@@ -5,7 +5,9 @@
 }
 
 .navbar{
+    margin: 5px;
     background-color: #9ad5ff;
+    border-radius: 5px;
 }
 .logo{
     height: 100px;
@@ -31,6 +33,10 @@
 .nav-link{
     color: #ffffff;
     text-shadow: 0 0 5px #000000;
+}
+.nav-link:hover{
+    color: #5cbbff;
+    text-shadow: 0 0 5px #ffffff;
 }
 
 .frase{
@@ -141,14 +147,15 @@
 }
 
 .productosDestacados{
-    text-shadow: 0 0 10px #000000;
+    text-shadow: 0 0 10px #ffffff;
     text-align: center;
     background-color: #ffa35d;
     padding: 10px;
     margin: 5px 5px;
     border: 2px solid black;
-    color: #ffffff;
+    color: #000000;
     font-style: italic;
+    border-radius: 10px;
 }
 
 
@@ -312,47 +319,55 @@ margin-right: 10px;
 
 /* PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS -  */
 
-.mainNosotros{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "pagNosotros"
-    "parrafo";
-}
 
-.mainNosotros .pagNosotros{
+.pagNosotros{
     grid-area: pagNosotros;
-    background-color: #2581CC;
+    background-color: #ffa35d;
     text-shadow: 0 0 10px #ffffff;
     text-align: center;
     padding: 5px;
     border: 2px solid black;
+    border-radius: 10px;
     margin: 5px 5px;
 }
-
-.parrafo{
-    grid-area: parrafo;
-    background-color: #7ac3ff73;
-    padding: 30px;
-    margin: 15px 20px;
+.mainNosotros .container{
+    margin-top: 5px;
+    background-color: #9ad5ff;
 }
-
-.mainNosotros .parrafo p{
-    font-size: 18px;
-    border: 2px solid black;
+.mainNosotros .container .card-title{
+    background-color: #ffa35d;
+    border-radius: 10px;
+    font-size: 35px;
+    text-align: center;
     padding: 10px;
-    background-color: #17518079;
+    color: white;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.mainNosotros .container .card-text{
+    background-color: #ffa35de0;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+/* PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS -  */
+
+.mainProductos h3{
+    background-color: #ffa35d;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 5px 5px;
+}
 
 /* PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO -  */
 
 .mainContacto .h3Contacto{
     text-align: center;
-    background-color: #2581CC;
+    background-color: #ffa35d;
     text-shadow: 0 0 10px #ffffff;
     margin: 5px 5px;
     border: 2px solid black;
+    border-radius: 10px;
     padding: 3px;
 }
 
@@ -362,9 +377,10 @@ margin-right: 10px;
     grid-template-rows: auto;
     grid-template-areas: 
     "formulario imgSobre";
-    background-color: #41698a70;
+    background-color: #9ad5ffd3;
     margin: 10px 10px;
     height: auto;
+    border-radius: 10px;
 }
 
 .formulario{
@@ -382,7 +398,7 @@ margin-right: 10px;
 
 .formCompletar .inputContacto{
     border: none;
-    border-bottom: 2px solid #1061a4;
+    border-bottom: 2px solid #ffa35d;
     background: transparent;
 }
 
@@ -402,17 +418,14 @@ margin-right: 10px;
 }
 
 .formulario .boton{
-    border-style: none;
-    height: 20px;
-    width: 60px;
-    margin-top: 10px;
+    background-color: #ffa35dcf;
 }
 
 .imgSobre{
     grid-area: imgSobre;
     align-self: center;
     justify-self: center;
-    color: #1061a4;
+    color: #ffa35de1;
 }
 
 .imgSobre .bi-envelope-fill{
@@ -534,6 +547,9 @@ margin-right: 10px;
 }
 
 @media only screen and (min-width:480px){
+    .slide img{
+        height: 50vh;
+    }
     .carrousel2 img{
         height: 48vh;
     }
@@ -572,18 +588,6 @@ margin-right: 10px;
         margin-bottom: 10px;
     }
 
-    /* nosotros */
-    .pagNosotros{
-        font-size: 27px;
-    }
-    .parrafo{
-        margin: 20px 20px;
-    }
-    .mainNosotros .parrafo p{
-        font-size: 22px;
-    }
-
-
     /* contacto */
     .mainContacto .h3Contacto{
         font-size: 25px;
@@ -608,7 +612,7 @@ margin-right: 10px;
         font-size: 25px;
     }
     .slide img{
-        height: 70vh;
+        height: 75vh;
     }
     .main{
         display: grid;
@@ -637,6 +641,8 @@ margin-right: 10px;
         grid-area: productosDestacados;
         font-size: 20px;
     }
+
+    /* no logro corregir que el carrousel ocupe todo el ancho */
     .carrousel2 img{
         height: 55vh;
     }
@@ -707,14 +713,6 @@ margin-right: 10px;
     }
     .divRedes .divR2 .bi-facebook{
         margin-right: 10px;
-    }
-    /* nosotros */
-    .mainNosotros .pagNosotros{
-        font-size: 35px;
-    }
-
-    .mainNosotros .parrafo p{
-        font-size: 28px;
     }
 
     /* contacto */
@@ -876,21 +874,6 @@ margin-right: 10px;
         margin-right: 10px;
     }
 
-    /* nosotros */
-    .mainNosotros .pagNosotros{
-        font-size: 60px;
-        margin: 15px 15px;
-    }
-
-    .mainNosotros .parrafo{
-        margin: 25px 35px;
-        padding: 80px;
-    }
-    .mainNosotros .parrafo p{
-        font-size: 45px;
-    }
-
-
     /* contacto */
     .h3Contacto{
         font-size: 50px;
@@ -904,8 +887,8 @@ margin-right: 10px;
         height: 100px;
     }
     .imgSobre .bi-envelope-fill{
-        height: 300px;
-        width: 300px;
+        height: 150px;
+        width: 150px;
     }
     .mainContacto .h3Contacto{ 
         margin: 15px 15px;
@@ -1069,17 +1052,6 @@ margin-right: 10px;
         font-size: 30px;
     }
 
-    /* nosotros */
-    .mainNosotros .pagNosotros{
-        font-size: 100px;
-        margin: 25px 15px;
-    }
-    .mainNosotros .parrafo{
-        margin: 30px 50px;
-    }
-    .mainNosotros .parrafo p{
-        font-size: 55px;
-    }
     /* contacto */
     .mainContacto .h3Contacto{
         font-size: 100px;
@@ -1155,5 +1127,32 @@ margin-right: 10px;
     }
     .segundoH32 p{
         font-size: 35px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:3500px){
+    .logo{
+        height: 800px;
+        width: 800px;
+        border-radius: 400px;
+        border: 15px solid black;
+        margin: 95px 0px 0px 95px;
+    }
+    .nav-link{
+        font-size: 120px;
+        margin: 0px 100px 0px 100px;
+        text-shadow: 5px 5px 10px black;
+    }
+    .frase{
+        font-size: 180px;
+        text-shadow: 10px 10px 10px rgb(255, 255, 255);
+        padding: 50px;
+    }
+    .slide img{
+        height: 75vh;
     }
 }
