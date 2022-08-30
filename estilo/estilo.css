@@ -1,1151 +1,1035 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar{
-    margin: 5px;
-    background-color: #9ad5ff;
-    border-radius: 5px;
+.navbar {
+  margin: 5px;
+  background-color: #9ad5ff;
+  border-radius: 5px;
 }
-.logo{
-    height: 100px;
-    width: 100px;
-    border: 3px solid black;
-    border-radius: 50px;
-    grid-area: logoHeader;
+.navbar .logo {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 50px;
+  grid-area: logoHeader;
 }
-.logo:hover{
-    transform: scale(1.1);
-    transition: all 0.7s;
+.navbar .logo .logo:hover {
+  transform: scale(1.1);
+  transition: all 0.7s;
+}
+.navbar .form-control::placeholder {
+  color: #000000;
+}
+.navbar .btn {
+  color: #ffffff;
+  border-color: rgb(0, 0, 0);
+  background-color: #319be6;
+}
+.navbar .nav-link {
+  color: #ffffff;
+  text-shadow: 0 0 5px #000000;
+}
+.navbar .nav-link .nav-link:hover {
+  color: #5cbbff;
+  text-shadow: 0 0 5px #ffffff;
+}
+.navbar .frase {
+  text-shadow: 0 0 5px #ffffff;
+  font-style: italic;
 }
 
+/* .form-inline{
+    flex: 1;
+}
+.form-control{
+    height: 20px;
+    flex: 1;
+}
 .form-control::placeholder{
-    color: #000000;
+    font-size: 16px;
 }
 .btn{
-    color: #ffffff;
-    border-color: rgb(0, 0, 0);
-    background-color: #319be6;
+    flex: 0.30;
+} */
+.slide {
+  margin-top: 5px;
 }
-
-.nav-link{
-    color: #ffffff;
-    text-shadow: 0 0 5px #000000;
-}
-.nav-link:hover{
-    color: #5cbbff;
-    text-shadow: 0 0 5px #ffffff;
-}
-
-.frase{
-    text-shadow: 0 0 5px #ffffff;
-    font-style: italic;
-}
-
-.slide{
-    margin-top: 5px;
-}
-.slide img{
-    height: 38vh;
-    background-position: center;
-    background-size: cover;
+.slide .slide img {
+  height: 38vh;
+  background-position: center;
+  background-size: cover;
 }
 
 /* MAIN - MAIN - MAIN - MAIN - MAIN - MAIN - MAIN -  */
-
-.main .divArriba{
-    display: grid;
-    background-color: #9ad5ff;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    border: 2px solid black;
-    margin: 5px 5px 0px;
+.main .divArriba {
+  display: grid;
+  background-color: #9ad5ff;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  border: 2px solid black;
+  margin: 5px 5px 0px;
 }
-
-.divArriba .camion{
-    margin-top: 8px;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    background-color: #1751807d;
+.main .divArriba .camion {
+  margin-top: 8px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: rgba(23, 81, 128, 0.4901960784);
 }
-.divArriba .camion .bi-truck{
-    height: 35px;
-    width: 35px;
-    margin: 5px 8px;
-    color: #ffffff;
+.main .divArriba .camion .bi-truck {
+  height: 35px;
+  width: 35px;
+  margin: 5px 8px;
+  color: #ffffff;
 }
-
-.divArriba .realizamosDelivery{
-    margin: 15px 0px 0px;
-    color: #ffffff;
-    text-shadow: 0 0 10px #000;
+.main .divArriba .realizamosDelivery {
+  margin: 15px 0px 0px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
 }
-
-.divArriba .divWsp{
-    display: flex;
-    margin: 10px 0px;
+.main .divArriba .divWsp {
+  display: flex;
+  margin: 10px 0px;
 }
-
-.divArriba .divWsp .bi-whatsapp{
-    margin-right: 8px;
-    height: 22px;
-    width: 22px;
-    color: #000000;
+.main .divArriba .divWsp .bi-whatsapp {
+  margin-right: 8px;
+  height: 22px;
+  width: 22px;
+  color: #000000;
 }
-.divArriba .divWsp a{
-    color: #000000;
+.main .divArriba .divWsp .p {
+  align-self: center;
+  color: #fff;
 }
-.divArriba .divWsp .p{
-    align-self: center;
-    color: #fff;
+.main .divArriba .divWsp a {
+  color: #000000;
 }
-
-.main .divAbajo{
-    display: grid;
-    background-color: #9ad5ff;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    justify-items: center;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    margin: 0px 5px;
+.main .divAbajo {
+  display: grid;
+  background-color: #9ad5ff;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin: 0px 5px;
 }
-
-
-.divMpago .bi-credit-card{
-    margin: 25px 25px 0px 0px;
-    height: 45px;
-    width: 45px;
-    color: #000000;
-
+.main .divAbajo .divMpago .bi-credit-card {
+  margin: 25px 25px 0px 0px;
+  height: 45px;
+  width: 45px;
+  color: #000000;
 }
-
-.mercadoPago{
-    margin: 25px;
-    height: 45px;
-    width: 45px;
-    border: 2px solid #000000;
-    border-radius: 25px;
+.main .divAbajo .divMpago .mercadoPago {
+  margin: 25px;
+  height: 45px;
+  width: 45px;
+  border: 2px solid #000000;
+  border-radius: 25px;
 }
-
-.divMpago .bi-cash-coin{
-    margin: 35px 0px 0px 25px;
-    height: 45px;
-    width: 45px;
-    color: #000000;
+.main .divAbajo .divMpago .bi-cash-coin {
+  margin: 35px 0px 0px 25px;
+  height: 45px;
+  width: 45px;
+  color: #000000;
 }
-
-.divAbajo .mediosDePago{
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 0 0 10px #000;
+.main .divAbajo .mediosDePago {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
 }
-
-.productosDestacados{
-    text-shadow: 0 0 10px #ffffff;
-    text-align: center;
-    background-color: #ffa35d;
-    padding: 10px;
-    margin: 5px 5px;
-    border: 2px solid black;
-    color: #000000;
-    font-style: italic;
-    border-radius: 10px;
+.main .productosDestacados {
+  text-shadow: 0 0 10px #ffffff;
+  text-align: center;
+  background-color: #ffa35d;
+  padding: 10px;
+  margin: 5px 5px;
+  border: 2px solid black;
+  color: #000000;
+  font-style: italic;
+  border-radius: 10px;
 }
-
-
-.d-md-block{
-    color: black;
-    text-shadow: 0 0 5px white;
+.main .d-md-block {
+  color: black;
+  text-shadow: 0 0 5px white;
 }
 
 /* FOOTER - FOOTER - FOOTER - FOOTER - FOOTER -  */
-
-.footer{
-    grid-area: footer;
-    background-color: #9ad5ff;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "divEncontranos" 
-    "divLogoFooter" 
-    "divRedes"
-    "copy";
-    margin: 3px 5px 5px;
-    border: 2px solid black;
+.footer {
+  grid-area: footer;
+  background-color: #9ad5ff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "divEncontranos" "divLogoFooter" "divRedes" "copy";
+  margin: 3px 5px 5px;
+  border: 2px solid black;
 }
-
-.divEncontranos{
-    grid-area: divEncontranos;
-    border-bottom: 2px solid black;
+.footer .divEncontranos {
+  grid-area: divEncontranos;
+  border-bottom: 2px solid black;
 }
-
-.divEncontranos h3{
-    text-align: center;
-    padding: 10px;
+.footer .divEncontranos h3 {
+  text-align: center;
+  padding: 10px;
 }
-
-.divEncontranos .divE1{
-    display: flex;
-    margin-left: 50px;
-    margin-bottom: 10px;
+.footer .divEncontranos .divE1 {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
-.divEncontranos .divE2{
-    display: flex;
-    margin-left: 50px;
-    margin-bottom: 10px;
+.footer .divEncontranos .divE1 .bi-geo-alt {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
 }
-.divEncontranos .divE3{
-    display: flex;
-    margin-left: 50px;
-    margin-bottom: 10px;
+.footer .divEncontranos .divE2 {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
-
-.divEncontranos .bi-geo-alt{
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
+.footer .divEncontranos .divE3 {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
-
-.divEncontranos p{
-    align-self: center;
-    padding: 4px;
+.footer .divEncontranos p {
+  align-self: center;
+  padding: 4px;
 }
-
-.divEncontranos .pSm{
-    text-align: center;
+.footer .divEncontranos .pSm {
+  text-align: center;
 }
-
-.divLogoFooter{
-    grid-area: divLogoFooter;
-    border-bottom: 2px solid black;
+.footer .divLogoFooter {
+  grid-area: divLogoFooter;
+  border-bottom: 2px solid black;
 }
-
-.divLogoFooter .enlace{
-    margin: auto;
-    display: flex;
-    margin: 15px;
+.footer .divLogoFooter .enlace {
+  margin: auto;
+  display: flex;
+  margin: 15px;
 }
-
-.divLogoFooter .logo{
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    border: 2px solid black;
-    margin: auto;
+.footer .divLogoFooter .enlace .logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 2px solid black;
+  margin: auto;
 }
-
-.divLogoFooter .logo:hover{
-    transform: scale(1.11);
-    transition: all 0.7s;
+.footer .divLogoFooter .enlace .logo .logo:hover {
+  transform: scale(1.11);
+  transition: all 0.7s;
 }
-
-.divLogoFooter .contactanos{
-    display: grid;
-    justify-content: center;
-    margin-bottom: 5px;
+.footer .divLogoFooter .contactanos {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 5px;
 }
-
-.divLogoFooter .divF2{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+.footer .divLogoFooter .divF2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
-
-.divLogoFooter .divF2 .bi-whatsapp{
-height: 25px;
-width: 25px;
-margin-right: 10px;
+.footer .divLogoFooter .divF2 .bi-whatsapp {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
 }
-
-.divLogoFooter .divF2 p{
-    align-self: center;
+.footer .divLogoFooter .divF2 p {
+  align-self: center;
 }
-
-.divRedes{
-    grid-area: divRedes;
-    border-bottom: 2px solid black;
+.footer .divRedes {
+  grid-area: divRedes;
+  border-bottom: 2px solid black;
 }
-
-.divRedes p{
-    align-self: center;
+.footer .divRedes h3 {
+  text-align: center;
+  padding: 10px;
 }
-
-.divRedes a{
-    text-decoration: none;
-    color: #000;
+.footer .divRedes .divR1 {
+  display: flex;
+  justify-content: center;
 }
-
-.divRedes svg{
-    width: 30px;
-    height: 30px;
+.footer .divRedes .divR1 .bi-instagram {
+  margin-right: 10px;
 }
-
-
-.divRedes h3{
-    text-align: center;
-    padding: 10px;
+.footer .divRedes .divR2 {
+  display: flex;
+  justify-content: center;
 }
-
-.divRedes .divR1{
-    display: flex;
-    justify-content: center;
+.footer .divRedes .divR2 .bi-facebook {
+  margin-bottom: 10px;
 }
-
-.divRedes .divR1 .bi-instagram{
-    margin-right: 10px;
+.footer .divRedes p {
+  align-self: center;
 }
-
-.divRedes .divR2{
-    display: flex;
-    justify-content: center;
+.footer .divRedes a {
+  text-decoration: none;
+  color: #000;
 }
-.divRedes .divR2 .bi-facebook{
-    margin-bottom: 10px;
+.footer .divRedes svg {
+  width: 30px;
+  height: 30px;
 }
-.copy{
-    grid-area: copy;
-    text-align: center;
+.footer .copy {
+  grid-area: copy;
+  text-align: center;
 }
-
-
-
 
 /* PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS -  */
-
-
-.pagNosotros{
-    grid-area: pagNosotros;
-    background-color: #ffa35d;
-    text-shadow: 0 0 10px #ffffff;
-    text-align: center;
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 5px 5px;
+.mainNosotros .pagNosotros {
+  grid-area: pagNosotros;
+  background-color: #ffa35d;
+  text-shadow: 0 0 10px #ffffff;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px 5px;
 }
-.mainNosotros .container{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: #9ad5ff;
+.mainNosotros .container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #9ad5ff;
 }
-.mainNosotros .container .card-title{
-    background-color: #ffa35d;
-    border-radius: 10px;
-    font-size: 35px;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+.mainNosotros .container .card-title {
+  background-color: #ffa35d;
+  border-radius: 10px;
+  font-size: 35px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
-.mainNosotros .container .card-text{
-    background-color: #ffa35de0;
-    padding: 20px;
-    border-radius: 10px;
+.mainNosotros .container .card-text {
+  background-color: rgba(255, 163, 93, 0.8784313725);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /* PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS -  */
-
-.mainProductos h3{
-    background-color: #ffa35d;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-    margin: 5px 5px;
+.mainProductos h3 {
+  background-color: #ffa35d;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 5px 5px;
 }
 
 /* PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO -  */
-
-.mainContacto .h3Contacto{
-    text-align: center;
-    background-color: #ffa35d;
-    text-shadow: 0 0 10px #ffffff;
-    margin: 5px 5px;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 3px;
+.mainContacto .h3Contacto {
+  text-align: center;
+  background-color: #ffa35d;
+  text-shadow: 0 0 10px #ffffff;
+  margin: 5px 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 3px;
+}
+.mainContacto .sectionContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "formulario imgSobre";
+  background-color: rgba(154, 213, 255, 0.8274509804);
+  margin: 10px 10px;
+  height: auto;
+  border-radius: 10px;
+}
+.mainContacto .sectionContacto .formulario {
+  grid-area: formulario;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  align-self: center;
+  justify-self: center;
+}
+.mainContacto .sectionContacto .formulario .formCompletar {
+  padding: 15px 0px 5px 0px;
+}
+.mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
+  border: none;
+  border-bottom: 2px solid #ffa35d;
+  background: transparent;
+}
+.mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::placeholder {
+  color: rgb(53, 55, 57);
+}
+.mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto:focus {
+  background: rgba(122, 195, 255, 0.4862745098);
+  outline: none;
+}
+.mainContacto .sectionContacto .formulario .formCompletar textarea {
+  min-height: 60px;
+  min-width: 165px;
+  resize: none;
+}
+.mainContacto .sectionContacto .formulario .boton {
+  background-color: rgba(255, 163, 93, 0.8117647059);
+}
+.mainContacto .sectionContacto .imgSobre {
+  grid-area: imgSobre;
+  align-self: center;
+  justify-self: center;
+  color: rgba(255, 163, 93, 0.8823529412);
+}
+.mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+  height: 100px;
+  width: 100px;
+}
+.mainContacto .sectionContacto2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "primerH3" "segundoH3";
+  background-color: #1061a4;
+  margin: 5px 5px 0px;
+  border: 2px solid black;
+}
+.mainContacto .sectionContacto2 .primerH3 {
+  grid-area: primerH3;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+}
+.mainContacto .sectionContacto2 .primerH3 h3 {
+  text-align: center;
+  padding: 10px 0px 5px 0px;
+  border-bottom: 2px solid black;
+  margin: 0px auto;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
+}
+.mainContacto .sectionContacto2 .primerH3 .primerH31 {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin: 10px 0px 0px;
+}
+.mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
+  margin: 0px 10px;
+  height: 25px;
+  width: 25px;
+  color: #ffffff;
+}
+.mainContacto .sectionContacto2 .primerH3 .primerH31 p {
+  align-self: center;
+}
+.mainContacto .sectionContacto2 .primerH3 .primerH31 a {
+  text-decoration: none;
+  color: black;
+}
+.mainContacto .sectionContacto2 .primerH3 .primerH32 {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin: 10px 0px 15px;
+}
+.mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
+  margin: 0px 10px;
+  height: 25px;
+  width: 25px;
+  color: #ffffff;
+}
+.mainContacto .sectionContacto2 .primerH3 .primerH32 p {
+  align-self: center;
+}
+.mainContacto .sectionContacto2 .primerH3 .primerH32 a {
+  text-decoration: none;
+  color: black;
+}
+.mainContacto .sectionContacto2 .segundoH3 {
+  grid-area: segundoH3;
+  display: flex;
+  flex-direction: column;
+}
+.mainContacto .sectionContacto2 .segundoH3 h3 {
+  text-align: center;
+  padding: 10px 0px 5px 0px;
+  border-bottom: 2px solid black;
+  margin: 0px auto;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
+}
+.mainContacto .sectionContacto2 .segundoH3 .segundoH31 {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin: 15px 0px 0px;
+}
+.mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  color: #ffffff;
+}
+.mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
+  align-self: center;
+}
+.mainContacto .sectionContacto2 .segundoH3 .segundoH31 a {
+  text-decoration: none;
+  color: black;
+}
+.mainContacto .sectionContacto2 .segundoH3 .segundoH32 {
+  align-self: center;
+  justify-self: center;
+  margin: 10px 0px 15px;
+}
+.mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+  font-size: 18px;
 }
 
-.sectionContacto{
+@media only screen and (min-width: 480px) {
+  .slide img {
+    height: 50vh;
+  }
+  .carrousel2 img {
+    height: 48vh;
+  }
+  .divEncontranos .divE1 {
+    display: flex;
+    margin-left: 160px;
+    margin-bottom: 10px;
+  }
+  .divEncontranos .divE1 .bi-geo-alt {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .divEncontranos .divE2 {
+    display: flex;
+    margin-left: 160px;
+    margin-bottom: 10px;
+  }
+  .divEncontranos .divE2 .bi-geo-alt {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .divEncontranos .divE3 {
+    display: flex;
+    margin-left: 160px;
+    margin-bottom: 10px;
+  }
+  .divEncontranos .divE3 .bi-geo-alt {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .divEncontranos p {
+    align-self: center;
+    padding: 4px;
+  }
+  .divRedes .divR1 {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .divRedes .divR2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  /* contacto */
+  .mainContacto .h3Contacto {
+    font-size: 25px;
+  }
+  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+    height: 170px;
+    width: 170px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar .logo {
+    height: 190px;
+    width: 190px;
+    border-radius: 100px;
+    margin: 15px 0px 0px 15px;
+  }
+  .navbar .nav-link {
+    font-size: 25px;
+  }
+  .navbar .frase {
+    font-size: 35px;
+  }
+  .slide img {
+    height: 75vh;
+  }
+  .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "formulario imgSobre";
-    background-color: #9ad5ffd3;
-    margin: 10px 10px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.formulario{
-    grid-area: formulario;
-    margin-left: 20px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "divArriba divAbajo" "productosDestacados productosDestacados";
+  }
+  .main .divArriba {
+    grid-area: divArriba;
+    margin-right: 0px;
+    border-right: none;
+  }
+  .main .divArriba .camion {
+    height: 50px;
+    margin-top: 15px;
+  }
+  .main .divAbajo {
+    grid-area: divAbajo;
+    margin: 5px 5px 0px 0px;
+    border: 2px solid black;
+  }
+  .main .productosDestacados {
+    grid-area: productosDestacados;
+    font-size: 20px;
+  }
+  /* no logro corregir que el carrousel ocupe todo el ancho */
+  .carrousel2 img {
+    height: 55vh;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "divEncontranos divRedes" "divLogoFooter divLogoFooter" "copy copy";
+  }
+  .footer .divEncontranos h3 {
+    text-align: center;
+    padding: 10px;
+  }
+  .footer .divEncontranos .divE1 {
+    display: flex;
+    margin-left: 120px;
+    margin-bottom: 10px;
+  }
+  .footer .divEncontranos .divE1 .bi-geo-alt {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .footer .divEncontranos .divE2 {
+    display: flex;
+    margin-left: 120px;
+    margin-bottom: 10px;
+  }
+  .footer .divEncontranos .divE2 .bi-geo-alt {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .footer .divEncontranos .divE3 {
+    display: flex;
+    margin-left: 120px;
+    margin-bottom: 10px;
+  }
+  .footer .divEncontranos .divE3 .bi-geo-alt {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .footer .divEncontranos p {
+    align-self: center;
+    padding: 4px;
+  }
+  .footer .divEncontranos .pSm {
+    text-align: center;
+  }
+  .footer .divRedes {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .footer .divRedes h3 {
+    text-align: center;
+    padding: 10px;
+  }
+  .footer .divRedes svg {
+    width: 30px;
+    height: 30px;
+  }
+  .footer .divRedes p {
+    align-self: center;
+  }
+  .footer .divRedes a {
+    text-decoration: none;
+    color: #000;
+  }
+  .footer .divRedes .divR1 {
+    margin-top: 20px;
+  }
+  .footer .divRedes .divR1 .bi-instagram {
+    margin-right: 10px;
+  }
+  .footer .divRedes .divR2 .bi-facebook {
+    margin-right: 10px;
+  }
+  /* nosotros */
+  .mainNosotros .pagNosotros {
+    font-size: 40px;
+  }
+  .mainNosotros .container {
     margin-top: 15px;
     margin-bottom: 15px;
-    align-self: center;
-    justify-self: center;
+  }
+  .mainNosotros .container .card-title {
+    font-size: 45px;
+  }
+  .mainNosotros .container .card-text {
+    font-size: 30px;
+  }
+  /* contacto */
+  .mainContacto .h3Contacto {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+    height: 220px;
+    width: 220px;
+  }
 }
-
-.formCompletar{
-    padding: 15px 0px 5px 0px;
-}
-
-.formCompletar .inputContacto{
-    border: none;
-    border-bottom: 2px solid #ffa35d;
-    background: transparent;
-}
-
-.formCompletar .inputContacto::placeholder{
-    color: rgb(53, 55, 57);
-}
-
-.formCompletar .inputContacto:focus{
-    background: #7ac3ff7c;
-    outline: none;
-}
-
-.formCompletar textarea{
-    min-height: 60px;
-    min-width: 165px;
-    resize: none;
-}
-
-.formulario .boton{
-    background-color: #ffa35dcf;
-}
-
-.imgSobre{
-    grid-area: imgSobre;
-    align-self: center;
-    justify-self: center;
-    color: #ffa35de1;
-}
-
-.imgSobre .bi-envelope-fill{
+@media only screen and (min-width: 1024px) {
+  .navbar .logo {
+    height: 250px;
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 150px;
+    margin: 25px 0px 0px 25px;
+  }
+  .navbar .nav-link {
+    font-size: 35px;
+  }
+  .navbar .frase {
+    font-size: 45px;
+  }
+  .slide img {
+    height: 90vh;
+  }
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px auto auto;
+    grid-template-areas: "divArriba divAbajo" "productosDestacados productosDestacados" "imagenesProductos imagenesProductos";
+  }
+  .main .divArriba {
+    margin: 15px 0px 15px 15px;
+    border: 2px solid black;
+    border-right: none;
+  }
+  .main .divArriba .camion {
+    height: 120px;
+    width: 120px;
+  }
+  .main .divArriba .camion .bi-truck {
     height: 100px;
     width: 100px;
-}
-
-.sectionContacto2{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "primerH3"
-    "segundoH3";
-    background-color: #1061a4;
-    margin: 5px 5px 0px;
-    border: 2px solid black;
-}
-
-.primerH3{
-    grid-area: primerH3;
+  }
+  .main .divArriba .realizamosDelivery {
+    margin-top: 25px;
+    margin: 5px 0px;
+    font-size: 25px;
+  }
+  .main .divArriba .divWsp {
     display: flex;
-    flex-direction: column;
-    border-bottom: 2px solid black;
-}
-
-.primerH3 h3{
-    text-align: center;
-    padding: 10px 0px 5px 0px;
-    border-bottom: 2px solid black;
-    margin: 0px auto;
-    color: #ffffff;
-    text-shadow: 0 0 10px #000;
-}
-
-.primerH31{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    margin: 10px 0px 0px;
-}
-
-.primerH31 .bi-instagram{
-    margin: 0px 10px;
-    height: 25px;
-    width: 25px;
-    color: #ffffff;
-}
-
-.primerH31 p{
-    align-self: center;
-}
-
-.primerH31 a, .primerH32 a{
-    text-decoration: none;
-    color: black;
-}
-
-.primerH32{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    margin: 10px 0px 15px;
-}
-
-.primerH32 .bi-facebook{
-    margin: 0px 10px;
-    height: 25px;
-    width: 25px;
-    color: #ffffff;
-}
-
-.primerH32 p{
-    align-self: center;
-}
-
-
-.segundoH3{
-    grid-area: segundoH3;
-    display: flex;
-    flex-direction: column;
-}
-
-.segundoH3 h3{
-    text-align: center;
-    padding: 10px 0px 5px 0px;
-    border-bottom: 2px solid black;
-    margin: 0px auto;
-    color: #ffffff;
-    text-shadow: 0 0 10px #000;
-}
-
-.segundoH31{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    margin: 15px 0px 0px;
-}
-
-.segundoH31 .bi-whatsapp{
-    height: 25px;
-    width: 25px;
+    margin: 10px 0px;
+  }
+  .main .divArriba .divWsp .bi-whatsapp {
     margin-right: 5px;
-    color: #ffffff;
-}
-
-.segundoH31 p{
+    height: 50px;
+    width: 50px;
     align-self: center;
-}
-
-.segundoH32{
+  }
+  .main .divArriba .divWsp p {
+    font-size: 25px;
     align-self: center;
-    justify-self: center;
-    margin: 10px 0px 15px;
+  }
+  .main .divAbajo {
+    margin: 15px 15px 15px 0px;
+  }
+  .main .divAbajo .divMpago .bi-credit-card {
+    margin: 20px;
+    height: 70px;
+    width: 70px;
+  }
+  .main .divAbajo .divMpago .mercadoPago {
+    margin: 50px;
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    border-radius: 35px;
+  }
+  .main .divAbajo .divMpago .bi-cash-coin {
+    margin: 20px;
+    height: 70px;
+    width: 70px;
+  }
+  .main .divAbajo .mediosDePago {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .main .productosDestacados {
+    margin: 5px 15px;
+  }
+  .main .productosDestacados .h2pD {
+    font-size: 60px;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "divEncontranos divLogoFooter divRedes" "copy copy copy";
+    margin: 15px 15px 5px;
+  }
+  .footer .divRedes {
+    border-left: none;
+  }
+  .footer .divRedes .divR1 {
+    margin-top: 35px;
+  }
+  .footer .divRedes .divR1 .bi-instagram {
+    margin-right: 10px;
+  }
+  .footer .divRedes .divR2 .bi-facebook {
+    margin-right: 10px;
+  }
+  /* nosotros */
+  .mainNosotros .pagNosotros {
+    font-size: 50px;
+  }
+  .mainNosotros .container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainNosotros .container .card-title {
+    font-size: 60px;
+  }
+  .mainNosotros .container .card-text {
+    font-size: 35px;
+  }
+  /* contacto */
+  .mainContacto .h3Contacto {
+    margin: 15px 15px;
+    font-size: 60px;
+  }
+  .mainContacto .sectionContacto {
+    margin: 25px 55px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar {
+    margin-top: 40px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
+    width: 400px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar textarea {
+    height: 100px;
+  }
+  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+    height: 400px;
+    width: 400px;
+  }
+  .mainContacto .sectionContacto2 {
+    margin: 0px 15px 15px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 h3 {
+    font-size: 50px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 {
+    font-size: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
+    height: 50px;
+    width: 50px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
+    height: 50px;
+    width: 50px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 h3 {
+    font-size: 50px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .navbar .logo {
+    height: 350px;
+    width: 350px;
+    border: 3px solid black;
+    border-radius: 175px;
+    margin: 30px 0px 0px 30px;
+  }
+  .navbar .nav-link {
+    font-size: 50px;
+  }
+  .navbar .frase {
+    font-size: 70px;
+  }
+  .slide img {
+    height: 100vh;
+  }
+  .carrousel2 img {
+    height: 80vh;
+  }
+  .footer .divEncontranos h3 {
+    font-size: 35px;
+    margin-top: 25px;
+  }
+  .footer .divEncontranos .divE1 .bi-geo-alt {
+    height: 40px;
+    width: 40px;
+  }
+  .footer .divEncontranos .divE1 p {
+    font-size: 30px;
+  }
+  .footer .divEncontranos .divE2 .bi-geo-alt {
+    height: 40px;
+    width: 40px;
+  }
+  .footer .divEncontranos .divE2 p {
+    font-size: 30px;
+  }
+  .footer .divEncontranos .divE3 .bi-geo-alt {
+    height: 40px;
+    width: 40px;
+  }
+  .footer .divEncontranos .divE3 p {
+    font-size: 30px;
+  }
+  .footer .divEncontranos .pSm {
+    font-size: 25px;
+  }
+  .footer .divLogoFooter .logo {
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    border: 5px solid black;
+    margin-top: 25px;
+  }
+  .footer .divLogoFooter .contactanos {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .footer .divLogoFooter .divF2 .bi-whatsapp {
+    height: 35px;
+    width: 35px;
+  }
+  .footer .divLogoFooter .divF2 .p {
+    font-size: 25px;
+  }
+  .footer .divLogoFooter .divF2 a {
+    color: black;
+    text-shadow: 0 0 10px white;
+  }
+  .footer .divRedes h3 {
+    font-size: 35px;
+    margin-top: 25px;
+  }
+  .footer .divRedes .divR1 .bi-instagram {
+    height: 60px;
+    width: 60px;
+  }
+  .footer .divRedes .divR1 a {
+    font-size: 30px;
+  }
+  .footer .divRedes .divR2 .bi-facebook {
+    height: 60px;
+    width: 60px;
+  }
+  .footer .divRedes .divR2 a {
+    font-size: 30px;
+  }
+  /* nosotros */
+  .mainNosotros .pagNosotros {
+    font-size: 70px;
+  }
+  /* contacto */
+  .mainContacto .h3Contacto {
+    font-size: 100px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
+    margin: 20px 0px;
+    height: 25px;
+    width: 400px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::placeholder {
+    font-size: 20px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar textarea {
+    height: 220px;
+  }
+  .mainContacto .sectionContacto .formulario .boton {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+    height: 600px;
+    width: 600px;
+    margin-right: 80px;
+  }
+  .mainContacto .sectionContacto2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "primerH3 segundoH3";
+  }
+  .mainContacto .sectionContacto2 .primerH3 {
+    grid-area: primerH3;
+    border-right: 2px solid black;
+    margin: 50px 0px;
+    border-bottom: none;
+  }
+  .mainContacto .sectionContacto2 .primerH3 h3 {
+    font-size: 50px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 {
+    font-size: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
+    height: 40px;
+    width: 40px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
+    height: 40px;
+    width: 40px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 {
+    grid-area: segundoH3;
+    margin: 50px 0px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 h3 {
+    font-size: 50px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
+    height: 45px;
+    width: 45px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+    font-size: 35px;
+  }
 }
 
-.segundoH32 p{
-    font-size: 18px;
-}
-
-@media only screen and (min-width:480px){
-    .slide img{
-        height: 50vh;
-    }
-    .carrousel2 img{
-        height: 48vh;
-    }
-    .divEncontranos .divE1{
-        display: flex;
-        margin-left: 160px;
-        margin-bottom: 10px;
-    }
-    .divEncontranos .divE2{
-        display: flex;
-        margin-left: 160px;
-        margin-bottom: 10px;
-    }
-    .divEncontranos .divE3{
-        display: flex;
-        margin-left: 160px;
-        margin-bottom: 10px;
-    }
-    .divEncontranos .bi-geo-alt{
-        height: 25px;
-        width: 25px;
-        margin-right: 10px;
-    }
-    .divEncontranos p{
-        align-self: center;
-        padding: 4px;
-    }
-    .divRedes .divR1{
-        display: flex;
-        margin-bottom: 10px;
-        justify-content: center;
-    }
-    .divRedes .divR2{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    /* contacto */
-    .mainContacto .h3Contacto{
-        font-size: 25px;
-    }
-    .sectionContacto .imgSobre .bi-envelope-fill{
-        height: 170px;
-        width: 170px;
-    }
-}
-
-@media only screen and (min-width:768px){
-    .logo{
-        height: 190px;
-        width: 190px;
-        border-radius: 100px;
-        margin: 15px 0px 0px 15px;
-    }
-    .frase{
-        font-size: 35px;
-    }
-    .nav-link{
-        font-size: 25px;
-    }
-    .slide img{
-        height: 75vh;
-    }
-    .main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "divArriba divAbajo"
-        "productosDestacados productosDestacados";
-    }
-
-    .main .divArriba{
-        grid-area: divArriba;
-        margin-right: 0px;
-        border-right: none;
-    }
-    .main .divAbajo{
-        grid-area: divAbajo;
-        margin: 5px 5px 0px 0px;
-        border: 2px solid black;
-    }
-    .main .divArriba .camion{
-        height: 50px;
-        margin-top: 15px;
-    }
-    .productosDestacados{
-        grid-area: productosDestacados;
-        font-size: 20px;
-    }
-
-    /* no logro corregir que el carrousel ocupe todo el ancho */
-    .carrousel2 img{
-        height: 55vh;
-    }
-    .footer{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-        "divEncontranos divRedes"
-        "divLogoFooter divLogoFooter"
-        "copy copy";
-    }
-    .divEncontranos h3{
-        text-align: center;
-        padding: 10px;
-    }
-    .divEncontranos .divE1{
-        display: flex;
-        margin-left: 120px;
-        margin-bottom: 10px;
-    }
-    .divEncontranos .divE2{
-        display: flex;
-        margin-left: 120px;
-        margin-bottom: 10px;
-    }
-    .divEncontranos .divE3{
-        display: flex;
-        margin-left: 120px;
-        margin-bottom: 10px;
-    }
-    .divEncontranos .bi-geo-alt{
-        height: 25px;
-        width: 25px;
-        margin-right: 10px;
-    }
-    .divEncontranos p{
-        align-self: center;
-        padding: 4px;
-    }
-    .divEncontranos .pSm{
-        text-align: center;
-    }
-    .divRedes{
-        border-left: 2px solid black;
-        border-bottom: 2px solid black;
-    }
-    .divRedes p{
-        align-self: center;
-    }
-    .divRedes a{
-        text-decoration: none;
-        color: #000;
-    }
-    .divRedes svg{
-        width: 30px;
-        height: 30px;
-    }
-    .divRedes h3{
-        text-align: center;
-        padding: 10px;
-    }
-
-    .divRedes .divR1 .bi-instagram{
-        margin-right: 10px;
-    }
-    .divRedes .divR1{
-        margin-top: 20px;
-    }
-    .divRedes .divR2 .bi-facebook{
-        margin-right: 10px;
-    }
-    /* nosotros */
-    .mainNosotros .pagNosotros{
-        font-size: 40px;
-    }
-    .mainNosotros .container{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .mainNosotros .container .card-title{
-        font-size: 45px;
-    }
-    .mainNosotros .container .card-text{
-        font-size: 30px;
-    }
-    /* contacto */
-    .mainContacto .h3Contacto{
-        font-size: 35px;
-    }
-    .sectionContacto .imgSobre .bi-envelope-fill{
-        height: 220px;
-        width: 220px;
-    }
-}
-
-@media only screen and (min-width:1024px){
-    .logo{
-        height: 250px;
-        width: 250px;
-        border: 3px solid black;
-        border-radius: 150px;
-        margin: 25px 0px 0px 25px;
-    }
-    .nav-link{
-        font-size: 35px;
-    }
-    .frase{
-        font-size: 45px;
-    }
-    .slide img{
-        height: 90vh;
-    }
-    .main .divArriba{
-        margin: 10px 0px 5px 15px;
-    }
-    .main .divArriba .camion{
-        height: 120px;
-        width: 120px;
-    }
-    .main .divArriba .realizamosDelivery{
-        margin-top: 25px;
-        font-size: 30px;
-    }
-    .main .divArriba .divWsp .bi-whatsapp{
-        height: 30px;
-        width: 30px;
-    }
-    .main .divArriba .divWsp p{
-        font-size: 25px;
-        align-self: center;
-    }
-    .main .divAbajo{
-        margin: 10px 15px 5px 0px;
-    }
-    .main .divAbajo .divMpago .bi-credit-card, .divMpago .mercadoPago{
-        height: 90px;
-        width: 90px;
-    }
-    .main .divAbajo .divMpago .mercadoPago{
-        border-radius: 45px;
-    }
-    .main .divAbajo .divMpago .bi-cash-coin{
-        height: 90px;
-        width: 90px;
-        margin: 10px;
-    }
-    .main .divAbajo .mediosDePago{
-        font-size: 30px;
-    }
-    .productosDestacados{
-        margin: 5px 15px;
-    }
-    .productosDestacados .h2pD{
-        font-size: 60px;
-    }
-    .main{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px auto auto;
-        grid-template-areas: 
-        "divArriba divAbajo"
-        "productosDestacados productosDestacados"
-        "imagenesProductos imagenesProductos";
-    }
-
-    .divArriba, .divAbajo{
-        margin: 0px 15px;
-    }
-    .divArriba .camion .bi-truck{
-        height: 100px;
-        width: 100px;
-    }
-    .divArriba .realizamosDelivery{
-        margin: 5px 0px;
-        font-size: 25px;
-    }
-    .divArriba .divWsp{
-        display: flex;
-        margin: 10px 0px;
-    }
-    .divArriba .divWsp .bi-whatsapp{
-        margin-right: 5px;
-        height: 50px;
-        width: 50px;
-        align-self: center;
-    }
-    .divArriba .divWsp .p{
-        align-self: center;
-        font-size: 25px;
-    }
-    .divMpago .bi-credit-card{
-        margin: 20px;
-        height: 70px;
-        width: 70px;
-    }
-    .mercadoPago{
-        margin: 50px;
-        height: 70px;
-        width: 70px;
-        border: 2px solid black;
-        border-radius: 35px;
-    }
-    .divMpago .bi-cash-coin{
-        margin: 20px;
-        height: 70px;
-        width: 70px;
-    }
-    .divAbajo .mediosDePago{
-        padding: 10px;
-        font-size: 23px;
-    }
-    .imagenesProductos img{
-        height: 400px;
-        width: 400px;
-        border: 3px solid black;
-        gap: 20px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .imagenesProductos p{
-        font-size: 25px;
-    }
-
-    .footer{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-        "divEncontranos divLogoFooter divRedes"
-        "copy copy copy";
-        margin: 15px 15px 5px;
-    }
-    .divRedes{
-        border-left: none;
-    }
-    .divRedes .divR1{
-        margin-top: 35px;
-    }
-    .divRedes .divR1 .bi-instagram{
-        margin-right: 10px;
-    }
-    .divRedes .divR2 .bi-facebook{
-        margin-right: 10px;
-    }
-    /* nosotros */
-    .mainNosotros .pagNosotros{
-        font-size: 50px;
-    }
-    .mainNosotros .container{
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-    .mainNosotros .container .card-title{
-        font-size: 60px;
-    }
-    .mainNosotros .container .card-text{
-        font-size: 35px;
-    }
-    /* contacto */
-    .h3Contacto{
-        font-size: 50px;
-    }
-
-    .inputContacto{
-        width: 400px;
-    }
-
-    .formCompletar textarea{
-        height: 100px;
-    }
-    .imgSobre .bi-envelope-fill{
-        height: 150px;
-        width: 150px;
-    }
-    .mainContacto .h3Contacto{ 
-        margin: 15px 15px;
-        font-size: 60px;
-    }
-    .mainContacto .sectionContacto{
-        margin: 25px 55px;
-    }
-    .mainContacto .sectionContacto .formulario .formCompletar{
-        margin-top: 40px;
-    }
-    .mainContacto .sectionContacto .imgSobre .bi-envelope-fill{
-        height: 400px;
-        width: 400px;
-    }
-    .mainContacto .sectionContacto2{
-        margin: 0px 15px 15px;
-    }
-    .sectionContacto2 .primerH3 h3{
-        font-size: 50px;
-    }
-    .primerH31{
-        font-size: 35px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-    .primerH31 .bi-instagram{
-        height: 50px;
-        width: 50px;
-    }
-
-    .primerH32{
-        font-size: 35px;
-        margin-bottom: 25px;
-    }
-    .primerH32 .bi-facebook{
-        height: 50px;
-        width: 50px;
-    }
-
-    .segundoH3 h3{
-        font-size: 50px;
-    }
-    .segundoH31{
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-    .segundoH31 .bi-whatsapp{
-        height: 50px;
-        width: 50px;
-        margin-right: 15px;
-    }
-    .segundoH31 p{
-        font-size: 35px;
-    }
-
-    .segundoH32 p{
-        font-size: 35px;
-        margin-bottom: 25px;
-    }
-}
-
-@media only screen and (min-width:1500px){
-    .logo{
-        height: 350px;
-        width: 350px;
-        border: 3px solid black;
-        border-radius: 175px;
-        margin: 30px 0px 0px 30px;
-    }
-    .nav-link{
-        font-size: 50px;
-    }
-    .frase{
-        font-size: 70px;
-    }
-    .slide img{
-        height: 100vh;
-    }
-    .carrousel2 img{
-        height: 80vh;
-    }
-    .divEncontranos h3{
-        font-size: 35px;
-        margin-top: 25px;
-    }
-
-    .divE1 .bi-geo-alt{
-        height: 40px;
-        width: 40px;
-    }
-    .divE2 .bi-geo-alt{
-        height: 40px;
-        width: 40px;
-    }    
-    .divE3 .bi-geo-alt{
-        height: 40px;
-        width: 40px;
-    }
-    .divE1 p{
-        font-size: 30px;
-    }
-    .divE2 p{
-        font-size: 30px;
-    }
-    .divE3 p{
-        font-size: 30px;
-    }
-    .pSm{
-        font-size: 25px;
-    }
-
-    .divLogoFooter .logo{
-        height: 250px;
-        width: 250px;
-        border-radius: 125px;
-        border: 5px solid black;
-        margin-top: 25px;
-    }
-    .divLogoFooter .contactanos{
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .divLogoFooter .divF2 .bi-whatsapp{
-        height: 35px;
-        width: 35px;
-    }
-
-    .divLogoFooter .divF2 .p{
-        font-size: 25px;
-    }
-    .divLogoFooter .divF2 a{
-        color: black;
-        text-shadow: 0 0 10px white;
-    }
-
-    .divRedes h3{
-        font-size: 35px;
-        margin-top: 25px;
-    }
-    .divRedes .divR1 .bi-instagram{
-        height: 60px;
-        width: 60px;
-    }
-    .divRedes .divR2 .bi-facebook{
-        height: 60px;
-        width: 60px;
-    }
-    .divRedes .divR1 a{
-        font-size: 30px;
-    }
-    .divRedes .divR2 a{
-        font-size: 30px;
-    }
-        /* nosotros */
-        .mainNosotros .pagNosotros{
-            font-size: 70px;
-        }
-    /* contacto */
-    .mainContacto .h3Contacto{
-        font-size: 100px;
-    }
-    .inputContacto{
-        margin: 20px 0px;
-        height: 25px;
-        width: 400px;
-    }
-    .inputContacto::placeholder{
-        font-size: 20px;
-    }
-    .formCompletar textarea{
-        height: 220px;
-    }
-    .mainContacto .sectionContacto .imgSobre .bi-envelope-fill{
-        height: 600px;
-        width: 600px;
-        margin-right: 80px;
-    }
-    .mainContacto .sectionContacto .formulario .boton{
-        font-size: 35px;
-    }
-    .mainContacto .sectionContacto2{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "primerH3 segundoH3";
-    }
-    .mainContacto .sectionContacto2 .primerH3{
-        grid-area: primerH3;
-        border-right: 2px solid black;
-        margin: 50px 0px;
-        border-bottom: none;
-    }
-    .mainContacto .sectionContacto2 .segundoH3{
-        grid-area: segundoH3;
-        margin: 50px 0px;
-    }
-    .primerH3 h3{
-        font-size: 50px;
-    }
-    .primerH31{
-        font-size: 35px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-    .primerH31 .bi-instagram{
-        height: 40px;
-        width: 40px;
-    }
-    .primerH32{
-        font-size: 35px;
-        margin-bottom: 25px;
-    }
-    .primerH32 .bi-facebook{
-        height: 40px;
-        width: 40px;
-    }
-    .segundoH3 h3{
-        font-size: 50px;
-    }
-    .segundoH31 .bi-whatsapp{
-        height: 45px;
-        width: 45px;
-    }
-    .segundoH31 p{
-        font-size: 35px;
-    }
-    .segundoH32 p{
-        font-size: 35px;
-    }
-}
+/*# sourceMappingURL=estilo.css.map */
