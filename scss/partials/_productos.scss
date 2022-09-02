@@ -1,0 +1,135 @@
+$colorbase: #9ad5ff;
+$colortitulos: #ffa35d;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainProductos{
+    h3{
+        background-color: $colortitulos;
+        text-align: center;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 0, 0);
+        margin: 5px 5px;
+    }
+} 
+
+.mainProductos{
+    .todosLosProductos{
+        display: flex;
+        flex-direction: column;
+        .producto{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            img{
+                height: 180px;
+                width: 200px;
+                background-position: center;
+                background-size: cover;
+                border: 3px solid $colortitulos;
+                align-self: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:480px){
+    .mainProductos{
+        .todosLosProductos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-areas: 
+            "producto1 producto2"
+            "producto3 producto4"
+            "producto5 producto6"
+            "producto7 producto8"
+            "producto9 producto10"
+            "producto11 producto12"
+            "producto13 producto14"
+            "producto15 producto16"
+            "producto17 producto18"
+            "producto19 producto20"
+            "producto21 producto21";
+            .producto{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .mainProductos{
+        .todosLosProductos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto;
+            grid-template-areas: 
+            "producto1 producto2 producto3"
+            "producto4 producto5 producto6"
+            "producto7 producto8 producto9"
+            "producto10 producto11 producto12"
+            "producto13 producto14 producto15"
+            "producto16 producto17 producto18"
+            "producto19 producto20 producto21"
+            "producto22 producto22 producto22";
+            .producto{
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .mainProductos{
+        h3{
+            font-size: 45px;
+            padding: 10px;
+            font-style: italic;
+            text-shadow: 2px 2px 5px white;
+        }
+        .todosLosProductos{
+            .producto{
+                img{
+                    height: 250px;
+                    width: 280px;
+                    border: 4px solid $colortitulos;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:1500px){
+    .mainProductos{
+        h3{
+            font-size: 65px;
+            padding: 10px;
+            font-style: italic;
+            text-shadow: 3px 3px 6px white;
+        }
+        .todosLosProductos{
+            .producto{
+                img{
+                    height: 290px;
+                    width: 400px;
+                    border: 5px solid $colortitulos;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

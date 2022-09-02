@@ -1,0 +1,83 @@
+$colorbase: #9ad5ff;
+$colortitulos: #ffa35d;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainNosotros{
+    .pagNosotros{
+        grid-area: pagNosotros;
+        background-color: $colortitulos;
+        text-shadow: 0 0 10px #ffffff;
+        text-align: center;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 5px 5px;
+    }
+    .container{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: $colorbase;
+        .card-title{
+            background-color: $colortitulos;
+            border-radius: 10px;
+            font-size: 35px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            text-shadow: 5px 5px 10px rgb(0, 0, 0);
+        }
+        .card-text{
+            background-color: #ffa35de0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .mainNosotros{
+        .pagNosotros{
+            font-size: 40px;
+        }
+        .container{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            .card-title{
+                font-size: 45px;
+            }
+            .card-text{
+                font-size: 30px;
+            }
+        }
+    } 
+}
+
+@media only screen and (min-width:1024px){
+    .mainNosotros{
+        .pagNosotros{
+            font-size: 50px;
+        }
+        .container{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            .card-title{
+                font-size: 60px;
+            }
+            .card-text{
+                font-size: 35px;
+            }
+        }
+    } 
+}
+
+@media only screen and (min-width:1500px){
+    .mainNosotros{
+        .pagNosotros{
+            font-size: 70px;
+        }
+    } 
+}

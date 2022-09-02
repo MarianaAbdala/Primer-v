@@ -1,0 +1,376 @@
+$colorbase: #9ad5ff;
+$colortitulos: #ffa35d;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContacto{
+    .h3Contacto{
+        text-align: center;
+        background-color: $colortitulos;
+        text-shadow: 0 0 10px #ffffff;
+        margin: 5px 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .sectionContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "formulario imgSobre";
+        background-color: #9ad5ffd3;
+        margin: 10px 10px;
+        height: auto;
+        border-radius: 10px;
+        .formulario{
+            grid-area: formulario;
+            margin-left: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            align-self: center;
+            justify-self: center;
+            .formCompletar{
+                padding: 15px 0px 5px 0px;
+                .inputContacto{
+                    border: none;
+                    border-bottom: 2px solid $colortitulos;
+                    background: transparent;
+                    .inputContacto::placeholder{
+                        color: rgb(53, 55, 57);
+                    }
+                    .inputContacto:focus{
+                        background: #7ac3ff7c;
+                        outline: none;
+                    }
+                }
+                textarea{
+                    min-height: 60px;
+                    min-width: 165px;
+                    resize: none;
+                }
+            }
+            .boton{
+                background-color: #ffa35dcf;
+            }
+        }
+        .imgSobre{
+            grid-area: imgSobre;
+            align-self: center;
+            justify-self: center;
+            color: #ffa35de1;
+            .bi-envelope-fill{
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+    .sectionContacto2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "primerH3"
+        "segundoH3";
+        background-color: #1061a4;
+        margin: 5px 5px 0px;
+        border: 2px solid black;
+        .primerH3{
+            grid-area: primerH3;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px solid black;
+            h3{
+                text-align: center;
+                padding: 10px 0px 5px 0px;
+                border-bottom: 2px solid black;
+                margin: 0px auto;
+                color: #ffffff;
+                text-shadow: 0 0 10px #000;
+            }
+            .primerH31 {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                margin: 10px 0px 0px;
+                .bi-instagram{
+                    margin: 0px 10px;
+                    height: 25px;
+                    width: 25px;
+                    color: #ffffff;
+                }
+                p{
+                    align-self: center;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .primerH32 {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                margin: 10px 0px 15px;
+                .bi-facebook{
+                    margin: 0px 10px;
+                    height: 25px;
+                    width: 25px;
+                    color: #ffffff;
+                }
+                p{
+                    align-self: center;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        .segundoH3{
+            grid-area: segundoH3;
+            display: flex;
+            flex-direction: column;
+            h3{
+                text-align: center;
+                padding: 10px 0px 5px 0px;
+                border-bottom: 2px solid black;
+                margin: 0px auto;
+                color: #ffffff;
+                text-shadow: 0 0 10px #000;
+            }
+            .segundoH31{
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                margin: 15px 0px 0px;
+                .bi-whatsapp{
+                    height: 25px;
+                    width: 25px;
+                    margin-right: 5px;
+                    color: #ffffff;
+                }
+                p{
+                    align-self: center;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .segundoH32{
+                align-self: center;
+                justify-self: center;
+                margin: 10px 0px 15px;
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    } 
+}
+
+@media only screen and (min-width:480px){
+    .mainContacto{
+        .h3Contacto{
+            font-size: 25px;
+        }
+        .sectionContacto{
+            .imgSobre{
+                .bi-envelope-fill{
+                    height: 170px;
+                    width: 170px;
+                }
+            } 
+        } 
+    } 
+}
+
+@media only screen and (min-width:768px){
+    .mainContacto{
+        .h3Contacto{
+            font-size: 35px;
+        }
+        .sectionContacto{
+            .imgSobre{
+                .bi-envelope-fill{
+                    height: 220px;
+                    width: 220px;
+                }
+            } 
+        } 
+    } 
+}
+
+@media only screen and (min-width:1024px){
+    .mainContacto{
+        .h3Contacto{
+            margin: 15px 15px;
+            font-size: 60px;
+        }
+        .sectionContacto{
+            margin: 25px 55px;
+            .formulario{
+                .formCompletar{
+                    margin-top: 40px;
+                    .inputContacto{
+                        width: 400px;
+                    }
+                    textarea{
+                        height: 100px;
+                    }
+                }
+            }
+            .imgSobre{
+                .bi-envelope-fill{
+                    height: 400px;
+                    width: 400px;
+                }
+            } 
+        }
+        .sectionContacto2{
+            margin: 0px 15px 15px;
+            .primerH3{
+                h3{
+                    font-size: 50px;
+                }
+                .primerH31{
+                    font-size: 35px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    .bi-instagram{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+                .primerH32{
+                    font-size: 35px;
+                    margin-bottom: 25px;
+                    .bi-facebook{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            } 
+            .segundoH3{
+                h3{
+                    font-size: 50px;
+                }
+                .segundoH31{
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    .bi-whatsapp{
+                        height: 50px;
+                        width: 50px;
+                        margin-right: 15px;
+                    }
+                    p{
+                        font-size: 35px;
+                    }
+                }
+                .segundoH32{
+                    p{
+                        font-size: 35px;
+                        margin-bottom: 25px;
+                    }
+                } 
+            } 
+        }
+    }
+}
+
+@media only screen and (min-width:1500px){
+    .mainContacto{
+        .h3Contacto{
+            font-size: 100px;
+        }
+        .sectionContacto{
+            .formulario{
+                .formCompletar{
+                    .inputContacto{
+                        margin: 20px 0px;
+                        height: 25px;
+                        width: 400px;
+                        .inputContacto::placeholder{
+                            font-size: 20px;
+                        }
+                    }
+                    textarea{
+                        height: 220px;
+                    }
+                }
+                .boton{
+                    font-size: 35px;
+                }
+            }
+            .imgSobre{
+                .bi-envelope-fill{
+                    height: 600px;
+                    width: 600px;
+                    margin-right: 80px;
+                }
+            } 
+        }
+        .sectionContacto2{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "primerH3 segundoH3";
+            .primerH3{
+                grid-area: primerH3;
+                border-right: 2px solid black;
+                margin: 50px 0px;
+                border-bottom: none;
+                h3{
+                    font-size: 50px;
+                }
+                .primerH31{
+                    font-size: 35px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    .bi-instagram{
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+                .primerH32{
+                    font-size: 35px;
+                    margin-bottom: 25px;
+                    .bi-facebook{
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+            .segundoH3{
+                grid-area: segundoH3;
+                margin: 50px 0px;
+                h3{
+                    font-size: 50px;
+                }
+                .segundoH31{
+                    .bi-whatsapp{
+                        height: 45px;
+                        width: 45px;
+                    }
+                    p{
+                        font-size: 35px;
+                    }
+                } 
+                .segundoH32{
+                    p{
+                        font-size: 35px;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+
+

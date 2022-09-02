@@ -1,288 +1,9 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.navbar {
-  margin: 5px;
-  background-color: #9ad5ff;
-  border-radius: 5px;
-}
-.navbar .logo {
-  height: 100px;
-  width: 100px;
-  border: 3px solid black;
-  border-radius: 50px;
-  grid-area: logoHeader;
-}
-.navbar .logo .logo:hover {
-  transform: scale(1.1);
-  transition: all 0.7s;
-}
-.navbar .form-control::placeholder {
-  color: #000000;
-}
-.navbar .btn {
-  color: #ffffff;
-  border-color: rgb(0, 0, 0);
-  background-color: #319be6;
-}
-.navbar .nav-link {
-  color: #ffffff;
-  text-shadow: 0 0 5px #000000;
-}
-.navbar .nav-link .nav-link:hover {
-  color: #5cbbff;
-  text-shadow: 0 0 5px #ffffff;
-}
-.navbar .frase {
-  text-shadow: 0 0 5px #ffffff;
-  font-style: italic;
-}
-
-/* .form-inline{
-    flex: 1;
-}
-.form-control{
-    height: 20px;
-    flex: 1;
-}
-.form-control::placeholder{
-    font-size: 16px;
-}
-.btn{
-    flex: 0.30;
-} */
-.slide {
-  margin-top: 5px;
-}
-.slide .slide img {
-  height: 38vh;
-  background-position: center;
-  background-size: cover;
-}
-
-/* MAIN - MAIN - MAIN - MAIN - MAIN - MAIN - MAIN -  */
-.main .divArriba {
-  display: grid;
-  background-color: #9ad5ff;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  justify-items: center;
-  border: 2px solid black;
-  margin: 5px 5px 0px;
-}
-.main .divArriba .camion {
-  margin-top: 8px;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  background-color: rgba(23, 81, 128, 0.4901960784);
-}
-.main .divArriba .camion .bi-truck {
-  height: 35px;
-  width: 35px;
-  margin: 5px 8px;
-  color: #ffffff;
-}
-.main .divArriba .realizamosDelivery {
-  margin: 15px 0px 0px;
-  color: #ffffff;
-  text-shadow: 0 0 10px #000;
-}
-.main .divArriba .divWsp {
-  display: flex;
-  margin: 10px 0px;
-}
-.main .divArriba .divWsp .bi-whatsapp {
-  margin-right: 8px;
-  height: 22px;
-  width: 22px;
-  color: #000000;
-}
-.main .divArriba .divWsp .p {
-  align-self: center;
-  color: #fff;
-}
-.main .divArriba .divWsp a {
-  color: #000000;
-}
-.main .divAbajo {
-  display: grid;
-  background-color: #9ad5ff;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  justify-items: center;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  margin: 0px 5px;
-}
-.main .divAbajo .divMpago .bi-credit-card {
-  margin: 25px 25px 0px 0px;
-  height: 45px;
-  width: 45px;
-  color: #000000;
-}
-.main .divAbajo .divMpago .mercadoPago {
-  margin: 25px;
-  height: 45px;
-  width: 45px;
-  border: 2px solid #000000;
-  border-radius: 25px;
-}
-.main .divAbajo .divMpago .bi-cash-coin {
-  margin: 35px 0px 0px 25px;
-  height: 45px;
-  width: 45px;
-  color: #000000;
-}
-.main .divAbajo .mediosDePago {
-  padding: 10px;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 0 0 10px #000;
-}
-.main .productosDestacados {
-  text-shadow: 0 0 10px #ffffff;
-  text-align: center;
-  background-color: #ffa35d;
-  padding: 10px;
-  margin: 5px 5px;
-  border: 2px solid black;
-  color: #000000;
-  font-style: italic;
-  border-radius: 10px;
-}
-.main .d-md-block {
-  color: black;
-  text-shadow: 0 0 5px white;
-}
-
-/* FOOTER - FOOTER - FOOTER - FOOTER - FOOTER -  */
-.footer {
-  grid-area: footer;
-  background-color: #9ad5ff;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "divEncontranos" "divLogoFooter" "divRedes" "copy";
-  margin: 3px 5px 5px;
-  border: 2px solid black;
-}
-.footer .divEncontranos {
-  grid-area: divEncontranos;
-  border-bottom: 2px solid black;
-}
-.footer .divEncontranos h3 {
-  text-align: center;
-  padding: 10px;
-}
-.footer .divEncontranos .divE1 {
-  display: flex;
-  margin-left: 50px;
-  margin-bottom: 10px;
-}
-.footer .divEncontranos .divE1 .bi-geo-alt {
-  height: 25px;
-  width: 25px;
-  margin-right: 10px;
-}
-.footer .divEncontranos .divE2 {
-  display: flex;
-  margin-left: 50px;
-  margin-bottom: 10px;
-}
-.footer .divEncontranos .divE3 {
-  display: flex;
-  margin-left: 50px;
-  margin-bottom: 10px;
-}
-.footer .divEncontranos p {
-  align-self: center;
-  padding: 4px;
-}
-.footer .divEncontranos .pSm {
-  text-align: center;
-}
-.footer .divLogoFooter {
-  grid-area: divLogoFooter;
-  border-bottom: 2px solid black;
-}
-.footer .divLogoFooter .enlace {
-  margin: auto;
-  display: flex;
-  margin: 15px;
-}
-.footer .divLogoFooter .enlace .logo {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  border: 2px solid black;
-  margin: auto;
-}
-.footer .divLogoFooter .enlace .logo .logo:hover {
-  transform: scale(1.11);
-  transition: all 0.7s;
-}
-.footer .divLogoFooter .contactanos {
-  display: grid;
-  justify-content: center;
-  margin-bottom: 5px;
-}
-.footer .divLogoFooter .divF2 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-.footer .divLogoFooter .divF2 .bi-whatsapp {
-  height: 25px;
-  width: 25px;
-  margin-right: 10px;
-}
-.footer .divLogoFooter .divF2 p {
-  align-self: center;
-}
-.footer .divRedes {
-  grid-area: divRedes;
-  border-bottom: 2px solid black;
-}
-.footer .divRedes h3 {
-  text-align: center;
-  padding: 10px;
-}
-.footer .divRedes .divR1 {
-  display: flex;
-  justify-content: center;
-}
-.footer .divRedes .divR1 .bi-instagram {
-  margin-right: 10px;
-}
-.footer .divRedes .divR2 {
-  display: flex;
-  justify-content: center;
-}
-.footer .divRedes .divR2 .bi-facebook {
-  margin-bottom: 10px;
-}
-.footer .divRedes p {
-  align-self: center;
-}
-.footer .divRedes a {
-  text-decoration: none;
-  color: #000;
-}
-.footer .divRedes svg {
-  width: 30px;
-  height: 30px;
-}
-.footer .copy {
-  grid-area: copy;
-  text-align: center;
-}
-
-/* PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS - PÁG NOSOTROS -  */
 .mainNosotros .pagNosotros {
   grid-area: pagNosotros;
   background-color: #ffa35d;
@@ -313,16 +34,138 @@
   border-radius: 10px;
 }
 
-/* PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS - PÁG PRODUCTOS -  */
+@media only screen and (min-width: 768px) {
+  .mainNosotros .pagNosotros {
+    font-size: 40px;
+  }
+  .mainNosotros .container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .mainNosotros .container .card-title {
+    font-size: 45px;
+  }
+  .mainNosotros .container .card-text {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .mainNosotros .pagNosotros {
+    font-size: 50px;
+  }
+  .mainNosotros .container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainNosotros .container .card-title {
+    font-size: 60px;
+  }
+  .mainNosotros .container .card-text {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .mainNosotros .pagNosotros {
+    font-size: 70px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .mainProductos h3 {
   background-color: #ffa35d;
   text-align: center;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   margin: 5px 5px;
 }
 
-/* PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO - PÁG CONTACTO -  */
+.mainProductos .todosLosProductos {
+  display: flex;
+  flex-direction: column;
+}
+.mainProductos .todosLosProductos .producto {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.mainProductos .todosLosProductos .producto img {
+  height: 180px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #ffa35d;
+  align-self: center;
+}
+.mainProductos .todosLosProductos .producto p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  .mainProductos .todosLosProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "producto1 producto2" "producto3 producto4" "producto5 producto6" "producto7 producto8" "producto9 producto10" "producto11 producto12" "producto13 producto14" "producto15 producto16" "producto17 producto18" "producto19 producto20" "producto21 producto21";
+  }
+  .mainProductos .todosLosProductos .producto {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mainProductos .todosLosProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "producto1 producto2 producto3" "producto4 producto5 producto6" "producto7 producto8 producto9" "producto10 producto11 producto12" "producto13 producto14 producto15" "producto16 producto17 producto18" "producto19 producto20 producto21" "producto22 producto22 producto22";
+  }
+  .mainProductos .todosLosProductos .producto {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .mainProductos h3 {
+    font-size: 45px;
+    padding: 10px;
+    font-style: italic;
+    text-shadow: 2px 2px 5px white;
+  }
+  .mainProductos .todosLosProductos .producto img {
+    height: 250px;
+    width: 280px;
+    border: 4px solid #ffa35d;
+    margin-bottom: 5px;
+  }
+  .mainProductos .todosLosProductos .producto p {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .mainProductos h3 {
+    font-size: 65px;
+    padding: 10px;
+    font-style: italic;
+    text-shadow: 3px 3px 6px white;
+  }
+  .mainProductos .todosLosProductos .producto img {
+    height: 290px;
+    width: 400px;
+    border: 5px solid #ffa35d;
+    margin-bottom: 5px;
+  }
+  .mainProductos .todosLosProductos .producto p {
+    font-size: 28px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .mainContacto .h3Contacto {
   text-align: center;
   background-color: #ffa35d;
@@ -486,6 +329,429 @@
 }
 
 @media only screen and (min-width: 480px) {
+  .mainContacto .h3Contacto {
+    font-size: 25px;
+  }
+  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+    height: 170px;
+    width: 170px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mainContacto .h3Contacto {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+    height: 220px;
+    width: 220px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .mainContacto .h3Contacto {
+    margin: 15px 15px;
+    font-size: 60px;
+  }
+  .mainContacto .sectionContacto {
+    margin: 25px 55px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar {
+    margin-top: 40px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
+    width: 400px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar textarea {
+    height: 100px;
+  }
+  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+    height: 400px;
+    width: 400px;
+  }
+  .mainContacto .sectionContacto2 {
+    margin: 0px 15px 15px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 h3 {
+    font-size: 50px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 {
+    font-size: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
+    height: 50px;
+    width: 50px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
+    height: 50px;
+    width: 50px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 h3 {
+    font-size: 50px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .mainContacto .h3Contacto {
+    font-size: 100px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
+    margin: 20px 0px;
+    height: 25px;
+    width: 400px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::placeholder {
+    font-size: 20px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar textarea {
+    height: 220px;
+  }
+  .mainContacto .sectionContacto .formulario .boton {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
+    height: 600px;
+    width: 600px;
+    margin-right: 80px;
+  }
+  .mainContacto .sectionContacto2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "primerH3 segundoH3";
+  }
+  .mainContacto .sectionContacto2 .primerH3 {
+    grid-area: primerH3;
+    border-right: 2px solid black;
+    margin: 50px 0px;
+    border-bottom: none;
+  }
+  .mainContacto .sectionContacto2 .primerH3 h3 {
+    font-size: 50px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 {
+    font-size: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
+    height: 40px;
+    width: 40px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
+    height: 40px;
+    width: 40px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 {
+    grid-area: segundoH3;
+    margin: 50px 0px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 h3 {
+    font-size: 50px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
+    height: 45px;
+    width: 45px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+    font-size: 35px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin: 5px;
+  background-color: #9ad5ff;
+  border-radius: 5px;
+}
+.navbar .logo {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 50px;
+  grid-area: logoHeader;
+}
+.navbar .logo .logo:hover {
+  transform: scale(1.1);
+  transition: all 0.7s;
+}
+.navbar .form-control::placeholder {
+  color: #000000;
+}
+.navbar .btn {
+  color: #ffffff;
+  border-color: rgb(0, 0, 0);
+  background-color: #319be6;
+}
+.navbar .nav-link {
+  color: #ffffff;
+  text-shadow: 0 0 5px #000000;
+}
+.navbar .nav-link .nav-link:hover {
+  color: #5cbbff;
+  text-shadow: 0 0 5px #ffffff;
+}
+.navbar .frase {
+  text-shadow: 0 0 5px #ffffff;
+  font-style: italic;
+}
+
+.slide {
+  margin-top: 5px;
+}
+.slide .slide img {
+  height: 38vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.main .divArriba {
+  display: grid;
+  background-color: #9ad5ff;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  border: 2px solid black;
+  margin: 5px 5px 0px;
+}
+.main .divArriba .camion {
+  margin-top: 8px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: rgba(23, 81, 128, 0.4901960784);
+}
+.main .divArriba .camion .bi-truck {
+  height: 35px;
+  width: 35px;
+  margin: 5px 8px;
+  color: #ffffff;
+}
+.main .divArriba .realizamosDelivery {
+  margin: 15px 0px 0px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
+}
+.main .divArriba .divWsp {
+  display: flex;
+  margin: 10px 0px;
+}
+.main .divArriba .divWsp .bi-whatsapp {
+  margin-right: 8px;
+  height: 22px;
+  width: 22px;
+  color: #000000;
+}
+.main .divArriba .divWsp .p {
+  align-self: center;
+  color: #fff;
+}
+.main .divArriba .divWsp a {
+  color: #000000;
+}
+.main .divAbajo {
+  display: grid;
+  background-color: #9ad5ff;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin: 0px 5px;
+}
+.main .divAbajo .divMpago .bi-credit-card {
+  margin: 25px 25px 0px 0px;
+  height: 45px;
+  width: 45px;
+  color: #000000;
+}
+.main .divAbajo .divMpago .mercadoPago {
+  margin: 25px;
+  height: 45px;
+  width: 45px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+}
+.main .divAbajo .divMpago .bi-cash-coin {
+  margin: 35px 0px 0px 25px;
+  height: 45px;
+  width: 45px;
+  color: #000000;
+}
+.main .divAbajo .mediosDePago {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
+}
+.main .productosDestacados {
+  text-shadow: 0 0 10px #ffffff;
+  text-align: center;
+  background-color: #ffa35d;
+  padding: 10px;
+  margin: 5px 5px;
+  border: 2px solid black;
+  color: #000000;
+  font-style: italic;
+  border-radius: 10px;
+}
+.main .d-md-block {
+  color: black;
+  text-shadow: 0 0 5px white;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #9ad5ff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "divEncontranos" "divLogoFooter" "divRedes" "copy";
+  margin: 3px 5px 5px;
+  border: 2px solid black;
+}
+.footer .divEncontranos {
+  grid-area: divEncontranos;
+  border-bottom: 2px solid black;
+}
+.footer .divEncontranos h3 {
+  text-align: center;
+  padding: 10px;
+}
+.footer .divEncontranos .divE1 {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.footer .divEncontranos .divE1 .bi-geo-alt {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.footer .divEncontranos .divE2 {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.footer .divEncontranos .divE3 {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.footer .divEncontranos p {
+  align-self: center;
+  padding: 4px;
+}
+.footer .divEncontranos .pSm {
+  text-align: center;
+}
+.footer .divLogoFooter {
+  grid-area: divLogoFooter;
+  border-bottom: 2px solid black;
+}
+.footer .divLogoFooter .enlace {
+  margin: auto;
+  display: flex;
+  margin: 15px;
+}
+.footer .divLogoFooter .enlace .logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 2px solid black;
+  margin: auto;
+}
+.footer .divLogoFooter .enlace .logo .logo:hover {
+  transform: scale(1.11);
+  transition: all 0.7s;
+}
+.footer .divLogoFooter .contactanos {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.footer .divLogoFooter .divF2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer .divLogoFooter .divF2 .bi-whatsapp {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.footer .divLogoFooter .divF2 p {
+  align-self: center;
+}
+.footer .divRedes {
+  grid-area: divRedes;
+  border-bottom: 2px solid black;
+}
+.footer .divRedes h3 {
+  text-align: center;
+  padding: 10px;
+}
+.footer .divRedes .divR1 {
+  display: flex;
+  justify-content: center;
+}
+.footer .divRedes .divR1 .bi-instagram {
+  margin-right: 10px;
+}
+.footer .divRedes .divR2 {
+  display: flex;
+  justify-content: center;
+}
+.footer .divRedes .divR2 .bi-facebook {
+  margin-bottom: 10px;
+}
+.footer .divRedes p {
+  align-self: center;
+}
+.footer .divRedes a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .divRedes svg {
+  width: 30px;
+  height: 30px;
+}
+.footer .copy {
+  grid-area: copy;
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
   .slide img {
     height: 50vh;
   }
@@ -536,14 +802,6 @@
     justify-content: center;
     margin-bottom: 10px;
   }
-  /* contacto */
-  .mainContacto .h3Contacto {
-    font-size: 25px;
-  }
-  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
-    height: 170px;
-    width: 170px;
-  }
 }
 @media only screen and (min-width: 768px) {
   .navbar .logo {
@@ -585,7 +843,6 @@
     grid-area: productosDestacados;
     font-size: 20px;
   }
-  /* no logro corregir que el carrousel ocupe todo el ancho */
   .carrousel2 img {
     height: 55vh;
   }
@@ -662,28 +919,6 @@
   }
   .footer .divRedes .divR2 .bi-facebook {
     margin-right: 10px;
-  }
-  /* nosotros */
-  .mainNosotros .pagNosotros {
-    font-size: 40px;
-  }
-  .mainNosotros .container {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .mainNosotros .container .card-title {
-    font-size: 45px;
-  }
-  .mainNosotros .container .card-text {
-    font-size: 30px;
-  }
-  /* contacto */
-  .mainContacto .h3Contacto {
-    font-size: 35px;
-  }
-  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
-    height: 220px;
-    width: 220px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -788,83 +1023,6 @@
   .footer .divRedes .divR2 .bi-facebook {
     margin-right: 10px;
   }
-  /* nosotros */
-  .mainNosotros .pagNosotros {
-    font-size: 50px;
-  }
-  .mainNosotros .container {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .mainNosotros .container .card-title {
-    font-size: 60px;
-  }
-  .mainNosotros .container .card-text {
-    font-size: 35px;
-  }
-  /* contacto */
-  .mainContacto .h3Contacto {
-    margin: 15px 15px;
-    font-size: 60px;
-  }
-  .mainContacto .sectionContacto {
-    margin: 25px 55px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar {
-    margin-top: 40px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
-    width: 400px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar textarea {
-    height: 100px;
-  }
-  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
-    height: 400px;
-    width: 400px;
-  }
-  .mainContacto .sectionContacto2 {
-    margin: 0px 15px 15px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 h3 {
-    font-size: 50px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH31 {
-    font-size: 35px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
-    height: 50px;
-    width: 50px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH32 {
-    font-size: 35px;
-    margin-bottom: 25px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
-    height: 50px;
-    width: 50px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 h3 {
-    font-size: 50px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
-    height: 50px;
-    width: 50px;
-    margin-right: 15px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
-    font-size: 35px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
-    font-size: 35px;
-    margin-bottom: 25px;
-  }
 }
 @media only screen and (min-width: 1500px) {
   .navbar .logo {
@@ -953,82 +1111,6 @@
   }
   .footer .divRedes .divR2 a {
     font-size: 30px;
-  }
-  /* nosotros */
-  .mainNosotros .pagNosotros {
-    font-size: 70px;
-  }
-  /* contacto */
-  .mainContacto .h3Contacto {
-    font-size: 100px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
-    margin: 20px 0px;
-    height: 25px;
-    width: 400px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::placeholder {
-    font-size: 20px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar textarea {
-    height: 220px;
-  }
-  .mainContacto .sectionContacto .formulario .boton {
-    font-size: 35px;
-  }
-  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
-    height: 600px;
-    width: 600px;
-    margin-right: 80px;
-  }
-  .mainContacto .sectionContacto2 {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: "primerH3 segundoH3";
-  }
-  .mainContacto .sectionContacto2 .primerH3 {
-    grid-area: primerH3;
-    border-right: 2px solid black;
-    margin: 50px 0px;
-    border-bottom: none;
-  }
-  .mainContacto .sectionContacto2 .primerH3 h3 {
-    font-size: 50px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH31 {
-    font-size: 35px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
-    height: 40px;
-    width: 40px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH32 {
-    font-size: 35px;
-    margin-bottom: 25px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
-    height: 40px;
-    width: 40px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 {
-    grid-area: segundoH3;
-    margin: 50px 0px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 h3 {
-    font-size: 50px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
-    height: 45px;
-    width: 45px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
-    font-size: 35px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
-    font-size: 35px;
   }
 }
 
