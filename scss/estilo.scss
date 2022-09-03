@@ -64,7 +64,6 @@ $colorborde: #567ccf;
             background-size: cover
         }
     }
-
 }
 
 main{
@@ -194,7 +193,7 @@ main{
     .container{
         .carrousel2{
             img{
-                height: 45vh;
+                height: 85vh;
             }
         }
     }
@@ -316,160 +315,6 @@ footer{
     }
 }
 
-// .wsp{
-//     display: flex;
-//     border: 2px solid #567ccf;
-//     border-radius: 5px;
-//     padding: 4px;
-//     margin: 0px 10px;
-//     background-color: #ffa35d;
-//     .bi-whatsapp{
-//         height: 25px;
-//         width: 25px;
-//         color: white;
-//     }
-// }
-// .p{
-//     margin-top: auto;
-//     margin-bottom: auto;
-//     font-size: 18px;
-//     color: #ffa35d;
-//     a{
-//         color: #ffa35d;
-//         text-shadow: 0 0 5px rgb(0, 0, 0);
-//     }
-// }
-
-
-
-
-
-
-
-// .footer{
-//     grid-area: footer;
-//     background-color: $colorbase;
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: auto auto auto auto;
-//     grid-template-areas: 
-//     "divEncontranos" 
-//     "divLogoFooter" 
-//     "divRedes"
-//     "copy";
-//     margin: 3px 5px 5px;
-//     border: 2px solid black;
-//     .divEncontranos{
-//         grid-area: divEncontranos;
-//         border-bottom: 2px solid black;
-//         h3{
-//             text-align: center;
-//             padding: 10px;
-//         }
-//         .divE1{
-//             display: flex;
-//             margin-left: 50px;
-//             margin-bottom: 10px;
-//             .bi-geo-alt{
-//                 height: 25px;
-//                 width: 25px;
-//                 margin-right: 10px;
-//             }
-//         }
-//         .divE2{
-//             display: flex;
-//             margin-left: 50px;
-//             margin-bottom: 10px;
-//         }
-//         .divE3{
-//             display: flex;
-//             margin-left: 50px;
-//             margin-bottom: 10px;
-//         }
-//         p{
-//             align-self: center;
-//             padding: 4px;
-//         }
-//         .pSm{
-//             text-align: center;
-//         }
-//     }
-//     .divLogoFooter{
-//         grid-area: divLogoFooter;
-//         border-bottom: 2px solid black;
-//         .enlace{
-//             margin: auto;
-//             display: flex;
-//             margin: 15px;
-//             .logo{
-//                 height: 100px;
-//                 width: 100px;
-//                 border-radius: 50px;
-//                 border: 2px solid black;
-//                 margin: auto;
-//                 .logo:hover{
-//                     transform: scale(1.11);
-//                     transition: all 0.7s;
-//                 }
-//             }
-//         }
-//         .contactanos{
-//             display: grid;
-//             justify-content: center;
-//             margin-bottom: 5px;
-//         }
-//         .divF2{
-//             display: flex;
-//             justify-content: center;
-//             margin-bottom: 10px;
-//             .bi-whatsapp{
-//                 height: 25px;
-//                 width: 25px;
-//                 margin-right: 10px;
-//                 }
-//             p{
-//                 align-self: center;
-//             }
-//         }
-//     }
-//     .divRedes{
-//         grid-area: divRedes;
-//         border-bottom: 2px solid black;
-//         h3{
-//             text-align: center;
-//             padding: 10px;
-//         }
-//         .divR1{
-//             display: flex;
-//             justify-content: center;
-//             .bi-instagram{
-//                 margin-right: 10px;
-//             }
-//         }
-//         .divR2{
-//             display: flex;
-//             justify-content: center;
-//             .bi-facebook{
-//                 margin-bottom: 10px;
-//             }
-//         }
-//         p{
-//             align-self: center;
-//         }
-//         a{
-//             text-decoration: none;
-//             color: #000;
-//         }
-//         svg{
-//             width: 30px;
-//             height: 30px;
-//         }
-//     }
-//     .copy{
-//         grid-area: copy;
-//         text-align: center;
-//     }
-// }
 @media only screen and (min-width:480px){
     .slide{
         img{
