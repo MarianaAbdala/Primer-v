@@ -98,7 +98,6 @@
   background-position: center;
   background-size: cover;
   border: 3px solid #ffa35d;
-  border-radius: 20px;
   align-self: center;
 }
 .mainProductos .todosLosProductos .producto p {
@@ -201,6 +200,12 @@
   border: none;
   border-bottom: 2px solid #ffa35d;
   background: transparent;
+}
+.mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::-moz-placeholder {
+  color: rgb(53, 55, 57);
+}
+.mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto:-ms-input-placeholder {
+  color: rgb(53, 55, 57);
 }
 .mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::placeholder {
   color: rgb(53, 55, 57);
@@ -420,6 +425,12 @@
     height: 25px;
     width: 400px;
   }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::-moz-placeholder {
+    font-size: 20px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto:-ms-input-placeholder {
+    font-size: 20px;
+  }
   .mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::placeholder {
     font-size: 20px;
   }
@@ -494,292 +505,268 @@
   margin: 5px;
   background-color: #9ad5ff;
   border-radius: 5px;
-  border: 2px solid #567ccf;
 }
 .navbar .logo {
   height: 100px;
   width: 100px;
   border: 3px solid black;
   border-radius: 50px;
+  grid-area: logoHeader;
 }
 .navbar .logo .logo:hover {
   transform: scale(1.1);
   transition: all 0.7s;
 }
-.navbar .navbar-collapse .nav-link {
+.navbar .form-control::-moz-placeholder {
+  color: #000000;
+}
+.navbar .form-control:-ms-input-placeholder {
+  color: #000000;
+}
+.navbar .form-control::placeholder {
+  color: #000000;
+}
+.navbar .btn {
+  color: #ffffff;
+  border-color: rgb(0, 0, 0);
+  background-color: #319be6;
+}
+.navbar .nav-link {
   color: #ffffff;
   text-shadow: 0 0 5px #000000;
 }
-.navbar .navbar-collapse .nav-link .nav-link:hover {
+.navbar .nav-link .nav-link:hover {
   color: #5cbbff;
   text-shadow: 0 0 5px #ffffff;
-}
-.navbar .navbar-collapse .form-inline .form-control::placeholder {
-  color: #000000;
-}
-.navbar .navbar-collapse .form-inline .btn {
-  color: #ffffff;
-  border-color: rgb(0, 0, 0);
-  background-color: #ffa35d;
 }
 .navbar .frase {
   text-shadow: 0 0 5px #ffffff;
   font-style: italic;
-  text-align: center;
-  margin-top: 5px;
 }
 
 .slide {
   margin-top: 5px;
-  margin: 0px 5px;
 }
-.slide .carousel-inner img {
-  height: 85vh;
+.slide .slide img {
+  height: 38vh;
   background-position: center;
   background-size: cover;
 }
 
-main .divPadre {
+.main .divArriba {
+  display: grid;
   background-color: #9ad5ff;
-  margin: 5px 5px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid #567ccf;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  border: 2px solid black;
+  margin: 5px 5px 0px;
 }
-main .divPadre .divArriba {
-  border-bottom: 2px solid #567ccf;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-}
-main .divPadre .divArriba .camion {
-  border: 2px solid #567ccf;
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  background-color: #ffa35d;
-}
-main .divPadre .divArriba .camion .bi-truck {
-  color: #ffffff;
-  height: 30px;
-  width: 30px;
-}
-main .divPadre .divArriba .realizamosDelivery {
-  text-shadow: 0 0 5px rgb(0, 0, 0);
-  color: #ffa35d;
-}
-main .divPadre .divArriba .divWsp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 10px;
-}
-main .divPadre .divArriba .divWsp .wsp {
-  display: flex;
-  border: 2px solid #567ccf;
-  border-radius: 5px;
-  padding: 4px;
-  margin: 0px 10px;
-  background-color: #ffa35d;
-}
-main .divPadre .divArriba .divWsp .wsp .bi-whatsapp {
-  height: 25px;
-  width: 25px;
-  color: white;
-}
-main .divPadre .divArriba .divWsp .p {
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 18px;
-  color: #567ccf;
-}
-main .divPadre .divArriba .divWsp .p a {
-  color: #567ccf;
-  text-shadow: 0 0 5px rgb(255, 255, 255);
-}
-main .divPadre .divAbajo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .divPadre .divAbajo .divMpago {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  padding: 15px;
+.main .divArriba .camion {
   margin-top: 8px;
-}
-main .divPadre .divAbajo .divMpago .tarjC {
-  border: 2px solid #567ccf;
+  border: 2px solid #ffffff;
   border-radius: 5px;
-  background-color: #ffa35d;
-  padding: 2px 4px;
+  background-color: rgba(23, 81, 128, 0.4901960784);
 }
-main .divPadre .divAbajo .divMpago .tarjC .bi-credit-card {
-  color: white;
-  height: 30px;
-  width: 30px;
+.main .divArriba .camion .bi-truck {
+  height: 35px;
+  width: 35px;
+  margin: 5px 8px;
+  color: #ffffff;
 }
-main .divPadre .divAbajo .divMpago .mercadoPago {
-  height: 40px;
-  width: 40px;
-  border: 2px solid #567ccf;
-  border-radius: 20px;
+.main .divArriba .realizamosDelivery {
+  margin: 15px 0px 0px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
 }
-main .divPadre .divAbajo .divMpago .plata {
-  border: 2px solid #567ccf;
-  border-radius: 5px;
-  background-color: #ffa35d;
-  padding: 2px 4px;
+.main .divArriba .divWsp {
+  display: flex;
+  margin: 10px 0px;
 }
-main .divPadre .divAbajo .divMpago .plata .bi-cash-coin {
-  color: white;
-  height: 30px;
-  width: 30px;
+.main .divArriba .divWsp .bi-whatsapp {
+  margin-right: 8px;
+  height: 22px;
+  width: 22px;
+  color: #000000;
 }
-main .divPadre .divAbajo .mediosDePago {
-  text-align: center;
-  color: #ffa35d;
-  text-shadow: 0 0 5px black;
+.main .divArriba .divWsp .p {
+  align-self: center;
+  color: #fff;
+}
+.main .divArriba .divWsp a {
+  color: #000000;
+}
+.main .divAbajo {
+  display: grid;
+  background-color: #9ad5ff;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin: 0px 5px;
+}
+.main .divAbajo .divMpago .bi-credit-card {
+  margin: 25px 25px 0px 0px;
+  height: 45px;
+  width: 45px;
+  color: #000000;
+}
+.main .divAbajo .divMpago .mercadoPago {
+  margin: 25px;
+  height: 45px;
+  width: 45px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+}
+.main .divAbajo .divMpago .bi-cash-coin {
+  margin: 35px 0px 0px 25px;
+  height: 45px;
+  width: 45px;
+  color: #000000;
+}
+.main .divAbajo .mediosDePago {
   padding: 10px;
-  margin-bottom: 20px;
-}
-main .h2pD {
-  color: #567ccf;
-  background-color: #ffa35d;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  border: 2px solid #567ccf;
-  text-shadow: 0 0 5px rgb(255, 255, 255);
-  font-style: italic;
   text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
 }
-main .container .carrousel2 img {
-  height: 45vh;
+.main .productosDestacados {
+  text-shadow: 0 0 10px #ffffff;
+  text-align: center;
+  background-color: #ffa35d;
+  padding: 10px;
+  margin: 5px 5px;
+  border: 2px solid black;
+  color: #000000;
+  font-style: italic;
+  border-radius: 10px;
+}
+.main .d-md-block {
+  color: black;
+  text-shadow: 0 0 5px white;
 }
 
-footer {
+.footer {
+  grid-area: footer;
   background-color: #9ad5ff;
-  border: 2px solid #567ccf;
-  margin: 5px 5px;
-  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "divEncontranos" "divLogoFooter" "divRedes" "copy";
+  margin: 3px 5px 5px;
+  border: 2px solid black;
+}
+.footer .divEncontranos {
+  grid-area: divEncontranos;
+  border-bottom: 2px solid black;
+}
+.footer .divEncontranos h3 {
+  text-align: center;
+  padding: 10px;
+}
+.footer .divEncontranos .divE1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
-footer .divEncontranos {
+.footer .divEncontranos .divE1 .bi-geo-alt {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.footer .divEncontranos .divE2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 2px solid #567ccf;
-  width: 85%;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
-footer .divEncontranos .encontranos {
-  padding: 8px;
-  color: #567ccf;
-  text-shadow: 0 0 5px white;
+.footer .divEncontranos .divE3 {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
-footer .divEncontranos .divE {
+.footer .divEncontranos p {
+  align-self: center;
+  padding: 4px;
+}
+.footer .divEncontranos .pSm {
+  text-align: center;
+}
+.footer .divLogoFooter {
+  grid-area: divLogoFooter;
+  border-bottom: 2px solid black;
+}
+.footer .divLogoFooter .enlace {
+  margin: auto;
+  display: flex;
+  margin: 15px;
+}
+.footer .divLogoFooter .enlace .logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 2px solid black;
+  margin: auto;
+}
+.footer .divLogoFooter .enlace .logo .logo:hover {
+  transform: scale(1.11);
+  transition: all 0.7s;
+}
+.footer .divLogoFooter .contactanos {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.footer .divLogoFooter .divF2 {
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding: 7px;
+  margin-bottom: 10px;
 }
-footer .divEncontranos .divE .bi-geo-alt {
-  height: 15px;
-  width: 15px;
+.footer .divLogoFooter .divF2 .bi-whatsapp {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.footer .divLogoFooter .divF2 p {
   align-self: center;
 }
-footer .divEncontranos .divE p {
-  color: #567ccf;
-  text-shadow: 0 0 5px rgb(255, 255, 255);
-  margin: auto 5px;
+.footer .divRedes {
+  grid-area: divRedes;
+  border-bottom: 2px solid black;
 }
-footer .divEncontranos .pSm {
-  padding: 8px;
-}
-footer .divLogoFooter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 2px solid #567ccf;
-  width: 85%;
-}
-footer .divLogoFooter .logo {
-  height: 80px;
-  width: 80px;
-  border: 2px solid black;
-  border-radius: 40px;
-  margin: 8px;
-}
-footer .divLogoFooter .contactanos {
-  color: #567ccf;
+.footer .divRedes h3 {
   text-align: center;
-  text-shadow: 0 0 5px white;
-}
-footer .divLogoFooter .divF2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   padding: 10px;
 }
-footer .divLogoFooter .divF2 .bi-whatsapp {
-  margin: 0px 5px;
-  height: 20px;
-  width: 20px;
-}
-footer .divLogoFooter .divF2 .p {
-  margin-top: auto;
-  margin-bottom: auto;
-  color: #567ccf;
-  text-shadow: 0 0 5px white;
-}
-footer .divLogoFooter .divF2 .p a {
-  color: #567ccf;
-  text-shadow: 0 0 5px white;
-}
-footer .divRedes {
+.footer .divRedes .divR1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 2px solid #567ccf;
-  width: 85%;
-}
-footer .divRedes .seguinos {
-  color: #567ccf;
-  text-shadow: 0 0 5px white;
-  padding: 8px;
-}
-footer .divRedes .divR {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 10px;
 }
-footer .divRedes .divR .bi {
-  height: 20px;
-  width: 20px;
+.footer .divRedes .divR1 .bi-instagram {
+  margin-right: 10px;
 }
-footer .divRedes .divR p {
-  margin: auto 5px;
+.footer .divRedes .divR2 {
+  display: flex;
+  justify-content: center;
 }
-footer .divRedes .divR p a {
-  color: #567ccf;
-  text-shadow: 0 0 5px white;
+.footer .divRedes .divR2 .bi-facebook {
+  margin-bottom: 10px;
 }
-footer .copy {
+.footer .divRedes p {
+  align-self: center;
+}
+.footer .divRedes a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .divRedes svg {
+  width: 30px;
+  height: 30px;
+}
+.footer .copy {
+  grid-area: copy;
   text-align: center;
-  margin-top: 8px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -839,7 +826,7 @@ footer .copy {
     height: 190px;
     width: 190px;
     border-radius: 100px;
-    margin: 15px 0px 0px 45px;
+    margin: 15px 0px 0px 15px;
   }
   .navbar .nav-link {
     font-size: 25px;
@@ -954,20 +941,20 @@ footer .copy {
 }
 @media only screen and (min-width: 1024px) {
   .navbar .logo {
-    height: 210px;
-    width: 210px;
+    height: 250px;
+    width: 250px;
     border: 3px solid black;
     border-radius: 150px;
-    margin: 25px 0px 0px 65px;
+    margin: 25px 0px 0px 25px;
   }
   .navbar .nav-link {
-    font-size: 30px;
+    font-size: 35px;
   }
   .navbar .frase {
     font-size: 45px;
   }
   .slide img {
-    height: 85vh;
+    height: 90vh;
   }
   .main {
     grid-template-columns: 1fr 1fr;
@@ -1030,9 +1017,6 @@ footer .copy {
     font-size: 30px;
     padding: 10px;
   }
-  .main .carrousel2 img {
-    height: 70vh;
-  }
   .main .productosDestacados {
     margin: 5px 15px;
   }
@@ -1060,14 +1044,14 @@ footer .copy {
 }
 @media only screen and (min-width: 1500px) {
   .navbar .logo {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     border: 3px solid black;
     border-radius: 175px;
-    margin: 30px 0px 0px 100px;
+    margin: 30px 0px 0px 30px;
   }
   .navbar .nav-link {
-    font-size: 40px;
+    font-size: 50px;
   }
   .navbar .frase {
     font-size: 70px;
@@ -1146,6 +1130,4 @@ footer .copy {
   .footer .divRedes .divR2 a {
     font-size: 30px;
   }
-}
-
-/*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=estilo.css.map */

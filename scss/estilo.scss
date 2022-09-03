@@ -4,6 +4,7 @@
 
 $colorbase: #9ad5ff;
 $colortitulos: #ffa35d;
+$colorborde: #567ccf;
 
 *{
     margin: 0;
@@ -15,270 +16,460 @@ $colortitulos: #ffa35d;
     margin: 5px;
     background-color: $colorbase;
     border-radius: 5px;
+    border: 2px solid $colorborde;
     .logo{
         height: 100px;
         width: 100px;
         border: 3px solid black;
         border-radius: 50px;
-        grid-area: logoHeader;
         .logo:hover{
             transform: scale(1.1);
             transition: all 0.7s;
         }
     }
-    .form-control::placeholder{
-        color: #000000;
-    }
-    .btn{
-        color: #ffffff;
-        border-color: rgb(0, 0, 0);
-        background-color: #319be6;
-    }
-    .nav-link{
-        color: #ffffff;
-        text-shadow: 0 0 5px #000000;
-        .nav-link:hover{
-            color: #5cbbff;
-            text-shadow: 0 0 5px #ffffff;
-        } 
+    .navbar-collapse{
+        .nav-link{
+            color: #ffffff;
+            text-shadow: 0 0 5px #000000;
+            .nav-link:hover{
+                color: #5cbbff;
+                text-shadow: 0 0 5px #ffffff;
+            } 
+        }
+        .form-inline{
+            .form-control::placeholder{
+                color: #000000;
+            }
+            .btn{
+                color: #ffffff;
+                border-color: rgb(0, 0, 0);
+                background-color: $colortitulos;
+            }
+        }
     }
     .frase{
         text-shadow: 0 0 5px #ffffff;
         font-style: italic;
+        text-align: center;
+        margin-top: 5px;
     }
 }
 .slide{
     margin-top: 5px;
-    .slide img{
-        height: 38vh;
-        background-position: center;
-        background-size: cover;
+    margin: 0px 5px;
+    .carousel-inner{
+        img{
+            height: 85vh;
+            background-position: center;
+            background-size: cover
+        }
     }
+
 }
 
-.main{
-    .divArriba{
-        display: grid;
+main{
+    .divPadre{
         background-color: $colorbase;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        justify-items: center;
-        border: 2px solid black;
-        margin: 5px 5px 0px;
-        .camion{
-            margin-top: 8px;
-            border: 2px solid #ffffff;
-            border-radius: 5px;
-            background-color: #1751807d;
-            .bi-truck{
-                height: 35px;
-                width: 35px;
-                margin: 5px 8px;
-                color: #ffffff;
-            }
-        }
-        .realizamosDelivery{
-            margin: 15px 0px 0px;
-            color: #ffffff;
-            text-shadow: 0 0 10px #000;
-        }
-        .divWsp{
-            display: flex;
-            margin: 10px 0px;
-            .bi-whatsapp{
-                margin-right: 8px;
-                height: 22px;
-                width: 22px;
-                color: #000000;
-            }
-            .p{
-                align-self: center;
-                color: #fff;
-            }
-            a{
-                color: #000000;
-            }
-        }
-    }
-    .divAbajo{
-        display: grid;
-        background-color: $colorbase;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        justify-items: center;
-        border-bottom: 2px solid black;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        margin: 0px 5px;
-        .divMpago {
-            .bi-credit-card{
-            margin: 25px 25px 0px 0px;
-            height: 45px;
-            width: 45px;
-            color: #000000;
-            }
-            .mercadoPago{
-                margin: 25px;
-                height: 45px;
-                width: 45px;
-                border: 2px solid #000000;
-                border-radius: 25px;
-            }
-            .bi-cash-coin{
-                margin: 35px 0px 0px 25px;
-                height: 45px;
-                width: 45px;
-                color: #000000;
-            }
-        }
-        .mediosDePago{
-            padding: 10px;
-            text-align: center;
-            color: #ffffff;
-            text-shadow: 0 0 10px #000;
-        }
-    }
-    .productosDestacados{
-        text-shadow: 0 0 10px #ffffff;
-        text-align: center;
-        background-color: $colortitulos;
-        padding: 10px;
         margin: 5px 5px;
-        border: 2px solid black;
-        color: #000000;
-        font-style: italic;
-        border-radius: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $colorborde;
+        .divArriba{
+            border-bottom: 2px solid $colorborde;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            .camion{
+                border: 2px solid #567ccf;
+                border-radius: 5px;
+                padding: 5px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                background-color: $colortitulos;
+                .bi-truck{
+                    color: #ffffff;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            .realizamosDelivery{
+                text-shadow: 0 0 5px rgb(0, 0, 0);
+                color: #ffa35d;
+            }
+            .divWsp{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 10px;
+                .wsp{
+                    display: flex;
+                    border: 2px solid #567ccf;
+                    border-radius: 5px;
+                    padding: 4px;
+                    margin: 0px 10px;
+                    background-color: #ffa35d;
+                    .bi-whatsapp{
+                        height: 25px;
+                        width: 25px;
+                        color: white;
+                    }
+                }
+                .p{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    font-size: 18px;
+                    color: $colorborde;
+                    a{
+                        color: $colorborde;
+                        text-shadow: 0 0 5px rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+        .divAbajo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .divMpago{
+                display: flex;
+                justify-content: center;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                padding: 15px;
+                margin-top: 8px;
+                .tarjC{
+                    border: 2px solid #567ccf;
+                    border-radius: 5px;
+                    background-color: $colortitulos;
+                    padding: 2px 4px;
+                    .bi-credit-card{
+                        color: white;
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+                .mercadoPago{
+                    height: 40px;
+                    width: 40px;
+                    border: 2px solid #567ccf;
+                    border-radius: 20px;
+                }
+                .plata{
+                    border: 2px solid #567ccf;
+                    border-radius: 5px;
+                    background-color: $colortitulos;
+                    padding: 2px 4px;
+                    .bi-cash-coin{
+                        color: white;
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+            .mediosDePago{
+                text-align: center;
+                color: $colortitulos;
+                text-shadow: 0 0 5px black;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+        }
     }
-    .d-md-block{
-        color: black;
-        text-shadow: 0 0 5px white;
+    .h2pD{
+        color: $colorborde;
+        background-color: $colortitulos;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 2px solid $colorborde;
+        text-shadow: 0 0 5px rgb(255, 255, 255);
+        font-style: italic;
+        text-align: center;
+    }
+    .container{
+        .carrousel2{
+            img{
+                height: 45vh;
+            }
+        }
     }
 }
 
-.footer{
-    grid-area: footer;
+footer{
     background-color: $colorbase;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "divEncontranos" 
-    "divLogoFooter" 
-    "divRedes"
-    "copy";
-    margin: 3px 5px 5px;
-    border: 2px solid black;
+    border: 2px solid $colorborde;
+    margin: 5px 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .divEncontranos{
-        grid-area: divEncontranos;
-        border-bottom: 2px solid black;
-        h3{
-            text-align: center;
-            padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid $colorborde;
+        width: 85%;
+        .encontranos{
+            padding: 8px;
+            color: $colorborde;
+            text-shadow: 0 0 5px white;
         }
-        .divE1{
+        .divE{
             display: flex;
-            margin-left: 50px;
-            margin-bottom: 10px;
+            justify-content: center;
+            width: 100%;
+            padding: 7px;
             .bi-geo-alt{
-                height: 25px;
-                width: 25px;
-                margin-right: 10px;
+                height: 15px;
+                width: 15px;
+                align-self: center;
             }
-        }
-        .divE2{
-            display: flex;
-            margin-left: 50px;
-            margin-bottom: 10px;
-        }
-        .divE3{
-            display: flex;
-            margin-left: 50px;
-            margin-bottom: 10px;
-        }
-        p{
-            align-self: center;
-            padding: 4px;
+            p{
+                color: $colorborde;
+                text-shadow: 0 0 5px rgb(255, 255, 255);
+                margin: auto 5px;
+            }
         }
         .pSm{
-            text-align: center;
+            padding: 8px;
         }
     }
     .divLogoFooter{
-        grid-area: divLogoFooter;
-        border-bottom: 2px solid black;
-        .enlace{
-            margin: auto;
-            display: flex;
-            margin: 15px;
-            .logo{
-                height: 100px;
-                width: 100px;
-                border-radius: 50px;
-                border: 2px solid black;
-                margin: auto;
-                .logo:hover{
-                    transform: scale(1.11);
-                    transition: all 0.7s;
-                }
-            }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid $colorborde;
+        width: 85%;
+        .logo{
+            height: 80px;
+            width: 80px;
+            border: 2px solid black;
+            border-radius: 40px;
+            margin: 8px;
         }
         .contactanos{
-            display: grid;
-            justify-content: center;
-            margin-bottom: 5px;
+            color: $colorborde;
+            text-align: center;
+            text-shadow: 0 0 5px white;
         }
-        .divF2{
+        .divF2{                
             display: flex;
+            align-items: center;
             justify-content: center;
-            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
             .bi-whatsapp{
-                height: 25px;
-                width: 25px;
-                margin-right: 10px;
+                margin: 0px 5px;
+                height: 20px;
+                width: 20px;
+            }
+            .p{
+                margin-top: auto;
+                margin-bottom: auto;
+                color: $colorborde;
+                text-shadow: 0 0 5px white;
+                a{
+                    color: $colorborde;
+                    text-shadow: 0 0 5px white;
                 }
-            p{
-                align-self: center;
             }
         }
     }
     .divRedes{
-        grid-area: divRedes;
-        border-bottom: 2px solid black;
-        h3{
-            text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid $colorborde;
+        width: 85%;
+        .seguinos{
+            color: $colorborde;
+            text-shadow: 0 0 5px white;
+            padding: 8px;
+        }
+        .divR{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
             padding: 10px;
-        }
-        .divR1{
-            display: flex;
-            justify-content: center;
-            .bi-instagram{
-                margin-right: 10px;
+            .bi{
+                height: 20px;
+                width: 20px;
             }
-        }
-        .divR2{
-            display: flex;
-            justify-content: center;
-            .bi-facebook{
-                margin-bottom: 10px;
+            p{
+                margin: auto 5px;
+                a{
+                    color: $colorborde;
+                    text-shadow: 0 0 5px white;
+                }
             }
-        }
-        p{
-            align-self: center;
-        }
-        a{
-            text-decoration: none;
-            color: #000;
-        }
-        svg{
-            width: 30px;
-            height: 30px;
         }
     }
     .copy{
-        grid-area: copy;
         text-align: center;
+        margin-top: 8px;
     }
 }
+
+// .wsp{
+//     display: flex;
+//     border: 2px solid #567ccf;
+//     border-radius: 5px;
+//     padding: 4px;
+//     margin: 0px 10px;
+//     background-color: #ffa35d;
+//     .bi-whatsapp{
+//         height: 25px;
+//         width: 25px;
+//         color: white;
+//     }
+// }
+// .p{
+//     margin-top: auto;
+//     margin-bottom: auto;
+//     font-size: 18px;
+//     color: #ffa35d;
+//     a{
+//         color: #ffa35d;
+//         text-shadow: 0 0 5px rgb(0, 0, 0);
+//     }
+// }
+
+
+
+
+
+
+
+// .footer{
+//     grid-area: footer;
+//     background-color: $colorbase;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto auto auto auto;
+//     grid-template-areas: 
+//     "divEncontranos" 
+//     "divLogoFooter" 
+//     "divRedes"
+//     "copy";
+//     margin: 3px 5px 5px;
+//     border: 2px solid black;
+//     .divEncontranos{
+//         grid-area: divEncontranos;
+//         border-bottom: 2px solid black;
+//         h3{
+//             text-align: center;
+//             padding: 10px;
+//         }
+//         .divE1{
+//             display: flex;
+//             margin-left: 50px;
+//             margin-bottom: 10px;
+//             .bi-geo-alt{
+//                 height: 25px;
+//                 width: 25px;
+//                 margin-right: 10px;
+//             }
+//         }
+//         .divE2{
+//             display: flex;
+//             margin-left: 50px;
+//             margin-bottom: 10px;
+//         }
+//         .divE3{
+//             display: flex;
+//             margin-left: 50px;
+//             margin-bottom: 10px;
+//         }
+//         p{
+//             align-self: center;
+//             padding: 4px;
+//         }
+//         .pSm{
+//             text-align: center;
+//         }
+//     }
+//     .divLogoFooter{
+//         grid-area: divLogoFooter;
+//         border-bottom: 2px solid black;
+//         .enlace{
+//             margin: auto;
+//             display: flex;
+//             margin: 15px;
+//             .logo{
+//                 height: 100px;
+//                 width: 100px;
+//                 border-radius: 50px;
+//                 border: 2px solid black;
+//                 margin: auto;
+//                 .logo:hover{
+//                     transform: scale(1.11);
+//                     transition: all 0.7s;
+//                 }
+//             }
+//         }
+//         .contactanos{
+//             display: grid;
+//             justify-content: center;
+//             margin-bottom: 5px;
+//         }
+//         .divF2{
+//             display: flex;
+//             justify-content: center;
+//             margin-bottom: 10px;
+//             .bi-whatsapp{
+//                 height: 25px;
+//                 width: 25px;
+//                 margin-right: 10px;
+//                 }
+//             p{
+//                 align-self: center;
+//             }
+//         }
+//     }
+//     .divRedes{
+//         grid-area: divRedes;
+//         border-bottom: 2px solid black;
+//         h3{
+//             text-align: center;
+//             padding: 10px;
+//         }
+//         .divR1{
+//             display: flex;
+//             justify-content: center;
+//             .bi-instagram{
+//                 margin-right: 10px;
+//             }
+//         }
+//         .divR2{
+//             display: flex;
+//             justify-content: center;
+//             .bi-facebook{
+//                 margin-bottom: 10px;
+//             }
+//         }
+//         p{
+//             align-self: center;
+//         }
+//         a{
+//             text-decoration: none;
+//             color: #000;
+//         }
+//         svg{
+//             width: 30px;
+//             height: 30px;
+//         }
+//     }
+//     .copy{
+//         grid-area: copy;
+//         text-align: center;
+//     }
+// }
 @media only screen and (min-width:480px){
     .slide{
         img{
@@ -346,7 +537,7 @@ $colortitulos: #ffa35d;
             height: 190px;
             width: 190px;
             border-radius: 100px;
-            margin: 15px 0px 0px 15px;
+            margin: 15px 0px 0px 45px;
         }
         .nav-link{
             font-size: 25px;
@@ -479,14 +670,14 @@ $colortitulos: #ffa35d;
 @media only screen and (min-width:1024px){
     .navbar{
         .logo{
-            height: 250px;
-            width: 250px;
+            height: 210px;
+            width: 210px;
             border: 3px solid black;
             border-radius: 150px;
-            margin: 25px 0px 0px 25px;
+            margin: 25px 0px 0px 65px;
         }
         .nav-link{
-            font-size: 35px;
+            font-size: 30px;
         }
         .frase{
             font-size: 45px;
@@ -494,7 +685,7 @@ $colortitulos: #ffa35d;
     }
     .slide{
         img{
-            height: 90vh;
+            height: 85vh;
         }
     } 
     .main{
@@ -562,6 +753,11 @@ $colortitulos: #ffa35d;
                 padding: 10px;
             }
         }
+        .carrousel2{
+            img{
+                height: 70vh;
+            }
+        } 
         .productosDestacados{
             margin: 5px 15px;
             .h2pD{
@@ -597,14 +793,14 @@ $colortitulos: #ffa35d;
 @media only screen and (min-width:1500px){
     .navbar{
         .logo{
-            height: 350px;
-            width: 350px;
+            height: 300px;
+            width: 300px;
             border: 3px solid black;
             border-radius: 175px;
-            margin: 30px 0px 0px 30px;
+            margin: 30px 0px 0px 100px;
         }
         .nav-link{
-            font-size: 50px;
+            font-size: 40px;
         }
         .frase{
             font-size: 70px;
