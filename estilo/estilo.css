@@ -490,39 +490,39 @@
   box-sizing: border-box;
 }
 
-.navbar {
+header {
   margin: 5px;
   background-color: #9ad5ff;
   border-radius: 5px;
   border: 2px solid #567ccf;
 }
-.navbar .logo {
+header .navbar .logo {
   height: 100px;
   width: 100px;
   border: 3px solid black;
   border-radius: 50px;
 }
-.navbar .logo .logo:hover {
+header .navbar .logo .logo:hover {
   transform: scale(1.1);
   transition: all 0.7s;
 }
-.navbar .navbar-collapse .nav-link {
+header .navbar .navbar-collapse .nav-link {
   color: #ffffff;
   text-shadow: 0 0 5px #000000;
 }
-.navbar .navbar-collapse .nav-link .nav-link:hover {
+header .navbar .navbar-collapse .nav-link .nav-link:hover {
   color: #5cbbff;
   text-shadow: 0 0 5px #ffffff;
 }
-.navbar .navbar-collapse .form-inline .form-control::placeholder {
+header .navbar .navbar-collapse .form-inline .form-control::placeholder {
   color: #000000;
 }
-.navbar .navbar-collapse .form-inline .btn {
+header .navbar .navbar-collapse .form-inline .btn {
   color: #ffffff;
   border-color: rgb(0, 0, 0);
   background-color: #ffa35d;
 }
-.navbar .frase {
+header .frase {
   text-shadow: 0 0 5px #ffffff;
   font-style: italic;
   text-align: center;
@@ -783,55 +783,11 @@ footer .copy {
 }
 
 @media only screen and (min-width: 480px) {
-  .slide img {
-    height: 50vh;
+  .slide .carousel-inner img {
+    height: 85vh;
   }
-  .carrousel2 img {
-    height: 48vh;
-  }
-  .divEncontranos .divE1 {
-    display: flex;
-    margin-left: 160px;
-    margin-bottom: 10px;
-  }
-  .divEncontranos .divE1 .bi-geo-alt {
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
-  }
-  .divEncontranos .divE2 {
-    display: flex;
-    margin-left: 160px;
-    margin-bottom: 10px;
-  }
-  .divEncontranos .divE2 .bi-geo-alt {
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
-  }
-  .divEncontranos .divE3 {
-    display: flex;
-    margin-left: 160px;
-    margin-bottom: 10px;
-  }
-  .divEncontranos .divE3 .bi-geo-alt {
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
-  }
-  .divEncontranos p {
-    align-self: center;
-    padding: 4px;
-  }
-  .divRedes .divR1 {
-    display: flex;
-    margin-bottom: 10px;
-    justify-content: center;
-  }
-  .divRedes .divR2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+  main .container .carrousel2 img {
+    height: 85vh;
   }
 }
 @media only screen and (min-width: 768px) {
