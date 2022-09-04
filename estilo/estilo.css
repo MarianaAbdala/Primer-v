@@ -5,68 +5,90 @@
 }
 
 .mainNosotros .pagNosotros {
-  grid-area: pagNosotros;
-  background-color: #ffa35d;
+  background-color: #ffb379;
   text-shadow: 0 0 10px #ffffff;
   text-align: center;
   padding: 5px;
-  border: 2px solid black;
+  border: 2px solid #567ccf;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: #567ccf;
   border-radius: 10px;
   margin: 5px 5px;
 }
-.mainNosotros .container {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.mainNosotros .tarj {
+  border: 2px solid #567ccf;
   background-color: #9ad5ff;
 }
-.mainNosotros .container .card-title {
-  background-color: #ffa35d;
+.mainNosotros .tarj .card-img-top {
+  margin-top: 15px;
   border-radius: 10px;
+  border: 2px solid #567ccf;
+}
+.mainNosotros .tarj .card-title {
+  background-color: #ffb379;
+  border: 2px solid #567ccf;
+  border-radius: 10px;
+  font-family: "Truculenta", sans-serif;
   font-size: 35px;
   text-align: center;
   padding: 10px;
-  color: white;
-  text-shadow: 5px 5px 10px rgb(0, 0, 0);
+  color: #567ccf;
+  text-shadow: 5px 5px 10px rgb(255, 255, 255);
 }
-.mainNosotros .container .card-text {
-  background-color: rgba(255, 163, 93, 0.8784313725);
+.mainNosotros .tarj .card-text {
+  border: 2px solid #567ccf;
+  background-color: #ffb379;
   padding: 20px;
   border-radius: 10px;
 }
 
+@media only screen and (min-width: 480px) {
+  .mainNosotros .tarj .card-img-top {
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid #567ccf;
+  }
+  .mainNosotros .tarj .card-title {
+    font-size: 40px;
+  }
+  .mainNosotros .tarj .card-text {
+    font-size: 20px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .mainNosotros .pagNosotros {
     font-size: 40px;
   }
-  .mainNosotros .container {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .mainNosotros .tarj .card-title {
+    font-size: 50px;
   }
-  .mainNosotros .container .card-title {
-    font-size: 45px;
-  }
-  .mainNosotros .container .card-text {
-    font-size: 30px;
+  .mainNosotros .tarj .card-text {
+    font-size: 28px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .mainNosotros .pagNosotros {
     font-size: 50px;
   }
-  .mainNosotros .container {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .mainNosotros .container .card-title {
-    font-size: 60px;
-  }
-  .mainNosotros .container .card-text {
-    font-size: 35px;
+  .mainNosotros .tarj {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1160px) {
   .mainNosotros .pagNosotros {
-    font-size: 70px;
+    font-size: 55px;
+  }
+  .mainNosotros .tarj {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mainNosotros .tarj .card-title {
+    font-size: 50px;
+  }
+  .mainNosotros .tarj .card-text {
+    font-size: 28px;
   }
 }
 * {
@@ -76,16 +98,24 @@
 }
 
 .mainProductos h3 {
-  background-color: #ffa35d;
+  background-color: #ffb379;
   text-align: center;
   border-radius: 10px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid #567ccf;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+  color: #567ccf;
   margin: 5px 5px;
+  padding: 5px;
 }
-
 .mainProductos .todosLosProductos {
   display: flex;
   flex-direction: column;
+  background-color: #9ad5ff;
+  margin: 0px 5px 5px 5px;
+  border-radius: 5px;
+  border: 2px solid #567ccf;
 }
 .mainProductos .todosLosProductos .producto {
   display: flex;
@@ -97,12 +127,19 @@
   width: 200px;
   background-position: center;
   background-size: cover;
-  border: 3px solid #ffa35d;
+  border: 4px solid #ffb379;
   border-radius: 20px;
   align-self: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .mainProductos .todosLosProductos .producto p {
+  margin: 0px;
   text-align: center;
+  font-family: "Truculenta", sans-serif;
+  color: #567ccf;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 @media only screen and (min-width: 480px) {
@@ -117,6 +154,9 @@
   }
 }
 @media only screen and (min-width: 768px) {
+  .mainProductos h3 {
+    font-size: 40px;
+  }
   .mainProductos .todosLosProductos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -126,39 +166,27 @@
   .mainProductos .todosLosProductos .producto {
     margin-top: 15px;
   }
+  .mainProductos .todosLosProductos .producto p {
+    font-size: 20px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .mainProductos h3 {
-    font-size: 45px;
-    padding: 10px;
-    font-style: italic;
-    text-shadow: 2px 2px 5px white;
+    font-size: 50px;
   }
   .mainProductos .todosLosProductos .producto img {
     height: 250px;
     width: 280px;
-    border: 4px solid #ffa35d;
+    border: 4px solid #ffb379;
     margin-bottom: 5px;
   }
   .mainProductos .todosLosProductos .producto p {
     font-size: 22px;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1160px) {
   .mainProductos h3 {
-    font-size: 65px;
-    padding: 10px;
-    font-style: italic;
-    text-shadow: 3px 3px 6px white;
-  }
-  .mainProductos .todosLosProductos .producto img {
-    height: 290px;
-    width: 400px;
-    border: 5px solid #ffa35d;
-    margin-bottom: 5px;
-  }
-  .mainProductos .todosLosProductos .producto p {
-    font-size: 28px;
+    font-size: 55px;
   }
 }
 * {
@@ -502,31 +530,39 @@ header .navbar .logo {
   border: 3px solid black;
   border-radius: 50px;
 }
-header .navbar .logo .logo:hover {
+header .navbar .logo:hover {
   transform: scale(1.1);
   transition: all 0.7s;
 }
-header .navbar .navbar-collapse .nav-link {
+header .navbar .navbar-collapse .nav-item .nav-link {
   color: #ffffff;
   text-shadow: 0 0 5px #000000;
+  font-family: "Truculenta", sans-serif;
 }
-header .navbar .navbar-collapse .nav-link .nav-link:hover {
-  color: #5cbbff;
+header .navbar .navbar-collapse .nav-item .nav-link:hover {
+  color: #567ccf;
   text-shadow: 0 0 5px #ffffff;
+  font-weight: bold;
 }
 header .navbar .navbar-collapse .form-inline .form-control::placeholder {
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
   color: #000000;
 }
 header .navbar .navbar-collapse .form-inline .btn {
   color: #ffffff;
   border-color: rgb(0, 0, 0);
-  background-color: #ffa35d;
+  background-color: #ffb379;
 }
 header .frase {
+  margin-top: 5px;
+}
+header .frase .h4 {
+  font-family: "Truculenta", sans-serif;
   text-shadow: 0 0 5px #ffffff;
+  font-weight: bold;
   font-style: italic;
   text-align: center;
-  margin-top: 5px;
 }
 
 .slide {
@@ -561,7 +597,7 @@ main .divPadre .divArriba .camion {
   padding: 5px;
   margin-top: 20px;
   margin-bottom: 10px;
-  background-color: #ffa35d;
+  background-color: #ffb379;
 }
 main .divPadre .divArriba .camion .bi-truck {
   color: #ffffff;
@@ -569,8 +605,10 @@ main .divPadre .divArriba .camion .bi-truck {
   width: 30px;
 }
 main .divPadre .divArriba .realizamosDelivery {
-  text-shadow: 0 0 5px rgb(0, 0, 0);
-  color: #ffa35d;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: #567ccf;
 }
 main .divPadre .divArriba .divWsp {
   display: flex;
@@ -585,7 +623,7 @@ main .divPadre .divArriba .divWsp .wsp {
   border-radius: 5px;
   padding: 4px;
   margin: 0px 10px;
-  background-color: #ffa35d;
+  background-color: #ffb379;
 }
 main .divPadre .divArriba .divWsp .wsp .bi-whatsapp {
   height: 25px;
@@ -597,6 +635,8 @@ main .divPadre .divArriba .divWsp .p {
   margin-bottom: auto;
   font-size: 18px;
   color: #567ccf;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
 }
 main .divPadre .divArriba .divWsp .p a {
   color: #567ccf;
@@ -619,7 +659,7 @@ main .divPadre .divAbajo .divMpago {
 main .divPadre .divAbajo .divMpago .tarjC {
   border: 2px solid #567ccf;
   border-radius: 5px;
-  background-color: #ffa35d;
+  background-color: #ffb379;
   padding: 2px 4px;
 }
 main .divPadre .divAbajo .divMpago .tarjC .bi-credit-card {
@@ -636,7 +676,7 @@ main .divPadre .divAbajo .divMpago .mercadoPago {
 main .divPadre .divAbajo .divMpago .plata {
   border: 2px solid #567ccf;
   border-radius: 5px;
-  background-color: #ffa35d;
+  background-color: #ffb379;
   padding: 2px 4px;
 }
 main .divPadre .divAbajo .divMpago .plata .bi-cash-coin {
@@ -646,24 +686,39 @@ main .divPadre .divAbajo .divMpago .plata .bi-cash-coin {
 }
 main .divPadre .divAbajo .mediosDePago {
   text-align: center;
-  color: #ffa35d;
-  text-shadow: 0 0 5px black;
+  color: #567ccf;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
   padding: 10px;
   margin-bottom: 20px;
 }
 main .h2pD {
   color: #567ccf;
-  background-color: #ffa35d;
+  background-color: #ffb379;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
   border: 2px solid #567ccf;
   text-shadow: 0 0 5px rgb(255, 255, 255);
   font-style: italic;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
   text-align: center;
 }
-main .container .carrousel2 img {
+main .carrusel2 .carrousel2 img {
   height: 45vh;
+}
+main .carrusel2 .carrousel2 .carousel-caption h5 {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+main .carrusel2 .carrousel2 .carousel-caption p {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+main .pDest {
+  display: none;
 }
 
 footer {
@@ -686,6 +741,8 @@ footer .divEncontranos .encontranos {
   padding: 8px;
   color: #567ccf;
   text-shadow: 0 0 5px white;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 footer .divEncontranos .divE {
   display: flex;
@@ -702,9 +759,13 @@ footer .divEncontranos .divE p {
   color: #567ccf;
   text-shadow: 0 0 5px rgb(255, 255, 255);
   margin: auto 5px;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 footer .divEncontranos .pSm {
   padding: 8px;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 footer .divLogoFooter {
   display: flex;
@@ -720,10 +781,17 @@ footer .divLogoFooter .logo {
   border-radius: 40px;
   margin: 8px;
 }
+footer .divLogoFooter .logo:hover {
+  transform: scale(1.1);
+  transition: all 0.7s;
+}
 footer .divLogoFooter .contactanos {
   color: #567ccf;
   text-align: center;
   text-shadow: 0 0 5px white;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
+  padding: 10px 0px 0px 0px;
 }
 footer .divLogoFooter .divF2 {
   display: flex;
@@ -742,6 +810,8 @@ footer .divLogoFooter .divF2 .p {
   margin-bottom: auto;
   color: #567ccf;
   text-shadow: 0 0 5px white;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 footer .divLogoFooter .divF2 .p a {
   color: #567ccf;
@@ -758,6 +828,8 @@ footer .divRedes .seguinos {
   color: #567ccf;
   text-shadow: 0 0 5px white;
   padding: 8px;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 footer .divRedes .divR {
   display: flex;
@@ -772,6 +844,8 @@ footer .divRedes .divR .bi {
 }
 footer .divRedes .divR p {
   margin: auto 5px;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 footer .divRedes .divR p a {
   color: #567ccf;
@@ -784,323 +858,336 @@ footer .copy {
 
 @media only screen and (min-width: 480px) {
   .slide .carousel-inner img {
-    height: 85vh;
+    height: 65vh;
   }
-  main .container .carrousel2 img {
-    height: 85vh;
+  main .carrusel2 .carrousel2 img {
+    height: 65vh;
+  }
+  main .pDest {
+    display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  .navbar .logo {
-    height: 190px;
-    width: 190px;
-    border-radius: 100px;
-    margin: 15px 0px 0px 45px;
+  header .navbar .logo {
+    height: 150px;
+    width: 150px;
+    border: 4px solid black;
+    border-radius: 75px;
   }
-  .navbar .nav-link {
-    font-size: 25px;
+  header .navbar .navbar-collapse .nav-item .nav-link {
+    font-size: 22px;
   }
-  .navbar .frase {
-    font-size: 35px;
-  }
-  .slide img {
-    height: 75vh;
-  }
-  .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "divArriba divAbajo" "productosDestacados productosDestacados";
-  }
-  .main .divArriba {
-    grid-area: divArriba;
-    margin-right: 0px;
-    border-right: none;
-  }
-  .main .divArriba .camion {
-    height: 50px;
-    margin-top: 15px;
-  }
-  .main .divAbajo {
-    grid-area: divAbajo;
-    margin: 5px 5px 0px 0px;
-    border: 2px solid black;
-  }
-  .main .productosDestacados {
-    grid-area: productosDestacados;
+  header .navbar .navbar-collapse .form-inline .form-control::placeholder {
     font-size: 20px;
   }
-  .carrousel2 img {
-    height: 55vh;
+  header .frase .h4 {
+    font-size: 35px;
   }
-  .footer {
+  .slide .carousel-inner img {
+    height: 80vh;
+  }
+  main .divPadre {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "divEncontranos divRedes" "divLogoFooter divLogoFooter" "copy copy";
+    grid-template-rows: auto;
+    grid-template-areas: "divArriba divAbajo";
   }
-  .footer .divEncontranos h3 {
-    text-align: center;
-    padding: 10px;
+  main .divPadre .divArriba {
+    grid-area: divArriba;
+    border-bottom: none;
+    width: auto;
+    border-right: 2px solid #567ccf;
+    padding: 30px 10px;
   }
-  .footer .divEncontranos .divE1 {
-    display: flex;
-    margin-left: 120px;
-    margin-bottom: 10px;
-  }
-  .footer .divEncontranos .divE1 .bi-geo-alt {
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
-  }
-  .footer .divEncontranos .divE2 {
-    display: flex;
-    margin-left: 120px;
-    margin-bottom: 10px;
-  }
-  .footer .divEncontranos .divE2 .bi-geo-alt {
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
-  }
-  .footer .divEncontranos .divE3 {
-    display: flex;
-    margin-left: 120px;
-    margin-bottom: 10px;
-  }
-  .footer .divEncontranos .divE3 .bi-geo-alt {
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
-  }
-  .footer .divEncontranos p {
-    align-self: center;
-    padding: 4px;
-  }
-  .footer .divEncontranos .pSm {
-    text-align: center;
-  }
-  .footer .divRedes {
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-  }
-  .footer .divRedes h3 {
-    text-align: center;
-    padding: 10px;
-  }
-  .footer .divRedes svg {
-    width: 30px;
-    height: 30px;
-  }
-  .footer .divRedes p {
-    align-self: center;
-  }
-  .footer .divRedes a {
-    text-decoration: none;
-    color: #000;
-  }
-  .footer .divRedes .divR1 {
+  main .divPadre .divArriba .camion {
+    border: 3px solid #567ccf;
+    padding: 5px;
     margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #ffb379;
   }
-  .footer .divRedes .divR1 .bi-instagram {
-    margin-right: 10px;
+  main .divPadre .divArriba .camion .bi-truck {
+    height: 45px;
+    width: 45px;
   }
-  .footer .divRedes .divR2 .bi-facebook {
-    margin-right: 10px;
+  main .divPadre .divArriba .realizamosDelivery {
+    font-size: 28px;
+    font-weight: bold;
   }
-}
-@media only screen and (min-width: 1024px) {
-  .navbar .logo {
-    height: 210px;
-    width: 210px;
-    border: 3px solid black;
-    border-radius: 150px;
-    margin: 25px 0px 0px 65px;
+  main .divPadre .divArriba .divWsp .wsp {
+    border: 3px solid #567ccf;
+    padding: 5px;
+    margin: 0px 10px;
   }
-  .navbar .nav-link {
-    font-size: 30px;
+  main .divPadre .divArriba .divWsp .wsp .bi-whatsapp {
+    height: 28px;
+    width: 28px;
   }
-  .navbar .frase {
-    font-size: 45px;
-  }
-  .slide img {
-    height: 85vh;
-  }
-  .main {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px auto auto;
-    grid-template-areas: "divArriba divAbajo" "productosDestacados productosDestacados" "imagenesProductos imagenesProductos";
-  }
-  .main .divArriba {
-    margin: 15px 0px 15px 15px;
-    border: 2px solid black;
-    border-right: none;
-  }
-  .main .divArriba .camion {
-    height: 120px;
-    width: 120px;
-  }
-  .main .divArriba .camion .bi-truck {
-    height: 100px;
-    width: 100px;
-  }
-  .main .divArriba .realizamosDelivery {
-    margin-top: 25px;
-    margin: 5px 0px;
+  main .divPadre .divArriba .divWsp .p {
     font-size: 25px;
   }
-  .main .divArriba .divWsp {
-    display: flex;
-    margin: 10px 0px;
+  main .divPadre .divAbajo {
+    grid-area: divAbajo;
+    width: auto;
+    padding: 30px 10px;
   }
-  .main .divArriba .divWsp .bi-whatsapp {
-    margin-right: 5px;
-    height: 50px;
-    width: 50px;
-    align-self: center;
+  main .divPadre .divAbajo .divMpago .tarjC {
+    border: 3px solid #567ccf;
+    padding: 2px 4px;
   }
-  .main .divArriba .divWsp p {
+  main .divPadre .divAbajo .divMpago .tarjC .bi-credit-card {
+    height: 45px;
+    width: 45px;
+  }
+  main .divPadre .divAbajo .divMpago .mercadoPago {
+    height: 80px;
+    width: 80px;
+    border: 3px solid #567ccf;
+    border-radius: 40px;
+  }
+  main .divPadre .divAbajo .divMpago .plata {
+    border: 3px solid #567ccf;
+    padding: 2px 4px;
+  }
+  main .divPadre .divAbajo .divMpago .plata .bi-cash-coin {
+    height: 45px;
+    width: 45px;
+  }
+  main .divPadre .divAbajo .mediosDePago {
     font-size: 25px;
-    align-self: center;
   }
-  .main .divAbajo {
-    margin: 15px 15px 15px 0px;
+  main .h2pD {
+    font-size: 40px;
   }
-  .main .divAbajo .divMpago .bi-credit-card {
-    margin: 20px;
-    height: 70px;
-    width: 70px;
-  }
-  .main .divAbajo .divMpago .mercadoPago {
-    margin: 50px;
-    height: 70px;
-    width: 70px;
-    border: 2px solid black;
-    border-radius: 35px;
-  }
-  .main .divAbajo .divMpago .bi-cash-coin {
-    margin: 20px;
-    height: 70px;
-    width: 70px;
-  }
-  .main .divAbajo .mediosDePago {
-    font-size: 30px;
-    padding: 10px;
-  }
-  .main .carrousel2 img {
+  main .carrusel2 .carrousel2 .carousel-inner img {
     height: 70vh;
   }
-  .main .productosDestacados {
-    margin: 5px 15px;
+  main .carrusel2 .carrousel2 .carousel-inner .carousel-caption h5 {
+    color: #000000;
+    text-shadow: 0 0 5px white;
+    font-size: 25px;
   }
-  .main .productosDestacados .h2pD {
-    font-size: 60px;
+  main .carrusel2 .carrousel2 .carousel-inner .carousel-caption p {
+    color: #000000;
+    text-shadow: 0 0 5px white;
+    font-size: 25px;
   }
-  .footer {
+  main .pDest {
+    display: none;
+  }
+  footer {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "divEncontranos divLogoFooter divRedes" "copy copy copy";
-    margin: 15px 15px 5px;
   }
-  .footer .divRedes {
-    border-left: none;
+  footer .divEncontranos {
+    grid-area: divEncontranos;
+    border-bottom: none;
+    margin-top: 15px;
+    width: auto;
+    padding: 20px;
   }
-  .footer .divRedes .divR1 {
-    margin-top: 35px;
+  footer .divEncontranos .encontranos {
+    font-size: 20px;
   }
-  .footer .divRedes .divR1 .bi-instagram {
-    margin-right: 10px;
+  footer .divEncontranos .divE .bi-geo-alt {
+    height: 18px;
+    width: 18px;
   }
-  .footer .divRedes .divR2 .bi-facebook {
-    margin-right: 10px;
+  footer .divEncontranos .divE .h6 {
+    font-size: 18px;
+  }
+  footer .divEncontranos .pSm {
+    font-size: 18px;
+    text-align: center;
+  }
+  footer .divLogoFooter {
+    grid-area: divLogoFooter;
+    border-bottom: none;
+    width: auto;
+    border-left: 3px solid #567ccf;
+    border-right: 3px solid #567ccf;
+    padding: 20px;
+    width: auto;
+  }
+  footer .divLogoFooter .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  footer .divLogoFooter .contactanos {
+    font-size: 20px;
+  }
+  footer .divLogoFooter .divF2 .bi-whatsapp {
+    height: 20px;
+    width: 20px;
+  }
+  footer .divLogoFooter .divF2 .p {
+    font-size: 18px;
+  }
+  footer .divRedes {
+    grid-area: divRedes;
+    border-bottom: none;
+    width: auto;
+    padding: 20px;
+    width: auto;
+  }
+  footer .divRedes .seguinos {
+    font-size: 20px;
+    text-align: center;
+  }
+  footer .divRedes .divR .bi {
+    height: 20px;
+    width: 20px;
+  }
+  footer .divRedes .divR p {
+    font-size: 18px;
+  }
+  footer .copy {
+    grid-area: copy;
   }
 }
-@media only screen and (min-width: 1500px) {
-  .navbar .logo {
-    height: 300px;
-    width: 300px;
-    border: 3px solid black;
-    border-radius: 175px;
-    margin: 30px 0px 0px 100px;
+@media only screen and (min-width: 1024px) {
+  header .navbar .logo {
+    height: 170px;
+    width: 170px;
+    border-radius: 85px;
+    margin: 20px 20px 0px 20px;
   }
-  .navbar .nav-link {
-    font-size: 40px;
-  }
-  .navbar .frase {
-    font-size: 70px;
-  }
-  .slide img {
-    height: 100vh;
-  }
-  .carrousel2 img {
-    height: 80vh;
-  }
-  .footer .divEncontranos h3 {
-    font-size: 35px;
-    margin-top: 25px;
-  }
-  .footer .divEncontranos .divE1 .bi-geo-alt {
-    height: 40px;
-    width: 40px;
-  }
-  .footer .divEncontranos .divE1 p {
-    font-size: 30px;
-  }
-  .footer .divEncontranos .divE2 .bi-geo-alt {
-    height: 40px;
-    width: 40px;
-  }
-  .footer .divEncontranos .divE2 p {
-    font-size: 30px;
-  }
-  .footer .divEncontranos .divE3 .bi-geo-alt {
-    height: 40px;
-    width: 40px;
-  }
-  .footer .divEncontranos .divE3 p {
-    font-size: 30px;
-  }
-  .footer .divEncontranos .pSm {
+  header .navbar .navbar-collapse .nav-item .nav-link {
     font-size: 25px;
   }
-  .footer .divLogoFooter .logo {
-    height: 250px;
-    width: 250px;
-    border-radius: 125px;
-    border: 5px solid black;
-    margin-top: 25px;
+  header .navbar .navbar-collapse .form-inline .form-control::placeholder {
+    font-size: 22px;
   }
-  .footer .divLogoFooter .contactanos {
+  header .frase .h4 {
+    font-size: 45px;
+  }
+  .slide .carousel-inner img {
+    height: 80vh;
+  }
+  main .divPadre .divArriba {
+    padding: 80px 10px;
+  }
+  main .divPadre .divArriba .camion {
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+  main .divPadre .divArriba .camion .bi-truck {
+    height: 55px;
+    width: 55px;
+  }
+  main .divPadre .divArriba .realizamosDelivery {
     font-size: 30px;
-    font-weight: bold;
   }
-  .footer .divLogoFooter .divF2 .bi-whatsapp {
+  main .divPadre .divArriba .divWsp .wsp {
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 15px;
+  }
+  main .divPadre .divArriba .divWsp .wsp .bi-whatsapp {
     height: 35px;
     width: 35px;
   }
-  .footer .divLogoFooter .divF2 .p {
+  main .divPadre .divArriba .divWsp .p {
+    font-size: 28px;
+  }
+  main .divPadre .divAbajo {
+    padding: 80px 10px;
+  }
+  main .divPadre .divAbajo .divMpago .tarjC {
+    border-radius: 15px;
+    padding: 10px;
+  }
+  main .divPadre .divAbajo .divMpago .tarjC .bi-credit-card {
+    height: 50px;
+    width: 50px;
+  }
+  main .divPadre .divAbajo .divMpago .mercadoPago {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+  main .divPadre .divAbajo .divMpago .plata {
+    padding: 10px;
+    border-radius: 15px;
+  }
+  main .divPadre .divAbajo .divMpago .plata .bi-cash-coin {
+    height: 45px;
+    width: 45px;
+  }
+  main .divPadre .divAbajo .mediosDePago {
+    font-size: 28px;
+  }
+  main .h2pD {
+    font-size: 50px;
+  }
+  main .carrusel2 {
+    display: none;
+  }
+  main .pDest {
+    padding: 40px 0px 40px 0px;
+    margin: 5px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "producto1 producto2" "producto3 producto4";
+    grid-row-gap: 50px;
+    background-color: #9ad5ff;
+    border: 2px solid #567ccf;
+  }
+  main .pDest .producto {
+    align-self: center;
+    justify-self: center;
+    background-color: #ffb379;
+    border-radius: 10px;
+    border: 4px solid #ffb379;
+  }
+  main .pDest .producto img {
+    border-radius: 8px;
+    height: 250px;
+    width: 380px;
+    background-position: center;
+    background-size: cover;
+  }
+  main .pDest .producto h4 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Truculenta", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  main .pDest .producto p {
+    text-align: center;
+    font-family: "Truculenta", sans-serif;
+    font-weight: bold;
     font-size: 25px;
   }
-  .footer .divLogoFooter .divF2 a {
-    color: black;
-    text-shadow: 0 0 10px white;
+  main .pDest .producto1 {
+    grid-area: producto1;
   }
-  .footer .divRedes h3 {
-    font-size: 35px;
-    margin-top: 25px;
+  main .pDest .producto2 {
+    grid-area: producto2;
   }
-  .footer .divRedes .divR1 .bi-instagram {
-    height: 60px;
-    width: 60px;
+  main .pDest .producto3 {
+    grid-area: producto3;
   }
-  .footer .divRedes .divR1 a {
-    font-size: 30px;
+  main .pDest .producto4 {
+    grid-area: producto4;
   }
-  .footer .divRedes .divR2 .bi-facebook {
-    height: 60px;
-    width: 60px;
+}
+@media only screen and (min-width: 1160px) {
+  header .navbar .logo {
+    margin: 30px 35px 0px 35px;
   }
-  .footer .divRedes .divR2 a {
-    font-size: 30px;
+  header .navbar .navbar-collapse .nav-item .nav-link {
+    font-size: 28px;
+  }
+  header .frase .h4 {
+    font-size: 55px;
   }
 }
 

@@ -3,8 +3,18 @@
 @import "partials/contacto";
 
 $colorbase: #9ad5ff;
-$colortitulos: #ffa35d;
-$colorborde: #567ccf;
+$color2: #ffb379;
+$color3: #567ccf;
+$letranav: 'Truculenta', sans-serif; 
+$letramain: 'Inconsolata', monospace;
+$letrafooter: 'Truculenta', sans-serif; 
+
+// fuentes 
+// 'Inconsolata', monospace; 
+// 'Dosis', sans-serif;
+// 'Abel', sans-serif;
+// 'Truculenta', sans-serif;
+// 'M PLUS Code Latin', sans-serif;
 
 *{
     margin: 0;
@@ -15,44 +25,55 @@ header{
     margin: 5px;
     background-color: $colorbase;
     border-radius: 5px;
-    border: 2px solid $colorborde;
+    border: 2px solid $color3;
     .navbar{
         .logo{
             height: 100px;
             width: 100px;
             border: 3px solid black;
             border-radius: 50px;
-            .logo:hover{
+            &:hover{
                 transform: scale(1.1);
                 transition: all 0.7s;
             }
         }
         .navbar-collapse{
-            .nav-link{
-                color: #ffffff;
-                text-shadow: 0 0 5px #000000;
-                .nav-link:hover{
-                    color: #5cbbff;
-                    text-shadow: 0 0 5px #ffffff;
-                } 
+            .nav-item{
+                .nav-link{
+                    color: #ffffff;
+                    text-shadow: 0 0 5px #000000;
+                    font-family: $letranav; 
+                    
+                    &:hover{
+                        color: $color3;
+                        text-shadow: 0 0 5px #ffffff;
+                        font-weight: bold;
+                    } 
+                }
             }
             .form-inline{
                 .form-control::placeholder{
+                    font-family: $letranav; 
+                    font-weight: bold;
                     color: #000000;
                 }
                 .btn{
                     color: #ffffff;
                     border-color: rgb(0, 0, 0);
-                    background-color: $colortitulos;
+                    background-color: $color2;
                 }
             }
         }
     }
     .frase{
-        text-shadow: 0 0 5px #ffffff;
-        font-style: italic;
-        text-align: center;
         margin-top: 5px;
+        .h4{
+            font-family: $letranav;
+            text-shadow: 0 0 5px #ffffff;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
     }
 }
 
@@ -63,7 +84,7 @@ header{
         img{
             height: 45vh;
             background-position: center;
-            background-size: cover
+            background-size: cover;
         }
     }
 }
@@ -76,20 +97,20 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid $colorborde;
+        border: 2px solid $color3;
         .divArriba{
-            border-bottom: 2px solid $colorborde;
+            border-bottom: 2px solid $color3;
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 80%;
             .camion{
-                border: 2px solid #567ccf;
+                border: 2px solid $color3;
                 border-radius: 5px;
                 padding: 5px;
                 margin-top: 20px;
                 margin-bottom: 10px;
-                background-color: $colortitulos;
+                background-color: $color2;
                 .bi-truck{
                     color: #ffffff;
                     height: 30px;
@@ -97,8 +118,10 @@ main{
                 }
             }
             .realizamosDelivery{
-                text-shadow: 0 0 5px rgb(0, 0, 0);
-                color: #ffa35d;
+                text-shadow: 0 0 5px rgb(255, 255, 255);
+                font-family: $letramain;
+                font-weight: bold;
+                color: $color3;
             }
             .divWsp{
                 display: flex;
@@ -108,11 +131,11 @@ main{
                 padding: 10px;
                 .wsp{
                     display: flex;
-                    border: 2px solid #567ccf;
+                    border: 2px solid $color3;
                     border-radius: 5px;
                     padding: 4px;
                     margin: 0px 10px;
-                    background-color: #ffa35d;
+                    background-color: $color2;
                     .bi-whatsapp{
                         height: 25px;
                         width: 25px;
@@ -123,9 +146,11 @@ main{
                     margin-top: auto;
                     margin-bottom: auto;
                     font-size: 18px;
-                    color: $colorborde;
+                    color: $color3;
+                    font-family: $letramain;
+                    font-weight: bold;
                     a{
-                        color: $colorborde;
+                        color: $color3;
                         text-shadow: 0 0 5px rgb(255, 255, 255);
                     }
                 }
@@ -144,9 +169,9 @@ main{
                 padding: 15px;
                 margin-top: 8px;
                 .tarjC{
-                    border: 2px solid #567ccf;
+                    border: 2px solid $color3;
                     border-radius: 5px;
-                    background-color: $colortitulos;
+                    background-color: $color2;
                     padding: 2px 4px;
                     .bi-credit-card{
                         color: white;
@@ -157,13 +182,13 @@ main{
                 .mercadoPago{
                     height: 40px;
                     width: 40px;
-                    border: 2px solid #567ccf;
+                    border: 2px solid $color3;
                     border-radius: 20px;
                 }
                 .plata{
-                    border: 2px solid #567ccf;
+                    border: 2px solid $color3;
                     border-radius: 5px;
-                    background-color: $colortitulos;
+                    background-color: $color2;
                     padding: 2px 4px;
                     .bi-cash-coin{
                         color: white;
@@ -174,36 +199,53 @@ main{
             }
             .mediosDePago{
                 text-align: center;
-                color: $colortitulos;
-                text-shadow: 0 0 5px black;
+                color: $color3;
+                font-family: $letramain; 
+                font-weight: bold;
+                text-shadow: 0 0 5px rgb(255, 255, 255);
                 padding: 10px;
                 margin-bottom: 20px;
             }
         }
     }
     .h2pD{
-        color: $colorborde;
-        background-color: $colortitulos;
+        color: $color3;
+        background-color: $color2;
         padding: 5px;
         margin: 5px;
         border-radius: 5px;
-        border: 2px solid $colorborde;
+        border: 2px solid $color3;
         text-shadow: 0 0 5px rgb(255, 255, 255);
         font-style: italic;
+        font-family: $letramain;
+        font-weight: bold;
         text-align: center;
     }
-    .container{
+    .carrusel2{
         .carrousel2{
             img{
                 height: 45vh;
             }
+            .carousel-caption{
+                h5{
+                    font-family: $letramain;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: $letramain;
+                    font-weight: bold;
+                }
+            }
         }
+    }
+    .pDest{
+        display: none;
     }
 }
 
 footer{
     background-color: $colorbase;
-    border: 2px solid $colorborde;
+    border: 2px solid $color3;
     margin: 5px 5px;
     border-radius: 5px;
     display: flex;
@@ -213,12 +255,14 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 2px solid $colorborde;
+        border-bottom: 2px solid $color3;
         width: 85%;
         .encontranos{
             padding: 8px;
-            color: $colorborde;
+            color: $color3;
             text-shadow: 0 0 5px white;
+            font-family: $letrafooter;
+            font-weight: bold;
         }
         .divE{
             display: flex;
@@ -231,20 +275,24 @@ footer{
                 align-self: center;
             }
             p{
-                color: $colorborde;
+                color: $color3;
                 text-shadow: 0 0 5px rgb(255, 255, 255);
                 margin: auto 5px;
+                font-family: $letrafooter;
+                font-weight: bold;
             }
         }
         .pSm{
             padding: 8px;
+            font-family: $letrafooter;
+            font-weight: bold;
         }
     }
     .divLogoFooter{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 2px solid $colorborde;
+        border-bottom: 2px solid $color3;
         width: 85%;
         .logo{
             height: 80px;
@@ -252,11 +300,18 @@ footer{
             border: 2px solid black;
             border-radius: 40px;
             margin: 8px;
+            &:hover{
+                transform: scale(1.1);
+                transition: all 0.7s;
+            }
         }
         .contactanos{
-            color: $colorborde;
+            color: $color3;
             text-align: center;
             text-shadow: 0 0 5px white;
+            font-family: $letrafooter;
+            font-weight: bold;
+            padding: 10px 0px 0px 0px;
         }
         .divF2{                
             display: flex;
@@ -272,10 +327,12 @@ footer{
             .p{
                 margin-top: auto;
                 margin-bottom: auto;
-                color: $colorborde;
+                color: $color3;
                 text-shadow: 0 0 5px white;
+                font-family: $letrafooter;
+                font-weight: bold;
                 a{
-                    color: $colorborde;
+                    color: $color3;
                     text-shadow: 0 0 5px white;
                 }
             }
@@ -285,12 +342,14 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 2px solid $colorborde;
+        border-bottom: 2px solid $color3;
         width: 85%;
         .seguinos{
-            color: $colorborde;
+            color: $color3;
             text-shadow: 0 0 5px white;
             padding: 8px;
+            font-family: $letrafooter;
+            font-weight: bold;
         }
         .divR{
             display: flex;
@@ -304,8 +363,10 @@ footer{
             }
             p{
                 margin: auto 5px;
+                font-family: $letrafooter;
+                font-weight: bold;
                 a{
-                    color: $colorborde;
+                    color: $color3;
                     text-shadow: 0 0 5px white;
                 }
             }
@@ -321,394 +382,422 @@ footer{
     .slide{
         .carousel-inner{
             img{
-                height: 85vh;
+                height: 65vh;
             }
         }
     }
     main{
-        .container{
+        .carrusel2{
             .carrousel2{
                 img{
-                    height: 85vh;
+                    height: 65vh;
                 }
             }
+        }
+        .pDest{
+            display: none;
         }
     }
 }
 
 @media only screen and (min-width:768px){
-    .navbar{
-        .logo{
-            height: 190px;
-            width: 190px;
-            border-radius: 100px;
-            margin: 15px 0px 0px 45px;
-        }
-        .nav-link{
-            font-size: 25px;
+    header{
+        .navbar{
+            .logo{
+                height: 150px;
+                width: 150px;
+                border: 4px solid black;
+                border-radius: 75px;
+            }
+            .navbar-collapse{
+                .nav-item{
+                    .nav-link{
+                        font-size: 22px;
+                    }
+                }
+                .form-inline{
+                    .form-control::placeholder{
+                        font-size: 20px;
+                    }
+                }
+            }
         }
         .frase{
-            font-size: 35px;
+            .h4{
+                font-size: 35px;
+            }
         }
     }
-
-
     .slide{
-        img{
-            height: 75vh;
+        .carousel-inner{
+            img{
+                height: 80vh;
+            }
         }
-    } 
-    .main{
+    }
+    main{
+        .divPadre{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "divArriba divAbajo";
+            .divArriba{
+                grid-area: divArriba;
+                border-bottom: none;
+                width: auto;
+                border-right: 2px solid $color3;
+                padding: 30px 10px;
+                .camion{
+                    border: 3px solid $color3;
+                    padding: 5px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    background-color: $color2;
+                    .bi-truck{
+                        height: 45px;
+                        width: 45px;
+                    }
+                }
+                .realizamosDelivery{
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+                .divWsp{
+                    .wsp{
+                        border: 3px solid $color3;
+                        padding: 5px;
+                        margin: 0px 10px;
+                        .bi-whatsapp{
+                            height: 28px;
+                            width: 28px;
+                        }
+                    }
+                    .p{
+                        font-size: 25px;
+                    }
+                }
+            }
+            .divAbajo{
+                grid-area: divAbajo;
+                width: auto;
+                padding: 30px 10px;
+                .divMpago{
+                    .tarjC{
+                        border: 3px solid $color3;
+                        padding: 2px 4px;
+                        .bi-credit-card{
+                            height: 45px;
+                            width: 45px;
+                        }
+                    }
+                    .mercadoPago{
+                        height: 80px;
+                        width: 80px;
+                        border: 3px solid $color3;
+                        border-radius: 40px;
+                    }
+                    .plata{
+                        border: 3px solid $color3;
+                        padding: 2px 4px;
+                        .bi-cash-coin{
+                            height: 45px;
+                            width: 45px;
+                        }
+                    }
+                }
+                .mediosDePago{
+                    font-size: 25px;
+                }
+            }
+        }
+        .h2pD{
+            font-size: 40px;
+        }
+        .carrusel2{
+            .carrousel2{
+                .carousel-inner{
+                    img{
+                        height: 70vh;
+                    }
+                    .carousel-caption{
+                        h5{
+                            color: #000000;
+                            text-shadow: 0 0 5px white;
+                            font-size: 25px;
+                        }
+                        p{
+                            color: #000000;
+                            text-shadow: 0 0 5px white;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .pDest{
+            display: none;
+        }
+    }
+    footer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-areas: 
-        "divArriba divAbajo"
-        "productosDestacados productosDestacados";
-        .divArriba{
-            grid-area: divArriba;
-            margin-right: 0px;
-            border-right: none;
-            .camion{
-                height: 50px;
-                margin-top: 15px;
-            }
-        }
-        .divAbajo{
-            grid-area: divAbajo;
-            margin: 5px 5px 0px 0px;
-            border: 2px solid black;
-        }
-        .productosDestacados{
-            grid-area: productosDestacados;
-            font-size: 20px;
-        }
-    }
-    .carrousel2{
-        img{
-            height: 55vh;
-        }
-    } 
-    .footer{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-        "divEncontranos divRedes"
-        "divLogoFooter divLogoFooter"
-        "copy copy";
+        "divEncontranos divLogoFooter divRedes"
+        "copy copy copy";
         .divEncontranos{
-            h3{
-                text-align: center;
-                padding: 10px;
+            grid-area: divEncontranos;
+            border-bottom: none;
+            margin-top: 15px;
+            width: auto;
+            padding: 20px;
+            .encontranos{
+                font-size: 20px;
             }
-            .divE1{
-                display: flex;
-                margin-left: 120px;
-                margin-bottom: 10px;
+            .divE{
                 .bi-geo-alt{
-                    height: 25px;
-                    width: 25px;
-                    margin-right: 10px;
+                    height: 18px;
+                    width: 18px;
                 }
-            }
-            .divE2{
-                display: flex;
-                margin-left: 120px;
-                margin-bottom: 10px;
-                .bi-geo-alt{
-                    height: 25px;
-                    width: 25px;
-                    margin-right: 10px;
+                .h6{
+                    font-size: 18px;
                 }
-            }
-            .divE3{
-                display: flex;
-                margin-left: 120px;
-                margin-bottom: 10px;
-                .bi-geo-alt{
-                    height: 25px;
-                    width: 25px;
-                    margin-right: 10px;
-                }
-            }
-            p{
-                align-self: center;
-                padding: 4px;
             }
             .pSm{
+                font-size: 18px;
                 text-align: center;
+            }
+        }
+        .divLogoFooter{
+            grid-area: divLogoFooter;
+            border-bottom: none;
+            width: auto;
+            border-left: 3px solid $color3;
+            border-right: 3px solid $color3;
+            padding: 20px;
+            width: auto;
+            .logo{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+            }
+            .contactanos{
+                font-size: 20px;
+            }
+            .divF2{
+                .bi-whatsapp{
+                    height: 20px;
+                    width: 20px;
+                }
+                .p{
+                    font-size: 18px;
+                }
             }
         }
         .divRedes{
-            border-left: 2px solid black;
-            border-bottom: 2px solid black;
-            h3{
+            grid-area: divRedes;
+            border-bottom: none;
+            width: auto;
+            padding: 20px;
+            width: auto;
+            .seguinos{
+                font-size: 20px;
                 text-align: center;
-                padding: 10px;
             }
-            svg{
-                width: 30px;
-                height: 30px;
-            }
-            p{
-                align-self: center;
-            }
-            a{
-                text-decoration: none;
-                color: #000;
-            }
-            .divR1{
-                margin-top: 20px;
-                .bi-instagram{
-                    margin-right: 10px;
+            .divR{
+                .bi{
+                    height: 20px;
+                    width: 20px;
+                }
+                p{
+                    font-size: 18px;
                 }
             }
-            .divR2{
-                .bi-facebook{
-                    margin-right: 10px;
-                }
-            }
+        }
+        .copy{
+            grid-area: copy;
         }
     }
 }
 
 @media only screen and (min-width:1024px){
-    .navbar{
-        .logo{
-            height: 210px;
-            width: 210px;
-            border: 3px solid black;
-            border-radius: 150px;
-            margin: 25px 0px 0px 65px;
-        }
-        .nav-link{
-            font-size: 30px;
+    header{
+        .navbar{
+            .logo{
+                height: 170px;
+                width: 170px;
+                border-radius: 85px;
+                margin: 20px 20px 0px 20px;
+            }
+            .navbar-collapse{
+                .nav-item{
+                    .nav-link{
+                        font-size: 25px;
+                    }
+                }
+                .form-inline{
+                    .form-control::placeholder{
+                        font-size: 22px;
+                    }
+                }
+            }
         }
         .frase{
-            font-size: 45px;
+            .h4{
+                font-size: 45px;
+            }
         }
     }
     .slide{
-        img{
-            height: 85vh;
-        }
-    } 
-    .main{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px auto auto;
-        grid-template-areas: 
-        "divArriba divAbajo"
-        "productosDestacados productosDestacados"
-        "imagenesProductos imagenesProductos";
-        .divArriba{
-            margin: 15px 0px 15px 15px;
-            border: 2px solid black;
-            border-right: none;
-            .camion{
-                height: 120px;
-                width: 120px;
-                .bi-truck{
-                    height: 100px;
-                    width: 100px;
-                }
-            }
-            .realizamosDelivery{
-                margin-top: 25px;
-                margin: 5px 0px;
-                font-size: 25px;
-            }
-            .divWsp{
-                display: flex;
-                margin: 10px 0px;
-                .bi-whatsapp{
-                    margin-right: 5px;
-                    height: 50px;
-                    width: 50px;
-                    align-self: center;
-                }
-                p{
-                    font-size: 25px;
-                    align-self: center;
-                }
-            } 
-        }
-        .divAbajo{
-            margin: 15px 15px 15px 0px;
-            .divMpago{
-                .bi-credit-card{
-                    margin: 20px;
-                    height: 70px;
-                    width: 70px;
-                }
-                .mercadoPago{
-                    margin: 50px;
-                    height: 70px;
-                    width: 70px;
-                    border: 2px solid black;
-                    border-radius: 35px;
-                }
-                .bi-cash-coin{
-                    margin: 20px;
-                    height: 70px;
-                    width: 70px;
-                }
-            }
-            .mediosDePago{
-                font-size: 30px;
-                padding: 10px;
-            }
-        }
-        .carrousel2{
+        .carousel-inner{
             img{
-                height: 70vh;
-            }
-        } 
-        .productosDestacados{
-            margin: 5px 15px;
-            .h2pD{
-                font-size: 60px;
+                height: 80vh;
             }
         }
     }
-
-    .footer{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-        "divEncontranos divLogoFooter divRedes"
-        "copy copy copy";
-        margin: 15px 15px 5px;
-        .divRedes{
-            border-left: none;
-            .divR1{
-                margin-top: 35px;
-                .bi-instagram{
-                    margin-right: 10px;
+    main{
+        .divPadre{
+            .divArriba{
+                padding: 80px 10px;
+                .camion{
+                    border-radius: 15px;
+                    padding: 8px;
+                    margin-bottom: 20px;
+                    .bi-truck{
+                        height: 55px;
+                        width: 55px;
+                    }
+                }
+                .realizamosDelivery{
+                    font-size: 30px;
+                }
+                .divWsp{
+                    .wsp{
+                        padding: 10px;
+                        margin: 0px 10px;
+                        border-radius: 15px;
+                        .bi-whatsapp{
+                            height: 35px;
+                            width: 35px;
+                        }
+                    }
+                    .p{
+                        font-size: 28px;
+                    }
                 }
             }
-            .divR2{
-                .bi-facebook{
-                    margin-right: 10px;
+            .divAbajo{
+                padding: 80px 10px;
+                .divMpago{
+                    .tarjC{
+                        border-radius: 15px;
+                        padding: 10px;
+                        .bi-credit-card{
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                    .mercadoPago{
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50px;
+                    }
+                    .plata{
+                        padding: 10px;
+                        border-radius: 15px;
+                        .bi-cash-coin{
+                            height: 45px;
+                            width: 45px;
+                        }
+                    }
+                }
+                .mediosDePago{
+                    font-size: 28px;
                 }
             }
         }
+        .h2pD{
+            font-size: 50px;
+        }
+        .carrusel2{
+            display: none;
+        }
+        .pDest{
+            padding: 40px 0px 40px 0px;
+            margin: 5px;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            "producto1 producto2"
+            "producto3 producto4";
+            grid-row-gap: 50px;
+            background-color: $colorbase;
+            border: 2px solid $color3;
+            .producto{
+                align-self: center;
+                justify-self: center;
+                background-color: $color2;
+                border-radius: 10px;
+                border: 4px solid $color2;
+                img{
+                    border-radius: 8px;
+                    height: 250px;
+                    width: 380px;
+                    background-position: center;
+                    background-size: cover;
+                }
+                h4{
+                    margin-top: 10px;
+                    text-align: center;
+                    font-family: $letrafooter;
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+                p{
+                    text-align: center;
+                    font-family: $letrafooter;
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+            }
+            .producto1{
+                grid-area: producto1;
+            }
+            .producto2{
+                grid-area: producto2;
+            }
+            .producto3{
+                grid-area: producto3;
+            }
+            .producto4{
+                grid-area: producto4;
+            }
+        } 
     }
 }
 
-@media only screen and (min-width:1500px){
-    .navbar{
-        .logo{
-            height: 300px;
-            width: 300px;
-            border: 3px solid black;
-            border-radius: 175px;
-            margin: 30px 0px 0px 100px;
-        }
-        .nav-link{
-            font-size: 40px;
+@media only screen and (min-width:1160px){
+    header{
+        .navbar{
+            .logo{
+                margin: 30px 35px 0px 35px;
+            }
+            .navbar-collapse{
+                .nav-item{
+                    .nav-link{
+                        font-size: 28px;
+                    }
+                }
+            }
         }
         .frase{
-            font-size: 70px;
-        }
-    }
-
-    .slide{
-        img{
-            height: 100vh;
-        }
-    } 
-    .carrousel2{
-        img{
-            height: 80vh;
-        }
-    } 
-    .footer{
-        .divEncontranos{
-            h3{
-                font-size: 35px;
-                margin-top: 25px;
-            }
-            .divE1{
-                .bi-geo-alt{
-                    height: 40px;
-                    width: 40px;
-                }
-                p{
-                    font-size: 30px;
-                }
-            }
-            .divE2{
-                .bi-geo-alt{
-                    height: 40px;
-                    width: 40px;
-                }
-                p{
-                    font-size: 30px;
-                }
-            }
-            .divE3{
-                .bi-geo-alt{
-                    height: 40px;
-                    width: 40px;
-                }
-                p{
-                    font-size: 30px;
-                }
-            }
-            .pSm{
-                font-size: 25px;
+            .h4{
+                font-size: 55px;
             }
         }
-        .divLogoFooter{
-            .logo{
-                height: 250px;
-                width: 250px;
-                border-radius: 125px;
-                border: 5px solid black;
-                margin-top: 25px;
-            }
-            .contactanos{
-                font-size: 30px;
-                font-weight: bold;
-            }
-            .divF2{
-                .bi-whatsapp{
-                    height: 35px;
-                    width: 35px;
-                }
-                .p{
-                    font-size: 25px;
-                }
-                a{
-                    color: black;
-                    text-shadow: 0 0 10px white;
-                }
-            } 
-        }
-        .divRedes{
-            h3{
-                font-size: 35px;
-                margin-top: 25px;
-            }
-            .divR1{
-                .bi-instagram{
-                    height: 60px;
-                    width: 60px;
-                }
-                a{
-                    font-size: 30px;
-                }
-            }
-            .divR2{
-                .bi-facebook{
-                    height: 60px;
-                    width: 60px;
-                }
-                a{
-                    font-size: 30px;
-                }
-            } 
-        } 
     }
 }
 

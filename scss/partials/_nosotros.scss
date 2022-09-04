@@ -1,39 +1,71 @@
 $colorbase: #9ad5ff;
-$colortitulos: #ffa35d;
+$color2: #ffb379;
+$color3: #567ccf;
+$letranav: 'Truculenta', sans-serif; 
+$letramain: 'Inconsolata', monospace;
+$letrafooter: 'Truculenta', sans-serif; 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .mainNosotros{
     .pagNosotros{
-        grid-area: pagNosotros;
-        background-color: $colortitulos;
+        background-color: $color2;
         text-shadow: 0 0 10px #ffffff;
         text-align: center;
         padding: 5px;
-        border: 2px solid black;
+        border: 2px solid $color3;
+        font-family: $letramain; 
+        font-weight: bold;
+        color: $color3;
         border-radius: 10px;
         margin: 5px 5px;
     }
-    .container{
-        margin-top: 5px;
-        margin-bottom: 5px;
+    .tarj{
+        border: 2px solid $color3;
         background-color: $colorbase;
-        .card-title{
-            background-color: $colortitulos;
+        .card-img-top{
+            margin-top: 15px;
             border-radius: 10px;
+            border: 2px solid $color3;
+        }
+        .card-title{
+            background-color: $color2;
+            border: 2px solid $color3;
+            border-radius: 10px;
+            font-family: $letrafooter;
             font-size: 35px;
             text-align: center;
             padding: 10px;
-            color: white;
-            text-shadow: 5px 5px 10px rgb(0, 0, 0);
+            color: $color3;
+            text-shadow: 5px 5px 10px rgb(255, 255, 255);
         }
         .card-text{
-            background-color: #ffa35de0;
+            border: 2px solid $color3;
+            background-color: $color2;
             padding: 20px;
             border-radius: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width:480px){
+    .mainNosotros{
+        .tarj{
+            .card-img-top{
+                margin-top: 15px;
+                border-radius: 10px;
+                border: 2px solid $color3;
+            }
+            .card-title{
+                font-size: 40px;
+            }
+            .card-text{
+                font-size: 20px;
+            }
         }
     }
 }
@@ -43,17 +75,17 @@ $colortitulos: #ffa35d;
         .pagNosotros{
             font-size: 40px;
         }
-        .container{
-            margin-top: 15px;
-            margin-bottom: 15px;
+        .tarj{
+            .card-img-top{
+            }
             .card-title{
-                font-size: 45px;
+                font-size: 50px;
             }
             .card-text{
-                font-size: 30px;
+                font-size: 28px;
             }
         }
-    } 
+    }
 }
 
 @media only screen and (min-width:1024px){
@@ -61,23 +93,29 @@ $colortitulos: #ffa35d;
         .pagNosotros{
             font-size: 50px;
         }
-        .container{
-            margin-top: 25px;
-            margin-bottom: 25px;
-            .card-title{
-                font-size: 60px;
-            }
-            .card-text{
-                font-size: 35px;
-            }
+        .tarj{   
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
-    } 
+    }
 }
 
-@media only screen and (min-width:1500px){
+@media only screen and (min-width:1160px){
     .mainNosotros{
         .pagNosotros{
-            font-size: 70px;
+            font-size: 55px;
         }
-    } 
+        .tarj{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .card-img-top{
+            }
+            .card-title{
+                font-size: 50px;
+            }
+            .card-text{
+                font-size: 28px;
+            }
+        }
+    }
 }
