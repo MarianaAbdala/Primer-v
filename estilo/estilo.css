@@ -10,7 +10,7 @@
   text-align: center;
   padding: 5px;
   border: 2px solid #567ccf;
-  font-family: "Inconsolata", monospace;
+  font-family: "Truculenta", sans-serif;
   font-weight: bold;
   color: #567ccf;
   border-radius: 10px;
@@ -102,7 +102,7 @@
   text-align: center;
   border-radius: 10px;
   border: 2px solid #567ccf;
-  font-family: "Inconsolata", monospace;
+  font-family: "Truculenta", sans-serif;
   font-weight: bold;
   text-shadow: 0 0 5px white;
   color: #567ccf;
@@ -197,22 +197,27 @@
 
 .mainContacto .h3Contacto {
   text-align: center;
-  background-color: #ffa35d;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
+  background-color: #ffb379;
   text-shadow: 0 0 10px #ffffff;
   margin: 5px 5px;
-  border: 2px solid black;
+  border: 2px solid #567ccf;
   border-radius: 10px;
-  padding: 3px;
+  padding: 5px;
+  color: #567ccf;
 }
 .mainContacto .sectionContacto {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "formulario imgSobre";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imgSobre" "formulario";
   background-color: rgba(154, 213, 255, 0.8274509804);
-  margin: 10px 10px;
+  margin: 5px 5px;
+  padding: 5px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 2px solid #567ccf;
 }
 .mainContacto .sectionContacto .formulario {
   grid-area: formulario;
@@ -223,33 +228,38 @@
   justify-self: center;
 }
 .mainContacto .sectionContacto .formulario .formCompletar {
-  padding: 15px 0px 5px 0px;
+  padding: 10px 0px 5px 0px;
 }
 .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
   border: none;
-  border-bottom: 2px solid #ffa35d;
+  border-bottom: 2px solid #567ccf;
   background: transparent;
 }
-.mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::placeholder {
-  color: rgb(53, 55, 57);
+.mainContacto .sectionContacto .formulario .formCompletar .inputContacto::placeholder {
+  color: #567ccf;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
-.mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto:focus {
-  background: rgba(122, 195, 255, 0.4862745098);
+.mainContacto .sectionContacto .formulario .formCompletar .inputContacto:focus {
+  background: #9ad5ff;
   outline: none;
 }
 .mainContacto .sectionContacto .formulario .formCompletar textarea {
-  min-height: 60px;
+  min-height: 80px;
   min-width: 165px;
   resize: none;
 }
 .mainContacto .sectionContacto .formulario .boton {
-  background-color: rgba(255, 163, 93, 0.8117647059);
+  margin-top: 15px;
+  background-color: #ffb379;
 }
 .mainContacto .sectionContacto .imgSobre {
   grid-area: imgSobre;
   align-self: center;
   justify-self: center;
-  color: rgba(255, 163, 93, 0.8823529412);
+  color: #ffb379;
+  padding: 10px;
+  padding-bottom: none;
 }
 .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
   height: 100px;
@@ -260,125 +270,203 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "primerH3" "segundoH3";
-  background-color: #1061a4;
-  margin: 5px 5px 0px;
-  border: 2px solid black;
+  background-color: #ffb379;
+  margin: 0px 5px 5px 5px;
+  border: 2px solid #567ccf;
+  border-radius: 5px;
 }
 .mainContacto .sectionContacto2 .primerH3 {
   grid-area: primerH3;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #567ccf;
+  padding: 20px 20px;
 }
 .mainContacto .sectionContacto2 .primerH3 h3 {
   text-align: center;
+  font-family: "Truculenta", sans-serif;
   padding: 10px 0px 5px 0px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #567ccf;
   margin: 0px auto;
-  color: #ffffff;
-  text-shadow: 0 0 10px #000;
+  color: #567ccf;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH31 {
   display: flex;
   align-self: center;
   justify-self: center;
-  margin: 10px 0px 0px;
+  margin-top: 20px;
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
   margin: 0px 10px;
   height: 25px;
   width: 25px;
-  color: #ffffff;
+  color: #567ccf;
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH31 p {
   align-self: center;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH31 a {
   text-decoration: none;
-  color: black;
+  color: #567ccf;
+  text-shadow: 0 0 5px white;
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH32 {
   display: flex;
   align-self: center;
   justify-self: center;
-  margin: 10px 0px 15px;
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
   margin: 0px 10px;
   height: 25px;
   width: 25px;
-  color: #ffffff;
+  color: #567ccf;
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH32 p {
   align-self: center;
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH32 a {
   text-decoration: none;
-  color: black;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
+  color: #567ccf;
+  text-shadow: 0 0 5px white;
 }
 .mainContacto .sectionContacto2 .segundoH3 {
   grid-area: segundoH3;
   display: flex;
   flex-direction: column;
+  padding: 20px 20px;
 }
 .mainContacto .sectionContacto2 .segundoH3 h3 {
   text-align: center;
   padding: 10px 0px 5px 0px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #567ccf;
   margin: 0px auto;
-  color: #ffffff;
-  text-shadow: 0 0 10px #000;
+  color: #567ccf;
+  font-family: "Truculenta", sans-serif;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 .mainContacto .sectionContacto2 .segundoH3 .segundoH31 {
   display: flex;
   align-self: center;
   justify-self: center;
-  margin: 15px 0px 0px;
+  margin-top: 20px;
 }
 .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
   height: 25px;
   width: 25px;
   margin-right: 5px;
-  color: #ffffff;
+  color: #567ccf;
 }
 .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
   align-self: center;
+  color: #567ccf;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
 }
 .mainContacto .sectionContacto2 .segundoH3 .segundoH31 a {
   text-decoration: none;
-  color: black;
+  color: #567ccf;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
 }
 .mainContacto .sectionContacto2 .segundoH3 .segundoH32 {
   align-self: center;
   justify-self: center;
-  margin: 10px 0px 15px;
 }
 .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
   font-size: 18px;
+  color: #567ccf;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
 }
 
 @media only screen and (min-width: 480px) {
-  .mainContacto .h3Contacto {
-    font-size: 25px;
-  }
   .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
-    height: 170px;
-    width: 170px;
+    height: 120px;
+    width: 120px;
+  }
+  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
+    width: 300px;
   }
 }
 @media only screen and (min-width: 768px) {
   .mainContacto .h3Contacto {
-    font-size: 35px;
+    font-size: 40px;
+  }
+  .mainContacto .sectionContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "formulario imgSobre";
+  }
+  .mainContacto .sectionContacto .formulario {
+    grid-area: formulario;
+  }
+  .mainContacto .sectionContacto .formulario .inputContacto {
+    font-size: 22px;
+  }
+  .mainContacto .sectionContacto .imgSobre {
+    grid-area: imgSobre;
   }
   .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
-    height: 220px;
-    width: 220px;
+    height: 150px;
+    width: 150px;
+  }
+  .mainContacto .sectionContacto2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "primerH3 segundoH3";
+  }
+  .mainContacto .sectionContacto2 .primerH3 {
+    border-bottom: none;
+    padding: 30px 30px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 h3 {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
+    height: 32px;
+    width: 32px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH31 a {
+    font-size: 25px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
+    height: 32px;
+    width: 32px;
+  }
+  .mainContacto .sectionContacto2 .primerH3 .primerH32 a {
+    font-size: 25px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 {
+    padding: 30px 30px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 h3 {
+    font-size: 35px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
+    height: 32px;
+    width: 32px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 a {
+    font-size: 25px;
+  }
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .mainContacto .h3Contacto {
-    margin: 15px 15px;
-    font-size: 60px;
+    margin: 5px 5px;
+    font-size: 50px;
   }
   .mainContacto .sectionContacto {
     margin: 25px 55px;
@@ -392,124 +480,53 @@
   .mainContacto .sectionContacto .formulario .formCompletar textarea {
     height: 100px;
   }
+  .mainContacto .sectionContacto .formulario .boton {
+    font-size: 25px;
+  }
   .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
   }
   .mainContacto .sectionContacto2 {
-    margin: 0px 15px 15px;
+    margin: 0px 5px 5px;
   }
   .mainContacto .sectionContacto2 .primerH3 h3 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .mainContacto .sectionContacto2 .primerH3 .primerH31 {
     font-size: 35px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: auto;
   }
   .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   .mainContacto .sectionContacto2 .primerH3 .primerH32 {
     font-size: 35px;
     margin-bottom: 25px;
   }
   .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   .mainContacto .sectionContacto2 .segundoH3 h3 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .mainContacto .sectionContacto2 .segundoH3 .segundoH31 {
     margin-top: 25px;
     margin-bottom: 25px;
   }
   .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin-right: 15px;
   }
   .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
     font-size: 35px;
   }
   .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 25px;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .mainContacto .h3Contacto {
-    font-size: 100px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto {
-    margin: 20px 0px;
-    height: 25px;
-    width: 400px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar .inputContacto .inputContacto::placeholder {
-    font-size: 20px;
-  }
-  .mainContacto .sectionContacto .formulario .formCompletar textarea {
-    height: 220px;
-  }
-  .mainContacto .sectionContacto .formulario .boton {
-    font-size: 35px;
-  }
-  .mainContacto .sectionContacto .imgSobre .bi-envelope-fill {
-    height: 600px;
-    width: 600px;
-    margin-right: 80px;
-  }
-  .mainContacto .sectionContacto2 {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: "primerH3 segundoH3";
-  }
-  .mainContacto .sectionContacto2 .primerH3 {
-    grid-area: primerH3;
-    border-right: 2px solid black;
-    margin: 50px 0px;
-    border-bottom: none;
-  }
-  .mainContacto .sectionContacto2 .primerH3 h3 {
-    font-size: 50px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH31 {
-    font-size: 35px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH31 .bi-instagram {
-    height: 40px;
-    width: 40px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH32 {
-    font-size: 35px;
-    margin-bottom: 25px;
-  }
-  .mainContacto .sectionContacto2 .primerH3 .primerH32 .bi-facebook {
-    height: 40px;
-    width: 40px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 {
-    grid-area: segundoH3;
-    margin: 50px 0px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 h3 {
-    font-size: 50px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 .bi-whatsapp {
-    height: 45px;
-    width: 45px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
-    font-size: 35px;
-  }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
-    font-size: 35px;
   }
 }
 * {
@@ -606,7 +623,7 @@ main .divPadre .divArriba .camion .bi-truck {
 }
 main .divPadre .divArriba .realizamosDelivery {
   text-shadow: 0 0 5px rgb(255, 255, 255);
-  font-family: "Inconsolata", monospace;
+  font-family: "Truculenta", sans-serif;
   font-weight: bold;
   color: #567ccf;
 }
@@ -635,7 +652,7 @@ main .divPadre .divArriba .divWsp .p {
   margin-bottom: auto;
   font-size: 18px;
   color: #567ccf;
-  font-family: "Inconsolata", monospace;
+  font-family: "Truculenta", sans-serif;
   font-weight: bold;
 }
 main .divPadre .divArriba .divWsp .p a {
@@ -687,7 +704,7 @@ main .divPadre .divAbajo .divMpago .plata .bi-cash-coin {
 main .divPadre .divAbajo .mediosDePago {
   text-align: center;
   color: #567ccf;
-  font-family: "Inconsolata", monospace;
+  font-family: "Truculenta", sans-serif;
   font-weight: bold;
   text-shadow: 0 0 5px rgb(255, 255, 255);
   padding: 10px;
@@ -702,7 +719,7 @@ main .h2pD {
   border: 2px solid #567ccf;
   text-shadow: 0 0 5px rgb(255, 255, 255);
   font-style: italic;
-  font-family: "Inconsolata", monospace;
+  font-family: "Truculenta", sans-serif;
   font-weight: bold;
   text-align: center;
 }
@@ -710,11 +727,11 @@ main .carrusel2 .carrousel2 img {
   height: 45vh;
 }
 main .carrusel2 .carrousel2 .carousel-caption h5 {
-  font-family: "Inconsolata", monospace;
+  font-family: "Truculenta", sans-serif;
   font-weight: bold;
 }
 main .carrusel2 .carrousel2 .carousel-caption p {
-  font-family: "Inconsolata", monospace;
+  font-family: "Truculenta", sans-serif;
   font-weight: bold;
 }
 main .pDest {
