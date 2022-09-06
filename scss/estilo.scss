@@ -9,12 +9,6 @@ $letranav: 'Truculenta', sans-serif;
 $letramain: 'Truculenta', sans-serif;
 $letrafooter: 'Truculenta', sans-serif; 
 
-// fuentes 
-// 'Inconsolata', monospace; 
-// 'Dosis', sans-serif;
-// 'Abel', sans-serif;
-// 'Truculenta', sans-serif;
-// 'M PLUS Code Latin', sans-serif;
 
 *{
     margin: 0;
@@ -99,10 +93,10 @@ main{
         align-items: center;
         border: 2px solid $color3;
         .divArriba{
-            border-bottom: 2px solid $color3;
             display: flex;
             flex-direction: column;
             align-items: center;
+            border-bottom: 2px solid $color3;
             width: 80%;
             .camion{
                 border: 2px solid $color3;
@@ -111,10 +105,13 @@ main{
                 margin-top: 20px;
                 margin-bottom: 10px;
                 background-color: $color2;
+                @mixin icono ($color, $altura, $ancho) {
+                    color: $color;
+                    height: $altura;
+                    width: $ancho;
+                }
                 .bi-truck{
-                    color: #ffffff;
-                    height: 30px;
-                    width: 30px;
+                    @include icono (white, 30px, 30px);
                 }
             }
             .realizamosDelivery{
@@ -357,9 +354,12 @@ footer{
             justify-content: center;
             width: 100%;
             padding: 10px;
-            .bi{
+            .bi-instagram{
                 height: 20px;
                 width: 20px;
+            }
+            .bi-facebook{
+                @extend .bi-instagram
             }
             p{
                 margin: auto 5px;
@@ -501,8 +501,8 @@ footer{
                         border: 3px solid $color3;
                         padding: 2px 4px;
                         .bi-cash-coin{
-                            height: 45px;
                             width: 45px;
+                            height: 45px;
                         }
                     }
                 }
