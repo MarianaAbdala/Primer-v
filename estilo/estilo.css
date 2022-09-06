@@ -552,9 +552,9 @@ header .navbar .logo:hover {
   transition: all 0.7s;
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
-  color: #ffffff;
-  text-shadow: 0 0 5px #000000;
+  color: #000000;
   font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover {
   color: #567ccf;

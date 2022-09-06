@@ -40,9 +40,9 @@ header{
         .navbar-collapse{
             .nav-item{
                 .nav-link{
-                    color: #ffffff;
-                    text-shadow: 0 0 5px #000000;
-                    font-family: $letranav; 
+                    color: #000000;
+                    font-family: $letranav;
+                    font-weight: bold;
                     
                     &:hover{
                         color: $color3;
