@@ -154,7 +154,7 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .mainProductos h3 {
+  .mainProductos h2 {
     font-size: 40px;
   }
   .mainProductos .todosLosProductos {
@@ -171,7 +171,7 @@
   }
 }
 @media only screen and (min-width: 1024px) {
-  .mainProductos h3 {
+  .mainProductos h2 {
     font-size: 50px;
   }
   .mainProductos .todosLosProductos .producto img {
@@ -185,7 +185,7 @@
   }
 }
 @media only screen and (min-width: 1160px) {
-  .mainProductos h3 {
+  .mainProductos h2 {
     font-size: 55px;
   }
 }
