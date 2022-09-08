@@ -41,6 +41,8 @@
   background-color: #ffb379;
   padding: 20px;
   border-radius: 10px;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 480px) {
@@ -72,7 +74,6 @@
     font-size: 50px;
   }
   .mainNosotros .tarj {
-    margin-top: 20px;
     margin-bottom: 20px;
   }
 }
@@ -81,7 +82,6 @@
     font-size: 55px;
   }
   .mainNosotros .tarj {
-    margin-top: 20px;
     margin-bottom: 20px;
   }
   .mainNosotros .tarj .card-title {
@@ -133,7 +133,7 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.mainProductos .todosLosProductos .producto p {
+.mainProductos .todosLosProductos .producto p, .mainProductos .todosLosProductos .producto footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainProductos .todosLosProductos .producto a {
   margin: 0px;
   text-align: center;
   font-family: "Truculenta", sans-serif;
@@ -166,13 +166,13 @@
   .mainProductos .todosLosProductos .producto {
     margin-top: 15px;
   }
-  .mainProductos .todosLosProductos .producto p {
+  .mainProductos .todosLosProductos .producto p, .mainProductos .todosLosProductos .producto footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainProductos .todosLosProductos .producto a {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .mainProductos h2 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .mainProductos .todosLosProductos .producto img {
     height: 250px;
@@ -180,7 +180,7 @@
     border: 4px solid #ffb379;
     margin-bottom: 5px;
   }
-  .mainProductos .todosLosProductos .producto p {
+  .mainProductos .todosLosProductos .producto p, .mainProductos .todosLosProductos .producto footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainProductos .todosLosProductos .producto a {
     font-size: 22px;
   }
 }
@@ -252,6 +252,8 @@
 .mainContacto .sectionContacto .formulario .boton {
   margin-top: 15px;
   background-color: #ffb379;
+  font-family: "Truculenta", sans-serif;
+  font-weight: bold;
 }
 .mainContacto .sectionContacto .imgSobre {
   grid-area: imgSobre;
@@ -303,7 +305,7 @@
   width: 25px;
   color: #567ccf;
 }
-.mainContacto .sectionContacto2 .primerH3 .primerH31 p {
+.mainContacto .sectionContacto2 .primerH3 .primerH31 p, .mainContacto .sectionContacto2 .primerH3 .primerH31 footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainContacto .sectionContacto2 .primerH3 .primerH31 a {
   align-self: center;
   font-family: "Truculenta", sans-serif;
   font-weight: bold;
@@ -324,7 +326,7 @@
   width: 25px;
   color: #567ccf;
 }
-.mainContacto .sectionContacto2 .primerH3 .primerH32 p {
+.mainContacto .sectionContacto2 .primerH3 .primerH32 p, .mainContacto .sectionContacto2 .primerH3 .primerH32 footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainContacto .sectionContacto2 .primerH3 .primerH32 a {
   align-self: center;
 }
 .mainContacto .sectionContacto2 .primerH3 .primerH32 a {
@@ -361,7 +363,7 @@
   margin-right: 5px;
   color: #567ccf;
 }
-.mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
+.mainContacto .sectionContacto2 .segundoH3 .segundoH31 p, .mainContacto .sectionContacto2 .segundoH3 .segundoH31 footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainContacto .sectionContacto2 .segundoH3 .segundoH31 a {
   align-self: center;
   color: #567ccf;
   font-family: "Truculenta", sans-serif;
@@ -379,7 +381,7 @@
   align-self: center;
   justify-self: center;
 }
-.mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+.mainContacto .sectionContacto2 .segundoH3 .segundoH32 p, .mainContacto .sectionContacto2 .segundoH3 .segundoH32 footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainContacto .sectionContacto2 .segundoH3 .segundoH32 a {
   font-size: 18px;
   color: #567ccf;
   font-family: "Truculenta", sans-serif;
@@ -459,17 +461,16 @@
   .mainContacto .sectionContacto2 .segundoH3 .segundoH31 a {
     font-size: 25px;
   }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p, .mainContacto .sectionContacto2 .segundoH3 .segundoH32 footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainContacto .sectionContacto2 .segundoH3 .segundoH32 a {
     font-size: 25px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .mainContacto .h3Contacto {
-    margin: 5px 5px;
-    font-size: 50px;
+    font-size: 45px;
   }
   .mainContacto .sectionContacto {
-    margin: 25px 55px;
+    margin: 5px 50px;
   }
   .mainContacto .sectionContacto .formulario .formCompletar {
     margin-top: 40px;
@@ -521,12 +522,17 @@
     width: 40px;
     margin-right: 15px;
   }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p {
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH31 p, .mainContacto .sectionContacto2 .segundoH3 .segundoH31 footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainContacto .sectionContacto2 .segundoH3 .segundoH31 a {
     font-size: 35px;
   }
-  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p {
+  .mainContacto .sectionContacto2 .segundoH3 .segundoH32 p, .mainContacto .sectionContacto2 .segundoH3 .segundoH32 footer .divEncontranos .divE p a, footer .divEncontranos .divE p .mainContacto .sectionContacto2 .segundoH3 .segundoH32 a {
     font-size: 30px;
     margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1160px) {
+  .mainContacto .h3Contacto {
+    font-size: 55px;
   }
 }
 * {
@@ -587,9 +593,8 @@ header .frase .h4 {
   margin: 0px 5px;
 }
 .slide .carousel-inner img {
+  width: 100%;
   height: 45vh;
-  background-position: center;
-  background-size: cover;
 }
 
 main .divPadre {
@@ -610,7 +615,7 @@ main .divPadre .divArriba {
 }
 main .divPadre .divArriba .camion {
   border: 2px solid #567ccf;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -637,8 +642,8 @@ main .divPadre .divArriba .divWsp {
 main .divPadre .divArriba .divWsp .wsp {
   display: flex;
   border: 2px solid #567ccf;
-  border-radius: 5px;
-  padding: 4px;
+  border-radius: 15px;
+  padding: 6px;
   margin: 0px 10px;
   background-color: #ffb379;
 }
@@ -675,9 +680,9 @@ main .divPadre .divAbajo .divMpago {
 }
 main .divPadre .divAbajo .divMpago .tarjC {
   border: 2px solid #567ccf;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #ffb379;
-  padding: 2px 4px;
+  padding: 4px 4px;
 }
 main .divPadre .divAbajo .divMpago .tarjC .bi-credit-card {
   color: white;
@@ -685,21 +690,21 @@ main .divPadre .divAbajo .divMpago .tarjC .bi-credit-card {
   width: 30px;
 }
 main .divPadre .divAbajo .divMpago .mercadoPago {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border: 2px solid #567ccf;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 main .divPadre .divAbajo .divMpago .plata {
   border: 2px solid #567ccf;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #ffb379;
-  padding: 2px 4px;
+  padding: 6px 6px;
 }
 main .divPadre .divAbajo .divMpago .plata .bi-cash-coin {
   color: white;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 main .divPadre .divAbajo .mediosDePago {
   text-align: center;
@@ -730,7 +735,7 @@ main .carrusel2 .carrousel2 .carousel-caption h5 {
   font-family: "Truculenta", sans-serif;
   font-weight: bold;
 }
-main .carrusel2 .carrousel2 .carousel-caption p {
+main .carrusel2 .carrousel2 .carousel-caption p, main .carrusel2 .carrousel2 .carousel-caption footer .divEncontranos .divE p a, footer .divEncontranos .divE p main .carrusel2 .carrousel2 .carousel-caption a {
   font-family: "Truculenta", sans-serif;
   font-weight: bold;
 }
@@ -772,7 +777,7 @@ footer .divEncontranos .divE .bi-geo-alt {
   width: 15px;
   align-self: center;
 }
-footer .divEncontranos .divE p {
+footer .divEncontranos .divE p, footer .divEncontranos .divE p a {
   color: #567ccf;
   text-shadow: 0 0 5px rgb(255, 255, 255);
   margin: auto 5px;
@@ -859,12 +864,12 @@ footer .divRedes .divR .bi-instagram, footer .divRedes .divR .bi-facebook {
   height: 20px;
   width: 20px;
 }
-footer .divRedes .divR p {
+footer .divRedes .divR p, footer .divRedes .divR .divEncontranos .divE p a, footer .divEncontranos .divE p .divRedes .divR a {
   margin: auto 5px;
   font-family: "Truculenta", sans-serif;
   font-weight: bold;
 }
-footer .divRedes .divR p a {
+footer .divRedes .divR p a, footer .divRedes .divR .divEncontranos .divE p a a, footer .divEncontranos .divE p .divRedes .divR a a {
   color: #567ccf;
   text-shadow: 0 0 5px white;
 }
@@ -901,7 +906,7 @@ footer .copy {
     font-size: 35px;
   }
   .slide .carousel-inner img {
-    height: 80vh;
+    height: 100vh;
   }
   main .divPadre {
     display: grid;
@@ -984,7 +989,7 @@ footer .copy {
     text-shadow: 0 0 5px white;
     font-size: 25px;
   }
-  main .carrusel2 .carrousel2 .carousel-inner .carousel-caption p {
+  main .carrusel2 .carrousel2 .carousel-inner .carousel-caption p, main .carrusel2 .carrousel2 .carousel-inner .carousel-caption footer .divEncontranos .divE p a, footer .divEncontranos .divE p main .carrusel2 .carrousel2 .carousel-inner .carousel-caption a {
     color: #000000;
     text-shadow: 0 0 5px white;
     font-size: 25px;
@@ -1058,7 +1063,7 @@ footer .copy {
     height: 20px;
     width: 20px;
   }
-  footer .divRedes .divR p {
+  footer .divRedes .divR p, footer .divRedes .divR .divEncontranos .divE p a, footer .divEncontranos .divE p .divRedes .divR a {
     font-size: 18px;
   }
   footer .copy {
@@ -1082,7 +1087,7 @@ footer .copy {
     font-size: 45px;
   }
   .slide .carousel-inner img {
-    height: 80vh;
+    height: 100vh;
   }
   main .divPadre .divArriba {
     padding: 80px 10px;
@@ -1177,7 +1182,7 @@ footer .copy {
     font-weight: bold;
     font-size: 30px;
   }
-  main .pDest .producto p {
+  main .pDest .producto p, main .pDest .producto footer .divEncontranos .divE p a, footer .divEncontranos .divE p main .pDest .producto a {
     text-align: center;
     font-family: "Truculenta", sans-serif;
     font-weight: bold;

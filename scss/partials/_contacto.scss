@@ -69,6 +69,8 @@ $letrafooter: 'Truculenta', sans-serif;
             .boton{
                 margin-top: 15px;
                 background-color: $color2;
+                font-family: $letrafooter;
+                font-weight: bold;
             }
         }
         .imgSobre{
@@ -312,11 +314,10 @@ $letrafooter: 'Truculenta', sans-serif;
 @media only screen and (min-width:1024px){
     .mainContacto{
         .h3Contacto{
-            margin: 5px 5px;
-            font-size: 50px;
+            font-size: 45px;
         }
         .sectionContacto{
-            margin: 25px 55px;
+            margin: 5px 50px;
             .formulario{
                 .formCompletar{
                     margin-top: 40px;
@@ -384,6 +385,14 @@ $letrafooter: 'Truculenta', sans-serif;
                     }
                 } 
             } 
+        }
+    }
+}
+
+@media only screen and (min-width:1160px){
+    .mainContacto{
+        .h3Contacto{
+            font-size: 55px;
         }
     }
 }
