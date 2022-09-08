@@ -1,9 +1,7 @@
 $colorbase: #9ad5ff;
 $color2: #ffb379;
 $color3: #567ccf;
-$letranav: 'Truculenta', sans-serif; 
-$letramain: 'Truculenta', sans-serif;
-$letrafooter: 'Truculenta', sans-serif; 
+$letra: 'Truculenta', sans-serif; 
 
 
 *{
@@ -18,7 +16,7 @@ $letrafooter: 'Truculenta', sans-serif;
         text-align: center;
         border-radius: 10px;
         border: 2px solid $color3;
-        font-family: $letramain;
+        font-family: $letra;
         font-weight: bold;
         text-shadow: 0 0 5px white;
         color: $color3;
@@ -50,7 +48,7 @@ $letrafooter: 'Truculenta', sans-serif;
             p{
                 margin: 0px;
                 text-align: center;
-                font-family: $letrafooter;
+                font-family: $letra;
                 color: $color3;
                 font-weight: bold;
                 text-shadow: 0 0 5px rgb(255, 255, 255);

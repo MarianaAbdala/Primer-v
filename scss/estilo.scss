@@ -5,9 +5,7 @@
 $colorbase: #9ad5ff;
 $color2: #ffb379;
 $color3: #567ccf;
-$letranav: 'Truculenta', sans-serif; 
-$letramain: 'Truculenta', sans-serif;
-$letrafooter: 'Truculenta', sans-serif; 
+$letra: 'Truculenta', sans-serif; 
 
 
 *{
@@ -35,7 +33,7 @@ header{
             .nav-item{
                 .nav-link{
                     color: #000000;
-                    font-family: $letranav;
+                    font-family: $letra;
                     font-weight: bold;
                     
                     &:hover{
@@ -47,7 +45,7 @@ header{
             }
             .form-inline{
                 .form-control::placeholder{
-                    font-family: $letranav; 
+                    font-family: $letra; 
                     font-weight: bold;
                     color: #000000;
                 }
@@ -62,7 +60,7 @@ header{
     .frase{
         margin-top: 5px;
         .h4{
-            font-family: $letranav;
+            font-family: $letra;
             text-shadow: 0 0 5px #ffffff;
             font-weight: bold;
             font-style: italic;
@@ -115,7 +113,7 @@ main{
             }
             .realizamosDelivery{
                 text-shadow: 0 0 5px rgb(255, 255, 255);
-                font-family: $letramain;
+                font-family: $letra;
                 font-weight: bold;
                 color: $color3;
             }
@@ -143,7 +141,7 @@ main{
                     margin-bottom: auto;
                     font-size: 18px;
                     color: $color3;
-                    font-family: $letramain;
+                    font-family: $letra;
                     font-weight: bold;
                     a{
                         color: $color3;
@@ -196,7 +194,7 @@ main{
             .mediosDePago{
                 text-align: center;
                 color: $color3;
-                font-family: $letramain; 
+                font-family: $letra; 
                 font-weight: bold;
                 text-shadow: 0 0 5px rgb(255, 255, 255);
                 padding: 10px;
@@ -213,7 +211,7 @@ main{
         border: 2px solid $color3;
         text-shadow: 0 0 5px rgb(255, 255, 255);
         font-style: italic;
-        font-family: $letramain;
+        font-family: $letra;
         font-weight: bold;
         text-align: center;
     }
@@ -224,11 +222,11 @@ main{
             }
             .carousel-caption{
                 h5{
-                    font-family: $letramain;
+                    font-family: $letra;
                     font-weight: bold;
                 }
                 p{
-                    font-family: $letramain;
+                    font-family: $letra;
                     font-weight: bold;
                 }
             }
@@ -257,7 +255,7 @@ footer{
             padding: 8px;
             color: $color3;
             text-shadow: 0 0 5px white;
-            font-family: $letrafooter;
+            font-family: $letra;
             font-weight: bold;
         }
         .divE{
@@ -274,7 +272,7 @@ footer{
                 color: $color3;
                 text-shadow: 0 0 5px rgb(255, 255, 255);
                 margin: auto 5px;
-                font-family: $letrafooter;
+                font-family: $letra;
                 font-weight: bold;
                 a{
                     @extend p;
@@ -284,7 +282,7 @@ footer{
         }
         .pSm{
             padding: 8px;
-            font-family: $letrafooter;
+            font-family: $letra;
             font-weight: bold;
         }
     }
@@ -309,7 +307,7 @@ footer{
             color: $color3;
             text-align: center;
             text-shadow: 0 0 5px white;
-            font-family: $letrafooter;
+            font-family: $letra;
             font-weight: bold;
             padding: 10px 0px 0px 0px;
         }
@@ -329,7 +327,7 @@ footer{
                 margin-bottom: auto;
                 color: $color3;
                 text-shadow: 0 0 5px white;
-                font-family: $letrafooter;
+                font-family: $letra;
                 font-weight: bold;
                 a{
                     color: $color3;
@@ -348,7 +346,7 @@ footer{
             color: $color3;
             text-shadow: 0 0 5px white;
             padding: 8px;
-            font-family: $letrafooter;
+            font-family: $letra;
             font-weight: bold;
         }
         .divR{
@@ -366,7 +364,7 @@ footer{
             }
             p{
                 margin: auto 5px;
-                font-family: $letrafooter;
+                font-family: $letra;
                 font-weight: bold;
                 a{
                     color: $color3;
@@ -755,13 +753,13 @@ footer{
                 h4{
                     margin-top: 10px;
                     text-align: center;
-                    font-family: $letrafooter;
+                    font-family: $letra;
                     font-weight: bold;
                     font-size: 30px;
                 }
                 p{
                     text-align: center;
-                    font-family: $letrafooter;
+                    font-family: $letra;
                     font-weight: bold;
                     font-size: 25px;
                 }

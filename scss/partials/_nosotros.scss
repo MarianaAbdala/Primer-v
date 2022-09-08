@@ -1,9 +1,7 @@
 $colorbase: #9ad5ff;
 $color2: #ffb379;
 $color3: #567ccf;
-$letranav: 'Truculenta', sans-serif; 
-$letramain: 'Truculenta', sans-serif;
-$letrafooter: 'Truculenta', sans-serif; 
+$letra: 'Truculenta', sans-serif; 
 
 *{
     margin: 0;
@@ -18,15 +16,14 @@ $letrafooter: 'Truculenta', sans-serif;
         text-align: center;
         padding: 5px;
         border: 2px solid $color3;
-        font-family: $letramain; 
+        font-family: $letra; 
         font-weight: bold;
         color: $color3;
         border-radius: 10px;
         margin: 5px 5px;
     }
     .tarj{
-        border: 2px solid $color3;
-        background-color: $colorbase;
+        border: none;
         .card-img-top{
             margin-top: 15px;
             border-radius: 10px;
@@ -36,7 +33,7 @@ $letrafooter: 'Truculenta', sans-serif;
             background-color: $color2;
             border: 2px solid $color3;
             border-radius: 10px;
-            font-family: $letrafooter;
+            font-family: $letra;
             font-size: 35px;
             text-align: center;
             padding: 10px;
@@ -48,7 +45,7 @@ $letrafooter: 'Truculenta', sans-serif;
             background-color: $color2;
             padding: 20px;
             border-radius: 10px;
-            font-family: $letranav;
+            font-family: $letra;
             font-weight: bold;
         }
     }

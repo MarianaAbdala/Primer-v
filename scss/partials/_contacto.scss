@@ -1,9 +1,7 @@
 $colorbase: #9ad5ff;
 $color2: #ffb379;
 $color3: #567ccf;
-$letranav: 'Truculenta', sans-serif; 
-$letramain: 'Truculenta', sans-serif;
-$letrafooter: 'Truculenta', sans-serif; 
+$letra: 'Truculenta', sans-serif; 
 
 *{
     margin: 0;
@@ -14,7 +12,7 @@ $letrafooter: 'Truculenta', sans-serif;
 .mainContacto{
     .h3Contacto{
         text-align: center;
-        font-family: $letranav;
+        font-family: $letra;
         font-weight: bold;
         background-color: $color2;
         text-shadow: 0 0 10px #ffffff;
@@ -31,12 +29,10 @@ $letrafooter: 'Truculenta', sans-serif;
         grid-template-areas:
         "imgSobre"
         "formulario";
-        background-color: #9ad5ffd3;
         margin: 5px 5px;
         padding: 5px;
         height: auto;
         border-radius: 5px;
-        border: 2px solid $color3;
         .formulario{
             grid-area: formulario;
             margin-left: 20px;
@@ -52,7 +48,7 @@ $letrafooter: 'Truculenta', sans-serif;
                     background: transparent;
                     &::placeholder{
                         color: $color3;
-                        font-family: $letranav;
+                        font-family: $letra;
                         font-weight: bold;
                     }
                     &:focus{
@@ -69,7 +65,7 @@ $letrafooter: 'Truculenta', sans-serif;
             .boton{
                 margin-top: 15px;
                 background-color: $color2;
-                font-family: $letrafooter;
+                font-family: $letra;
                 font-weight: bold;
             }
         }
@@ -105,7 +101,7 @@ $letrafooter: 'Truculenta', sans-serif;
             padding: 20px 20px;
             h3{
                 text-align: center;
-                font-family: $letranav;
+                font-family: $letra;
                 padding: 10px 0px 5px 0px;
                 border-bottom: 2px solid $color3;
                 margin: 0px auto;
@@ -125,7 +121,7 @@ $letrafooter: 'Truculenta', sans-serif;
                 }
                 p{
                     align-self: center;
-                    font-family: $letranav;
+                    font-family: $letra;
                     font-weight: bold;
                 }
                 a{
@@ -149,7 +145,7 @@ $letrafooter: 'Truculenta', sans-serif;
                 }
                 a{
                     text-decoration: none;
-                    font-family: $letranav;
+                    font-family: $letra;
                     font-weight: bold;
                     color: $color3;
                     text-shadow: 0 0 5px white;
@@ -167,7 +163,7 @@ $letrafooter: 'Truculenta', sans-serif;
                 border-bottom: 2px solid $color3;
                 margin: 0px auto;
                 color: $color3;
-                font-family: $letranav;
+                font-family: $letra;
                 text-shadow: 0 0 10px rgb(255, 255, 255);
             }
             .segundoH31{
@@ -184,14 +180,14 @@ $letrafooter: 'Truculenta', sans-serif;
                 p{
                     align-self: center;
                     color: $color3;
-                    font-family: $letranav;
+                    font-family: $letra;
                     font-weight: bold;
                     text-shadow: 0 0 5px white;
                 }
                 a{
                     text-decoration: none;
                     color: $color3;
-                    font-family: $letranav;
+                    font-family: $letra;
                     font-weight: bold;
                     text-shadow: 0 0 5px white;
                 }
@@ -202,7 +198,7 @@ $letrafooter: 'Truculenta', sans-serif;
                 p{
                     font-size: 18px;
                     color: $color3;
-                    font-family: $letranav;
+                    font-family: $letra;
                     font-weight: bold;
                     text-shadow: 0 0 5px white;
                 }
