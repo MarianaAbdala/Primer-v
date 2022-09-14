@@ -257,6 +257,7 @@ footer{
             text-shadow: 0 0 5px white;
             font-family: $letra;
             font-weight: bold;
+            margin-top: 10px;
         }
         .divE{
             display: flex;
@@ -297,7 +298,7 @@ footer{
             width: 80px;
             border: 2px solid black;
             border-radius: 40px;
-            margin: 8px;
+            margin-top: 10px;
             &:hover{
                 transform: scale(1.1);
                 transition: all 0.7s;
@@ -348,6 +349,7 @@ footer{
             padding: 8px;
             font-family: $letra;
             font-weight: bold;
+            margin-top: 10px;
         }
         .divR{
             display: flex;
@@ -551,7 +553,7 @@ footer{
             grid-area: divEncontranos;
             border-bottom: none;
             margin-top: 15px;
-            width: auto;
+            min-width: 250px;
             padding: 20px;
             .encontranos{
                 font-size: 20px;
@@ -601,7 +603,7 @@ footer{
             border-bottom: none;
             width: auto;
             padding: 20px;
-            width: auto;
+            min-width: 200px;
             .seguinos{
                 font-size: 20px;
                 text-align: center;
@@ -777,6 +779,17 @@ footer{
                 grid-area: producto4;
             }
         } 
+    }
+    footer{
+        .divEncontranos{
+            width: auto;
+        }
+        .divLogoFooter{
+            width: auto;
+        }
+        .divRedes{
+            min-width: auto;
+        }
     }
 }
 

@@ -762,6 +762,7 @@ footer .divEncontranos .encontranos {
   text-shadow: 0 0 5px white;
   font-family: "Truculenta", sans-serif;
   font-weight: bold;
+  margin-top: 10px;
 }
 footer .divEncontranos .divE {
   display: flex;
@@ -798,7 +799,7 @@ footer .divLogoFooter .logo {
   width: 80px;
   border: 2px solid black;
   border-radius: 40px;
-  margin: 8px;
+  margin-top: 10px;
 }
 footer .divLogoFooter .logo:hover {
   transform: scale(1.1);
@@ -849,6 +850,7 @@ footer .divRedes .seguinos {
   padding: 8px;
   font-family: "Truculenta", sans-serif;
   font-weight: bold;
+  margin-top: 10px;
 }
 footer .divRedes .divR {
   display: flex;
@@ -1004,7 +1006,7 @@ footer .copy {
     grid-area: divEncontranos;
     border-bottom: none;
     margin-top: 15px;
-    width: auto;
+    min-width: 250px;
     padding: 20px;
   }
   footer .divEncontranos .encontranos {
@@ -1050,7 +1052,7 @@ footer .copy {
     border-bottom: none;
     width: auto;
     padding: 20px;
-    width: auto;
+    min-width: 200px;
   }
   footer .divRedes .seguinos {
     font-size: 20px;
@@ -1196,6 +1198,15 @@ footer .copy {
   }
   main .pDest .producto4 {
     grid-area: producto4;
+  }
+  footer .divEncontranos {
+    width: auto;
+  }
+  footer .divLogoFooter {
+    width: auto;
+  }
+  footer .divRedes {
+    min-width: auto;
   }
 }
 @media only screen and (min-width: 1160px) {
