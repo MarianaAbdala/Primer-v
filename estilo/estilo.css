@@ -1208,6 +1208,9 @@ footer .copy {
   header .frase .h4 {
     font-size: 55px;
   }
+  .slide .carousel-inner img {
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

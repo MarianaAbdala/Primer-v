@@ -800,6 +800,13 @@ footer{
             }
         }
     }
+    .slide{
+        .carousel-inner{
+            img{
+                height: 100vh;
+            }
+        }
+    }
 }
 
 
